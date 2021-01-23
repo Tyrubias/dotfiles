@@ -9,5 +9,9 @@
     "terminal.integrated.fontSize": 14,
     "files.autoSave": "afterDelay",
     "explorer.sortOrder": "type",
-    "editor.fontLigatures": true
+    "editor.fontLigatures": true,
+    "window.newWindowDimensions": "inherit",
+    "[typescript]": {
+        "editor.defaultFormatter": "numso.prettier-standard-vscode"
+    }
 }
