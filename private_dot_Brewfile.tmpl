@@ -1,22 +1,35 @@
+{{- if eq .chezmoi.os "darwin" -}}
 tap "buo/cask-upgrade"
+{{ end -}}
 tap "homebrew/bundle"
+{{- if eq .chezmoi.os "darwin" }}
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
+{{ end  -}}
 tap "homebrew/core"
 brew "antibody"
 brew "bat"
 brew "chezmoi"
+{{- if eq .chezmoi.os "linux" }}
+brew "docker"
+{{ end }}
 brew "exa"
 brew "fzf"
 brew "luajit", args: ["HEAD"]
 brew "neovim", args: ["HEAD"]
 brew "wakeonlan"
+{{- if eq .chezmoi.os "linux" }}
+brew "xclip"
+{{ end -}}
+
+{{- if eq .chezmoi.os "darwin" }}
 cask "font-fantasque-sans-mono-nerd-font"
 cask "google-chrome"
 cask "intellij-idea"
 cask "rectangle"
 cask "setapp"
 cask "slack"
+{{ end -}}
 
 # install Alacritty from source
 # install Visual Studio Code Insiders until there's M1 support
