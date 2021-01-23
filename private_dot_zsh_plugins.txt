@@ -1,0 +1,12 @@
+robbyrussell/oh-my-zsh
+robbyrussell/oh-my-zsh path:plugins/git
+robbyrussell/oh-my-zsh path:plugins/brew
+robbyrussell/oh-my-zsh path:plugins/colored-man-pages
+
+bigH/git-fuzzy path:bin kind:path
+
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-syntax-highlighting
+lukechilds/zsh-nvm
+
+romkatv/powerlevel10k
