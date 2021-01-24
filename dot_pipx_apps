@@ -1,0 +1,4 @@
+venvs are in /Users/vsong/.local/pipx/venvs
+apps are exposed on your $PATH at /Users/vsong/.local/bin
+   package radian 0.5.9, Python 3.9.1
+    - radian
