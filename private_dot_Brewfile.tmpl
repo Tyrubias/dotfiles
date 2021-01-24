@@ -11,15 +11,21 @@ brew "antibody"
 brew "bat"
 brew "chezmoi"
 {{- if eq .chezmoi.os "linux" }}
+brew "act"
 brew "docker"
 {{ end }}
 brew "exa"
 brew "fzf"
+{{- if eq .chezmoi.os "darwin"}}
 brew "luajit", args: ["HEAD"]
 brew "neovim", args: ["HEAD"]
 brew "wakeonlan"
+{{- else -}}
+brew "neovim"
+{{- end -}}
 {{- if eq .chezmoi.os "linux" }}
 brew "xclip"
+brew "zsh"
 {{ end -}}
 
 {{- if eq .chezmoi.os "darwin" }}
