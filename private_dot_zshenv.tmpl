@@ -1,10 +1,12 @@
 {{ if eq .chezmoi.os "linux" }}
-{{   if (contains "microsoft-WSL2" .chezmoi.kernel.osrelease) }}
+{{   if (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
 # Add Linuxbrew to PATH
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 # Add pyenv shims to PATH
 eval "$(pyenv init -)"
+
+export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 {{   end }}
 {{ end }}
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -24,7 +26,9 @@ alias bdbc="brew bundle dump --all --global --force && brew bundle cleanup --all
 
 alias up="cd .."
 {{ if eq .chezmoi.os "linux" }}
+{{   if not (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
 alias gchrome="google-chrome-stable --enable-features=WebUIDarkMode --force-dark-mode > /dev/null 2>&1 &"
 
 if [ -e /home/vsong/.nix-profile/etc/profile.d/nix.sh ]; then . /home/vsong/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+{{   end }}
 {{ end }}

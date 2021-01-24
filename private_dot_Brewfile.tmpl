@@ -11,10 +11,11 @@ brew "antibody"
 brew "bat"
 brew "cloc"
 brew "chezmoi"
-brew "coreutils"
 {{- if eq .chezmoi.os "linux" }}
+{{    if not (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
 brew "act"
 brew "docker"
+{{   end }}
 {{ end }}
 brew "exa"
 brew "fzf"
@@ -22,6 +23,7 @@ brew "jags"
 brew "jq"
 {{- if eq .chezmoi.os "darwin"}}
 brew "borgbackup"
+brew "coreutils"
 brew "luajit", args: ["HEAD"]
 brew "neovim", args: ["HEAD"]
 brew "wakeonlan"
@@ -34,9 +36,11 @@ brew "pipx"
 brew "r"
 brew "ripgrep"
 {{ if eq .chezmoi.os "linux" }}
+{{ if not (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
 brew "xclip"
+{{ end }}
 brew "zsh"
-{{   if (contains "microsoft-WSL2" .chezmoi.kernel.osrelease) }}
+{{   if (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
 brew "hub"
 brew "pango"
 brew "pyenv"

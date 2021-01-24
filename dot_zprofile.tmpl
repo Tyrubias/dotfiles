@@ -1,5 +1,5 @@
 {{ if eq .chezmoi.os "linux" }}
-{{   if not (contains "microsoft-WSL2" .chezmoi.kernel.osrelease) }}
+{{   if not (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 {{   end }}
 {{ end }}
@@ -10,7 +10,7 @@ export PATH="/Applications/Visual Studio Code - Insiders.app/Contents/Resources/
 {{ end }}
 
 {{ if eq .chezmoi.os "linux" }}
-{{  if (contains "microsoft-WSL2" .chezmoi.kernel.osrelease) }}
+{{  if (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
 # Get VSCode working after we exclude Windows paths
 # https://devblogs.microsoft.com/commandline/automatically-configuring-wsl/
 alias code="/mnt/c/Users/VictorSong/scoop/apps/vscode-wsl/current/bin/code"
@@ -20,9 +20,7 @@ alias code="/mnt/c/Users/VictorSong/scoop/apps/vscode-wsl/current/bin/code"
 # ZSH Autosuggest options
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
 export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history)
-{{ if (and (ne .chezmoi.os "linux") (ne .chezmoi.hostname "Victors-Mini")) }}
 source $HOME/.victor-secrets.sh
-{{ end }}
 {{ if eq .chezmoi.os "linux" }}
 export PATH="$PATH:/home/vsong/.local/bin"
 {{ end }}
