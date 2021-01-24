@@ -1,8 +1,8 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 
-export PATH="/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin:$PATH"
 export BAT_THEME="gruvbox"
+export BORG_REMOTE_PATH="borg1"
 
 export VISUAL=nvim
 export EDITOR=$VISUAL

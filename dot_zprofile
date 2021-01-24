@@ -1,0 +1,4 @@
+# Created by `userpath` on 2021-01-24 05:18:48
+export PATH="/Users/vsong/.local/bin:$PATH"
+
+export PATH="/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin:$PATH"
