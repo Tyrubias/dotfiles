@@ -36,6 +36,11 @@ brew "ripgrep"
 {{ if eq .chezmoi.os "linux" }}
 brew "xclip"
 brew "zsh"
+{{   if (contains "microsoft-WSL2" .chezmoi.kernel.osrelease) }}
+brew "hub"
+brew "pango"
+brew "pyenv"
+{{   end }}
 {{ end -}}
 brew "youtube-dl"
 

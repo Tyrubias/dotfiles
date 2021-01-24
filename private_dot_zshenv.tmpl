@@ -1,3 +1,12 @@
+{{ if eq .chezmoi.os "linux" }}
+{{   if (contains "microsoft-WSL2" .chezmoi.kernel.osrelease) }}
+# Add Linuxbrew to PATH
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
+# Add pyenv shims to PATH
+eval "$(pyenv init -)"
+{{   end }}
+{{ end }}
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 
