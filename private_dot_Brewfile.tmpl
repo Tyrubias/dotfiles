@@ -9,7 +9,6 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 brew "antibody"
 brew "bat"
-brew "borgbackup"
 brew "cloc"
 brew "chezmoi"
 brew "coreutils"
@@ -22,12 +21,15 @@ brew "fzf"
 brew "jags"
 brew "jq"
 {{- if eq .chezmoi.os "darwin"}}
+brew "borgbackup"
 brew "luajit", args: ["HEAD"]
 brew "neovim", args: ["HEAD"]
 brew "wakeonlan"
-{{- else -}}
+{{ else }}
 brew "neovim"
 {{ end }}
+brew "ncdu"
+brew "neofetch"
 brew "pipx"
 brew "r"
 brew "ripgrep"

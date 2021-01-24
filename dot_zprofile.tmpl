@@ -1,14 +1,18 @@
 {{- if eq .chezmoi.os "linux" }}
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 {{- end }}
+{{ if eq .chezmoi.os "darwin" }}
 # Created by `userpath` on 2021-01-24 05:18:48
 export PATH="/Users/vsong/.local/bin:$PATH"
-
 export PATH="/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin:$PATH"
+{{ end }}
 
 # ZSH Autosuggest options
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
 export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history)
 {{ if (and (ne .chezmoi.os "linux") (ne .chezmoi.hostname "Victors-Mini")) }}
 source $HOME/.victor-secrets.sh
+{{ end }}
+{{ if eq .chezmoi.os "linux" }}
+export PATH="$PATH:/home/vsong/.local/bin"
 {{ end }}

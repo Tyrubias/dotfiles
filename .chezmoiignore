@@ -1,2 +1,7 @@
 settings.json
 IntelliJ-Settings.zip
+{{ if ne .chezmoi.os "darwin" }}
+Library
+.ssh
+.sdkman
+{{ end }}
