@@ -14,3 +14,8 @@ alias bcbca="brew cleanup && brew cleanup -s && brew cleanup -p 0"
 alias bdbc="brew bundle dump --all --global --force && brew bundle cleanup --all --global --force"
 
 alias up="cd .."
+{{ if eq .chezmoi.os "linux" }}
+alias gchrome="google-chrome-stable --enable-features=WebUIDarkMode --force-dark-mode > /dev/null 2>&1 &"
+
+if [ -e /home/vsong/.nix-profile/etc/profile.d/nix.sh ]; then . /home/vsong/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+{{ end }}
