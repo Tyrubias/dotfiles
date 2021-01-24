@@ -1,0 +1,7 @@
+.First <- function () {
+    source("~/.config/store_packages.R")
+}
+
+.Last <- function () {
+    source("~/.config/store_packages.R")
+}

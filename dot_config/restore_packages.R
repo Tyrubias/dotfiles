@@ -1,0 +1,6 @@
+load(file = "installed_packages.rda")
+tmp <- installed.packages()
+installed_packages.new <- as.vector(tmp[is.na(tmp[,"Priority"]), 1])
+missing <- setdiff(installed_packages, installed_packages.new)
+install.packages(missing)
+update.packages()

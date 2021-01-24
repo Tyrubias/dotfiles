@@ -9,7 +9,11 @@ source ~/.zsh_plugins.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+{{ if (and (ne .chezmoi.os "linux") (ne .chezmoi.hostname "Victors-Mini")) }}
+test -e /Users/vsong/.iterm2_shell_integration.zsh && source /Users/vsong/.iterm2_shell_integration.zsh || true
 
+eval "$(rbenv init -)"
+{{ end }}
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/vsong/.sdkman"
 [[ -s "/Users/vsong/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/vsong/.sdkman/bin/sdkman-init.sh"
