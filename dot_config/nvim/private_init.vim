@@ -6,10 +6,11 @@ Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
-colorscheme gruvbox
+colorscheme onedark
 
 set termguicolors
 

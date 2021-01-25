@@ -1,7 +1,7 @@
 {
     "workbench.startupEditor": "newUntitledFile",
     "workbench.sideBar.location": "right",
-    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "workbench.colorTheme": "One Dark Pro",
     "workbench.iconTheme": "material-icon-theme",
     "editor.fontFamily": "FantasqueSansMono Nerd Font",
     "editor.fontSize": 14,
@@ -13,5 +13,10 @@
     "window.newWindowDimensions": "inherit",
     "[typescript]": {
         "editor.defaultFormatter": "numso.prettier-standard-vscode"
-    }
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "numso.prettier-standard-vscode"
+    },
+    "oneDarkPro.bold": true,
+    "oneDarkPro.vivid": true
 }
