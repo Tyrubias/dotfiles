@@ -1,9 +1,8 @@
 {
     "workbench.startupEditor": "newUntitledFile",
     "workbench.sideBar.location": "right",
-    "workbench.colorTheme": "One Dark Pro",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "FantasqueSansMono Nerd Font",
+    "editor.fontFamily": "FantasqueSansMono Nerd Font Mono",
     "editor.fontSize": 14,
     "terminal.integrated.fontFamily": "FantasqueSansMono Nerd Font Mono",
     "terminal.integrated.fontSize": 14,
@@ -18,5 +17,6 @@
         "editor.defaultFormatter": "numso.prettier-standard-vscode"
     },
     "oneDarkPro.bold": true,
+    "workbench.colorTheme": "One Dark Pro",
     "oneDarkPro.vivid": true
 }
