@@ -1,6 +1,6 @@
 window:
   dimensions:
-    columns: 165
+    columns: 175
     lines: 50
   padding:
     x: 6
