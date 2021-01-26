@@ -1,5 +1,5 @@
 syntax on
-colorscheme murphy
+set termguicolors
 set tabstop=8
 set softtabstop=0
 set shiftwidth=4
