@@ -26,8 +26,9 @@ brew "neovim", args: ["HEAD"]
 brew "neovim"
 {{ end }}
 
-# Stuff that's macOS only
 {{ if eq .chezmoi.os "darwin" }}
+# Stuff that's macOS only
+
 tap "buo/cask-upgrade"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -45,22 +46,26 @@ cask "slack"
 cask "spotify"
 cask "zoom"
 
+{{   if eq .chezmoi.hostname "Victors-MacBook-Air" }}
+
 # Stuff that I only installed
 # on my laptop. For future reference,
 # the hostname of my Mac Mini is
 # "Victors-Mini"
-{{   if eq .chezmoi.hostname "Victors-MacBook-Air" }}
+
 brew "rbenv"
 cask "julia"
 cask "keyboardcleantool"
 cask "rar"
 {{   end }}
+# Install Visual Studio Code Insiders until stable gets M1 support
 {{ end}}
 
+{{ if eq .chezmoi.os "linux" }}
 # Linux stuff. Here, we have to differentiate
 # between WSL 2 and my Pop-OS installation. My
 # Pop OS has hostname "pop-os"
-{{ if eq .chezmoi.os "linux" }}
+
 brew "zsh"
 
 # if WSL 2 => WSL 2 stuff, else Pop OS stuff
@@ -75,5 +80,4 @@ brew "xclip"
 {{   end }}
 {{ end }}
 
-# Install Alacritty for source if you want
-# Install Visual Studio Code Insiders until stable gets M1 support
+# Install Alacritty from source if you want
