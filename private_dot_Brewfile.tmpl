@@ -1,54 +1,39 @@
-{{- if eq .chezmoi.os "darwin" -}}
-tap "buo/cask-upgrade"
-{{ end -}}
+# Common stuff
 tap "homebrew/bundle"
-{{- if eq .chezmoi.os "darwin" }}
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-{{- end }}
 tap "homebrew/core"
 brew "antibody"
 brew "bat"
 brew "cloc"
 brew "chezmoi"
-{{- if eq .chezmoi.os "linux" }}
-{{    if not (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
-brew "act"
-brew "docker"
-{{   end }}
-{{ end }}
 brew "exa"
 brew "fzf"
 brew "jags"
 brew "jq"
-{{- if eq .chezmoi.os "darwin"}}
-brew "borgbackup"
-brew "coreutils"
-brew "luajit", args: ["HEAD"]
-brew "neovim", args: ["HEAD"]
-brew "wakeonlan"
-{{ else }}
-brew "neovim"
-{{ end }}
 brew "ncdu"
 brew "neofetch"
 brew "pipx"
 brew "r"
 brew "ripgrep"
-{{ if eq .chezmoi.os "linux" }}
-{{ if not (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
-brew "xclip"
-{{ end }}
-brew "zsh"
-{{   if (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
-brew "hub"
-brew "pango"
-brew "pyenv"
-{{   end }}
-{{ end -}}
 brew "youtube-dl"
 
-{{- if eq .chezmoi.os "darwin" }}
+# Stuff that needs to be installed differently
+# because Apple Silicon is weird and I only have
+# Apple Silicon machines
+{{ if eq .chezmoi.os "darwin" }}
+brew "luajit", args: ["HEAD"]
+brew "neovim", args: ["HEAD"]
+{{ else }}
+brew "neovim"
+{{ end }}
+
+# Stuff that's macOS only
+{{ if eq .chezmoi.os "darwin" }}
+tap "buo/cask-upgrade"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+brew "borgbackup"
+brew "coreutils"
+brew "wakeonlan"
 cask "discord"
 cask "font-fantasque-sans-mono-nerd-font"
 cask "google-chrome"
@@ -59,12 +44,36 @@ cask "setapp"
 cask "slack"
 cask "spotify"
 cask "zoom"
-{{- end -}}
-{{- if (and (ne .chezmoi.hostname "Victors-Mini") (ne .chezmoi.os "linux")) }}
+
+# Stuff that I only installed
+# on my laptop. For future reference,
+# the hostname of my Mac Mini is
+# "Victors-Mini"
+{{   if eq .chezmoi.hostname "Victors-MacBook-Air" }}
 brew "rbenv"
 cask "julia"
 cask "keyboardcleantool"
 cask "rar"
+{{   end }}
+{{ end}}
+
+# Linux stuff. Here, we have to differentiate
+# between WSL 2 and my Pop-OS installation. My
+# Pop OS has hostname "pop-os"
+{{ if eq .chezmoi.os "linux" }}
+brew "zsh"
+
+# if WSL 2 => WSL 2 stuff, else Pop OS stuff
+{{   if (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
+brew "hub"
+brew "pango"
+brew "pyenv"
+{{   else }}
+brew "act"
+brew "docker"
+brew "xclip"
+{{   end }}
 {{ end }}
-# install Alacritty from source
-# install Visual Studio Code Insiders until there's M1 support
+
+# Install Alacritty for source if you want
+# Install Visual Studio Code Insiders until stable gets M1 support
