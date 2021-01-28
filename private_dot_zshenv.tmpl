@@ -18,11 +18,10 @@ alias up="cd .."
 
 {{ if eq .chezmoi.os "linux" }}
 # Linux options
-{{   if (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
-# WSL 2 options
 # Add Linuxbrew to PATH
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-
+{{   if (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
+# WSL 2 options
 # Add pyenv shims to PATH
 eval "$(pyenv init -)"
 
