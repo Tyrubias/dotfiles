@@ -11,7 +11,7 @@ window:
 font:
   normal:
     family: FantasqueSansMono Nerd Font Mono
-  size: 12.0
+  size: 11.0
   use_thin_strokes: true
 
 draw_bold_text_with_bright_colors: true
