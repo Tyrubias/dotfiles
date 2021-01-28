@@ -18,9 +18,6 @@ export PATH="/Applications/Visual Studio Code - Insiders.app/Contents/Resources/
 # Get VSCode working after we exclude Windows paths
 # https://devblogs.microsoft.com/commandline/automatically-configuring-wsl/
 alias code="/mnt/c/Users/VictorSong/scoop/apps/vscode-wsl/current/bin/code"
-{{   else }}
-# Not WSL 2 options
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 {{   end }}
 # Common Linux options
 export PATH="$PATH:/home/vsong/.local/bin"
