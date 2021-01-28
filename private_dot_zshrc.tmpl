@@ -12,8 +12,8 @@ source ~/.zsh_plugins.sh
 
 {{ if eq .chezmoi.os "linux" }}
 # Linux options
-# WSL 2 options
 {{   if (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
+# WSL 2 options
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 {{   end }}
 {{ end }}
