@@ -17,9 +17,9 @@
         "editor.defaultFormatter": "numso.prettier-standard-vscode"
     },
     "oneDarkPro.bold": true,
-    "workbench.colorTheme": "One Dark Pro",
     "oneDarkPro.vivid": true,
     "[json]": {
         "editor.defaultFormatter": "numso.prettier-standard-vscode"
-    }
+    },
+    "workbench.colorTheme": "One Dark Pro"
 }
