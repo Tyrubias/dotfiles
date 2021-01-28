@@ -7,21 +7,27 @@ fi
 
 source ~/.zsh_plugins.sh
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 {{ if eq .chezmoi.os "linux" }}
+# Linux options
+# WSL 2 options
 {{   if (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 {{   end }}
 {{ end }}
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-{{ if (and (ne .chezmoi.os "linux") (ne .chezmoi.hostname "Victors-Mini")) }}
+{{ if eq .chezmoi.os "darwin" }}
+# macOS options
 test -e /Users/vsong/.iterm2_shell_integration.zsh && source /Users/vsong/.iterm2_shell_integration.zsh || true
-
+{{   if eq .chezmoi.hostname "Victors-MacBook-Air" }}
+# MacBook Air stuff
 eval "$(rbenv init -)"
-{{ end }}
-{{ if ne .chezmoi.os "linux" }}
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+{{   end }}
+# Common SDKMan stuff
+# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/vsong/.sdkman"
 [[ -s "/Users/vsong/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/vsong/.sdkman/bin/sdkman-init.sh"
 {{ end }}
+
