@@ -22,5 +22,13 @@
         "editor.defaultFormatter": "numso.prettier-standard-vscode"
     },
     "workbench.colorTheme": "One Dark Pro",
-    "terminal.external.osxExec": "iTerm.app"
+    "terminal.external.osxExec": "iTerm.app",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter-notebook",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "python.venvPath": "/Users/vsong/mambaforge/envs",
+    "terminal.integrated.inheritEnv": false
 }
