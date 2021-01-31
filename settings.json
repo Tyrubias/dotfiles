@@ -4,7 +4,7 @@
     "workbench.iconTheme": "material-icon-theme",
     "editor.fontFamily": "Rec Mono Duotone",
     "editor.fontSize": 14,
-    "terminal.integrated.fontFamily": "FantasqueSansMono Nerd Font Mono",
+    "terminal.integrated.fontFamily": "Rec Mono Semicasual",
     "terminal.integrated.fontSize": 14,
     "files.autoSave": "afterDelay",
     "explorer.sortOrder": "type",
@@ -21,5 +21,6 @@
     "[json]": {
         "editor.defaultFormatter": "numso.prettier-standard-vscode"
     },
-    "workbench.colorTheme": "One Dark Pro"
+    "workbench.colorTheme": "One Dark Pro",
+    "terminal.external.osxExec": "iTerm.app"
 }

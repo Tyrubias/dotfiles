@@ -3,6 +3,7 @@
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
 export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history)
 source $HOME/.victor-secrets.sh
+FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 
 {{ if eq .chezmoi.os "darwin" }}
 # --- macOS .zprofile options ---
