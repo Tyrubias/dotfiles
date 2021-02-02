@@ -1,15 +1,22 @@
 settings.json
 IntelliJ-Settings.zip
 {{ if ne .chezmoi.os "darwin" }}
+Library/**
 Library
+.ssh/**
 .ssh
+.sdkman/**
 .sdkman
 {{ end }}
 
 {{ if (and (ne .chezmoi.os "darwin") (ne .chezmoi.os "linux")) }}
+.config/**
 .config
+.sdkman/**
 .sdkman
+.ssh/**
 .ssh
+Library/**
 Library
 .pipx_apps
 .Rprofile
