@@ -5,3 +5,16 @@ Library
 .ssh
 .sdkman
 {{ end }}
+
+{{ if (and (ne .chezmoi.os "darwin") (ne .chezmoi.os "linux")) }}
+.config
+.pipx_apps
+.Rprofile
+.vimrc
+.vscode_extensions
+.zprofile
+.Brewfile
+.zsh_plugins.txt
+.zshenv
+.zshrc
+{{ end }}
