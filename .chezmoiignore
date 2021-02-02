@@ -36,4 +36,5 @@ AppData/**
 AppData
 Documents/**
 Documents
+.config/starship.toml
 {{ end }}
