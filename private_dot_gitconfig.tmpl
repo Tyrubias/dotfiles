@@ -11,3 +11,8 @@
 	rebase = false
 [alias]
     wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
+
+{{- if eq .chezmoi.os "windows" }}
+[credential]
+       helper = manager-core
+{{ end }}
