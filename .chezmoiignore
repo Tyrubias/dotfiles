@@ -11,7 +11,7 @@ Library
 
 {{ if (and (ne .chezmoi.os "darwin") (ne .chezmoi.os "linux")) }}
 .config/**
-.config
+!.config/starship.toml
 .sdkman/**
 .sdkman
 .ssh/**
