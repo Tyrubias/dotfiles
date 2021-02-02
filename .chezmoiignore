@@ -18,3 +18,8 @@ Library
 .zshenv
 .zshrc
 {{ end }}
+
+{{ if ne .chezmoi.os "windows" }}
+.scoop_apps.txt
+.choco_apps.txt
+{{ end }}
