@@ -32,6 +32,8 @@ Library
 {{ if ne .chezmoi.os "windows" }}
 .scoop_apps.txt
 .choco_apps.txt
+AppData/**
+AppData
 Documents/**
 Documents
 {{ end }}
