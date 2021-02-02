@@ -8,6 +8,9 @@ Library
 
 {{ if (and (ne .chezmoi.os "darwin") (ne .chezmoi.os "linux")) }}
 .config
+.sdkman
+.ssh
+Library
 .pipx_apps
 .Rprofile
 .vimrc
