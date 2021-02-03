@@ -37,6 +37,8 @@ AppData
 Documents/**
 Documents
 .config/starship.toml
+.spicetify/**
+.spicetify
 {{ end }}
 
 {{ if ne .chezmoi.hostname "Victors-Mini" }}
