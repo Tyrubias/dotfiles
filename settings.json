@@ -5,7 +5,7 @@
     "editor.fontFamily": "Rec Mono Semicasual",
     "editor.fontSize": 14,
     "terminal.integrated.fontFamily": "Rec Mono Semicasual",
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 13,
     "files.autoSave": "afterDelay",
     "explorer.sortOrder": "type",
     "editor.fontLigatures": true,

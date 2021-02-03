@@ -38,3 +38,8 @@ Documents/**
 Documents
 .config/starship.toml
 {{ end }}
+
+{{ if ne .chezmoi.hostname "Victors-Mini" }}
+.config/borg-remote.sh
+Library/LaunchAgents/me.vsong.borg.plist
+{{ end }}
