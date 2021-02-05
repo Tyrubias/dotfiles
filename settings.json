@@ -4,7 +4,7 @@
     "workbench.iconTheme": "material-icon-theme",
     "editor.fontFamily": "Rec Mono Semicasual",
     "editor.fontSize": 13,
-    "terminal.integrated.fontFamily": "Rec Mono Semicasual, FantasqueSansMono Nerd Font Mono",
+    "terminal.integrated.fontFamily": "Rec Mono Semicasual",
     "files.autoSave": "afterDelay",
     "explorer.sortOrder": "type",
     "editor.fontLigatures": true,
