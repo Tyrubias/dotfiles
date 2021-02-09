@@ -29,5 +29,6 @@
         }
     ],
     "python.venvPath": "/Users/vsong/mambaforge/envs",
-    "terminal.integrated.inheritEnv": false
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.shell.linux": "/home/linuxbrew/.linuxbrew/bin/zsh"
 }
