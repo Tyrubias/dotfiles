@@ -11,20 +11,11 @@ brew "jags"
 brew "jq"
 brew "ncdu"
 brew "neofetch"
+brew "neovim"
 brew "pipx"
 brew "r"
 brew "ripgrep"
 brew "youtube-dl"
-
-# Stuff that needs to be installed differently
-# because Apple Silicon is weird and I only have
-# Apple Silicon machines
-{{ if eq .chezmoi.os "darwin" }}
-brew "luajit", args: ["HEAD"]
-brew "neovim", args: ["HEAD"]
-{{ else }}
-brew "neovim"
-{{ end }}
 
 {{ if eq .chezmoi.os "darwin" }}
 # Stuff that's macOS only
