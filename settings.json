@@ -30,5 +30,9 @@
     ],
     "python.venvPath": "/Users/vsong/mambaforge/envs",
     "terminal.integrated.inheritEnv": false,
-    "terminal.integrated.shell.linux": "/home/linuxbrew/.linuxbrew/bin/zsh"
+    "terminal.integrated.shell.linux": "/home/linuxbrew/.linuxbrew/bin/zsh",
+    "terminal.integrated.fontSize": 14,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "numso.prettier-standard-vscode"
+    }
 }
