@@ -20,7 +20,7 @@
     "[json]": {
         "editor.defaultFormatter": "numso.prettier-standard-vscode"
     },
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Dracula",
     "terminal.external.osxExec": "iTerm.app",
     "workbench.editorAssociations": [
         {
