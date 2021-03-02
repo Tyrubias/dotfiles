@@ -34,5 +34,10 @@
     "terminal.integrated.fontSize": 14,
     "[javascriptreact]": {
         "editor.defaultFormatter": "numso.prettier-standard-vscode"
-    }
+    },
+    "remote.SSH.useLocalServer": false,
+    "remote.SSH.remotePlatform": {
+        "ssh.clear.rice.edu": "linux"
+    },
+    "git.ignoreLegacyWarning": true
 }
