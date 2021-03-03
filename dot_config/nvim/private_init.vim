@@ -5,12 +5,13 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
-Plug 'morhetz/gruvbox'
-Plug 'joshdick/onedark.vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
+"Plug 'morhetz/gruvbox'
+"Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
-colorscheme onedark
+colorscheme dracula
 
 set termguicolors
 
