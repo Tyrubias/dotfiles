@@ -40,6 +40,7 @@ cask "rectangle"
 cask "setapp"
 cask "slack"
 cask "spotify"
+cask "visual-studio-code"
 cask "zoom"
 
 {{   if eq .chezmoi.hostname "Victors-MacBook-Air" }}
@@ -55,7 +56,6 @@ cask "keyboardcleantool"
 cask "rar"
 {{   else }}
 {{   end }}
-# Install Visual Studio Code Insiders until stable gets M1 support
 {{ end}}
 
 {{ if eq .chezmoi.os "linux" }}
