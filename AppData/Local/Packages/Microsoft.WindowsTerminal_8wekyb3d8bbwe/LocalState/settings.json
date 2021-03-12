@@ -21,7 +21,7 @@
     "defaults": {
       // Put settings here that you want to apply to all profiles.
       "colorScheme": "Dracula",
-      "fontFace": "Rec Mono Casual",
+      "fontFace": "Rec Mono Semicasual",
       "fontSize": 10,
       "cursorShape": "bar"
     },
