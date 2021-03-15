@@ -1,0 +1,43 @@
+Host *
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_ed25519
+
+Host clear
+  HostName ssh.clear.rice.edu
+  User vms2
+
+Host rice-gateway
+  HostName gw.crc.rice.edu
+  User vms2
+
+Host nots
+  HostName nots.rice.edu
+  User vms2
+  ProxyJump rice-gateway
+
+{{ if ne .chezmoi.hostname "pop-os" }}
+Host local-pop
+  HostName pop-os.local
+  User vsong
+
+Host remote-pop
+  HostName hanover.vsong.me
+  User vsong
+  Port 23
+{{ end }}
+
+{{ if ne .chezmoi.hostname "Victors-Mac-mini" }}
+Host local-mini
+  HostName Victors-Mac-mini.local
+  User vsong
+
+Host remote-mini
+  HostName hanover.vsong.me
+  User vsong
+{{ end }}
+
+{{ if ne .chezmoi.hostname "Victors-MacBook-Air" }}
+Host local-air
+  HostName Victors-MacBook-Air.local
+  User vsong
+{{ end }}

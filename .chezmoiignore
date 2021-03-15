@@ -41,7 +41,7 @@ Documents
 .spicetify
 {{ end }}
 
-{{ if ne .chezmoi.hostname "Victors-Mini" }}
+{{ if ne .chezmoi.hostname "Victors-Mac-mini" }}
 .config/borg-remote.sh
 Library/LaunchAgents/me.vsong.borg.plist
 {{ end }}

@@ -1,7 +1,0 @@
-Host *
-  AddKeysToAgent yes
-  IdentityFile ~/.ssh/id_ed25519
-
-Host pop-os.local
-  HostName pop-os.local
-  User vsong
