@@ -8,6 +8,11 @@ window:
   dynamic_padding: true
   decorations: full
 
+shell:
+  program: /usr/bin/zsh
+  args:
+    - --login
+
 font:
   normal:
     family: Rec Mono Semicasual
