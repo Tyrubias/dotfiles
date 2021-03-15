@@ -59,13 +59,12 @@ cask "keyboardcleantool"
 # between WSL 2 and my Pop-OS installation. My
 # Pop OS has hostname "pop-os"
 
-brew "zsh"
-
 # if WSL 2 => WSL 2 stuff, else Pop OS stuff
 {{   if (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
 brew "hub"
 brew "pango"
 brew "pyenv"
+brew "zsh"
 {{   else }}
 brew "act"
 brew "docker"
