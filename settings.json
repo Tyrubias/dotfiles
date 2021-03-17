@@ -37,7 +37,8 @@
     },
     "remote.SSH.useLocalServer": false,
     "remote.SSH.remotePlatform": {
-        "ssh.clear.rice.edu": "linux"
+        "ssh.clear.rice.edu": "linux",
+        "clear": "linux"
     },
     "git.ignoreLegacyWarning": true
 }
