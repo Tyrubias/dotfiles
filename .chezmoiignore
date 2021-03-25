@@ -13,7 +13,7 @@ Library
 .sdkman/**
 .sdkman
 .ssh/**
-.ssh
+!.ssh/config
 Library/**
 Library
 .pipx_apps
