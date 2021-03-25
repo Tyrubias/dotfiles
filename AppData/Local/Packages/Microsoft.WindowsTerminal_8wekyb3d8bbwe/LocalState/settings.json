@@ -58,7 +58,7 @@
           "hidden": false,
           "name": "PowerShell",
           "source": "Windows.Terminal.PowershellCore",
-          "fontFace": "JetbrainsMono NF"
+          "fontFace": "JetBrainsMono NF"
       }
     ]
   },
