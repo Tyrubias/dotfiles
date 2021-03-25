@@ -11,3 +11,6 @@ success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being
 
 [directory]
 truncate_to_repo = false
+
+[cmd_duration]
+disabled = true
