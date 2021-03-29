@@ -3,7 +3,6 @@
     "workbench.sideBar.location": "right",
     "workbench.iconTheme": "material-icon-theme",
     "editor.fontFamily": "Rec Mono Semicasual",
-    "editor.fontSize": 14,
     "terminal.integrated.fontFamily": "Rec Mono Semicasual",
     "files.autoSave": "afterDelay",
     "explorer.sortOrder": "type",
@@ -31,7 +30,6 @@
     "python.venvPath": "/Users/vsong/mambaforge/envs",
     "terminal.integrated.inheritEnv": false,
     "terminal.integrated.shell.linux": "/home/linuxbrew/.linuxbrew/bin/zsh",
-    "terminal.integrated.fontSize": 14,
     "[javascriptreact]": {
         "editor.defaultFormatter": "numso.prettier-standard-vscode"
     },
