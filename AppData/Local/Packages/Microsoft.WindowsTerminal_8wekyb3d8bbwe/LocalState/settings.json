@@ -58,7 +58,6 @@
           "hidden": false,
           "name": "PowerShell",
 	  "commandline": "C:\\Users\\VictorSong\\scoop\\apps\\pwsh\\current\\pwsh.exe -nologo",
-          "fontFace": "JetBrainsMono NF"
       }
     ]
   },
