@@ -1,4 +1,6 @@
-{{- $email := promptString "email" -}}
+{{- $email := promptString "email" }}
+{{ $computerName := promptString "unique computer name" -}}
 
 [data]
     email = "{{ $email }}"
+    computerName = "{{ $computerName }}"

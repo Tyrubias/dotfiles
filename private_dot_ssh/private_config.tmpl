@@ -23,7 +23,7 @@ Host nots
   User vms2
   ProxyJump rice-gateway
 
-{{ if ne .chezmoi.hostname "pop-os" }}
+{{ if ne .computername "pop-os" }}
 Host local-pop
   HostName pop-os.local
   User vsong
@@ -38,7 +38,7 @@ Host vpn-pop
   User vsong
 {{ end }}
 
-{{ if ne .chezmoi.hostname "Victors-Mac-mini" }}
+{{ if ne .computername "Victors-Mac-mini" }}
 Host local-mini
   HostName Victors-Mac-mini.local
   User vsong
@@ -52,7 +52,7 @@ Host vpn-mini
   User vsong
 {{ end }}
 
-{{ if ne .chezmoi.hostname "Victors-MacBook-Air" }}
+{{ if ne .computername "Victors-MacBook-Air" }}
 Host local-air
   HostName Victors-MacBook-Air.local
   User vsong
