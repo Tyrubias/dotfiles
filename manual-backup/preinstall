@@ -1,3 +1,7 @@
+Migrate SSH keys for DigitalOcean and GitHub
+
+Install Bitwarden/Chrome everywhere
+
 Install WSL 2, Scoop, and Chocolatey on Windows
 
 Install XCode Developer Tools, set default shell to ZSH,
@@ -5,6 +9,8 @@ and install Homebrew on macOS
 
 Refer to this article for updating macOS headlessly:
     - https://thehomeofthefuture.com/how-to/update-macos-from-the-command-line/
+Refer to this article for install Xcode CLT headlessly:
+    - https://mokacoding.com/blog/how-to-install-xcode-cli-tools-without-gui/
 
 Install APT stuff on Linux and install Gnome tweaks (multi-monitor,
 shortcut for centering and moving windows)
