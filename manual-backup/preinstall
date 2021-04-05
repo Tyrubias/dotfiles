@@ -3,5 +3,8 @@ Install WSL 2, Scoop, and Chocolatey on Windows
 Install XCode Developer Tools, set default shell to ZSH,
 and install Homebrew on macOS
 
+Refer to this article for updating macOS headlessly:
+    - https://thehomeofthefuture.com/how-to/update-macos-from-the-command-line/
+
 Install APT stuff on Linux and install Gnome tweaks (multi-monitor,
 shortcut for centering and moving windows)
