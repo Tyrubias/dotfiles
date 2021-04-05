@@ -1,5 +1,7 @@
 settings.json
 IntelliJ-Settings.zip
+manual-backup/**
+manual-backup
 {{ if ne .chezmoi.os "darwin" }}
 Library/**
 Library
