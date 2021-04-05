@@ -25,6 +25,7 @@ Library
 .zsh_plugins.txt
 .zshenv
 .zshrc
+.tmux.conf
 {{ end }}
 
 {{ if ne .chezmoi.os "windows" }}
@@ -39,7 +40,7 @@ Documents
 .spicetify
 {{ end }}
 
-{{ if ne .chezmoi.hostname "Victors-Mac-mini" }}
+{{ if ne .computername "Victors-Mac-mini" }}
 .config/borg-remote.sh
 Library/LaunchAgents/me.vsong.borg.plist
 {{ end }}
