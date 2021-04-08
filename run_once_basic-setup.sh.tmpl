@@ -11,8 +11,7 @@ else
     echo "Homebrew is already installed!"
 fi
 
-command -V sdk
-if [[ $? != 0 ]] ; then
+if [ ! -d "$HOME/.sdkman" ] ; then
     curl -s "https://get.sdkman.io" | bash
 else
     echo "SDKMAN! is already installed!"
