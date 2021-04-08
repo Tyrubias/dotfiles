@@ -45,7 +45,7 @@ eval "$(rbenv init -)"
 # THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/vsong/.sdkman"
 [[ -s "/Users/vsong/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/vsong/.sdkman/bin/sdkman-init.sh"
-{{ else if (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
+{{ else if eq .chezmoi.os "linux" }}
 export SDKMAN_DIR="/home/vsong/.sdkman"
 [[ -s "/home/vsong/.sdkman/bin/sdkman-init.sh" ]] && source "/home/vsong/.sdkman/bin/sdkman-init.sh"
 {{ end -}}
