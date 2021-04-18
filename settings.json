@@ -38,6 +38,5 @@
         "ssh.clear.rice.edu": "linux",
         "clear": "linux"
     },
-    "git.ignoreLegacyWarning": true,
-    "editor.fontSize": 13
+    "git.ignoreLegacyWarning": true
 }
