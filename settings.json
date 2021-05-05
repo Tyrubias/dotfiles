@@ -38,5 +38,11 @@
         "ssh.clear.rice.edu": "linux",
         "clear": "linux"
     },
-    "git.ignoreLegacyWarning": true
+    "git.ignoreLegacyWarning": true,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "numso.prettier-standard-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "numso.prettier-standard-vscode"
+    }
 }
