@@ -1,7 +1,7 @@
 window:
   dimensions:
-    columns: 150
-    lines: 49
+    columns: 185
+    lines: 53
   padding:
     x: 6
     y: 6
@@ -16,7 +16,7 @@ shell:
 font:
   normal:
     family: Rec Mono Semicasual
-  size: 9.0
+  size: 10.0
   offset:
       x: 0
   use_thin_strokes: true
