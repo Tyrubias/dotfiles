@@ -46,3 +46,4 @@ Documents
 .config/borg-remote.sh
 Library/LaunchAgents/me.vsong.borg.plist
 {{ end }}
+windows_terminal_settings.json
