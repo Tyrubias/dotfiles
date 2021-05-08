@@ -71,8 +71,10 @@ brew "zsh"
 {{   else }}
 tap "jesseduffield/lazydocker"
 # brew "docker" (Install through APT instead)
+# Make sure to run in rootless mode and disable cgroups for Nvidia
+# Also install Docker Compose
 brew "jesseduffield/lazydocker/lazydocker"
 {{   end }}
 {{ end }}
 
-# Install Alacritty from source if you want
+# Install Alacritty/Kitty
