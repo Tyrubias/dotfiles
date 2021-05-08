@@ -16,6 +16,7 @@ info "Starting backup"
 
 /opt/homebrew/bin/borg create \
     --verbose \
+    --exclude '*/.DS_Store' \
     --list --filter=AME \
     --stats --show-rc \
     --compression auto,zstd,6 \
