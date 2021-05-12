@@ -2,7 +2,7 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.sideBar.location": "right",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "Rec Mono Semicasual",
+    "editor.fontFamily": "Fira Code, Rec Mono Semicasual",
     "terminal.integrated.fontFamily": "Rec Mono Semicasual",
     "files.autoSave": "afterDelay",
     "explorer.sortOrder": "type",
@@ -29,14 +29,14 @@
     ],
     "python.venvPath": "/Users/vsong/mambaforge/envs",
     "terminal.integrated.inheritEnv": false,
-    "terminal.integrated.shell.linux": "/home/linuxbrew/.linuxbrew/bin/zsh",
     "[javascriptreact]": {
         "editor.defaultFormatter": "numso.prettier-standard-vscode"
     },
     "remote.SSH.useLocalServer": false,
     "remote.SSH.remotePlatform": {
         "ssh.clear.rice.edu": "linux",
-        "clear": "linux"
+        "clear": "linux",
+        "local-pop": "linux"
     },
     "git.ignoreLegacyWarning": true,
     "[typescriptreact]": {
@@ -44,5 +44,6 @@
     },
     "[html]": {
         "editor.defaultFormatter": "numso.prettier-standard-vscode"
-    }
+    },
+    "terminal.integrated.defaultProfile.linux": "/usr/bin/zsh"
 }
