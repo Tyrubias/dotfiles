@@ -2,7 +2,7 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.sideBar.location": "right",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "Fira Code, Rec Mono Semicasual",
+    "editor.fontFamily": "Rec Mono Semicasual",
     "terminal.integrated.fontFamily": "Rec Mono Semicasual",
     "files.autoSave": "afterDelay",
     "explorer.sortOrder": "type",
@@ -45,5 +45,6 @@
     "[html]": {
         "editor.defaultFormatter": "numso.prettier-standard-vscode"
     },
-    "terminal.integrated.defaultProfile.linux": "/usr/bin/zsh"
+    "terminal.integrated.defaultProfile.linux": "/usr/bin/zsh",
+    "python.languageServer": "Pylance"
 }
