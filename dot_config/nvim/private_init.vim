@@ -25,8 +25,12 @@ set shiftwidth=4
 set smarttab
 
 onoremap af :<C-u>normal! ggVG<CR>
+
 "Make editing cron files easier.
 autocmd filetype crontab setlocal nobackup nowritebackup
+
+"Make editing Makefiles easier
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
 
 "open NERDTree on vim startup
 autocmd vimenter * NERDTree
