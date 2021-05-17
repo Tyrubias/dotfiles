@@ -1,6 +1,8 @@
+packadd! dracula
 syntax on
-set termguicolors
-colorscheme darkblue
+let g:dracula_colorterm = 0
+let g:dracula_italic = 0
+colorscheme dracula
 set tabstop=8
 set softtabstop=0
 set shiftwidth=4
