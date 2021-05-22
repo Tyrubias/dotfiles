@@ -112,3 +112,17 @@ password=<YOUR TOKEN HERE>
 Install `Linuxbrew`. Then, install `chezmoi` and run `chezmoi init`
 on your `new-dotfiles` repository. Don't forget to manually install
 the `Dracula` colorscheme for `neovim` and `vim`, as well as `vim-plug`.
+
+## Windows
+
+Disable all the telemetry. Uninstall all the bloatware. You can use
+[this debloater project](https://github.com/Sycnex/Windows10Debloater).
+
+Hide Cortana and the Search Box. Hide the icons in the toolbar, and hide
+all shortcuts on Desktop. Install Scoop and Chocolatey.
+
+Install Windows Terminal. Then, install [`chezmoi`](https://chezmoi.io/)
+Install WSL 2 following [the official Microsoft instructions](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+Then, install Windows Sandbox following [the official Microsoft instructions](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview). Finally, enable Isolated Browsing and Core Isolation.
+
+Don't forget to install hardware monitoring tools like GPU-Z and HWinfo64.
