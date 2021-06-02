@@ -46,5 +46,7 @@
         "editor.defaultFormatter": "numso.prettier-standard-vscode"
     },
     "terminal.integrated.defaultProfile.linux": "/usr/bin/zsh",
-    "python.languageServer": "Pylance"
+    "python.languageServer": "Pylance",
+    "editor.fontSize": 13,
+    "terminal.integrated.fontSize": 13
 }
