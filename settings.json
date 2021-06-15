@@ -20,12 +20,9 @@
         "editor.defaultFormatter": "numso.prettier-standard-vscode"
     },
     "terminal.external.osxExec": "iTerm.app",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter-notebook",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
     "python.venvPath": "/Users/vsong/mambaforge/envs",
     "terminal.integrated.inheritEnv": false,
     "[javascriptreact]": {
@@ -46,7 +43,7 @@
     },
     "terminal.integrated.defaultProfile.linux": "/usr/bin/zsh",
     "python.languageServer": "Pylance",
-    "editor.fontSize": 14,
+    "editor.fontSize": 13,
     "terminal.integrated.fontSize": 13,
     "workbench.colorTheme": "Dracula"
 }
