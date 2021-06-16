@@ -21,12 +21,9 @@
     },
     "workbench.colorTheme": "Dracula",
     "terminal.external.osxExec": "iTerm.app",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter-notebook",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
     "python.venvPath": "/Users/vsong/mambaforge/envs",
     "terminal.integrated.inheritEnv": false,
     "[javascriptreact]": {
