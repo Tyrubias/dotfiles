@@ -19,7 +19,6 @@
     "[json]": {
         "editor.defaultFormatter": "numso.prettier-standard-vscode"
     },
-    "workbench.colorTheme": "Dracula",
     "terminal.external.osxExec": "iTerm.app",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
@@ -45,5 +44,6 @@
     "terminal.integrated.defaultProfile.linux": "/usr/bin/zsh",
     "python.languageServer": "Pylance",
     "editor.fontSize": 13,
-    "terminal.integrated.fontSize": 13
+    "terminal.integrated.fontSize": 13,
+    "workbench.colorTheme": "Dracula"
 }
