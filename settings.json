@@ -2,8 +2,7 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.sideBar.location": "right",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "Rec Mono Semicasual",
-    "terminal.integrated.fontFamily": "Rec Mono Semicasual",
+    "editor.fontFamily": "Fantasque Sans Mono, Rec Mono Semicasual",
     "files.autoSave": "afterDelay",
     "explorer.sortOrder": "type",
     "editor.fontLigatures": true,
@@ -43,7 +42,7 @@
     },
     "terminal.integrated.defaultProfile.linux": "/usr/bin/zsh",
     "python.languageServer": "Pylance",
-    "editor.fontSize": 13,
-    "terminal.integrated.fontSize": 13,
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
     "workbench.colorTheme": "Dracula"
 }
