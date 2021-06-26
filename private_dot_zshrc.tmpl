@@ -16,11 +16,12 @@ source ~/.zsh_plugins.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 {{ if eq .chezmoi.os "linux" }}
 # Linux options
 {{   if (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
 # WSL 2 options
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 {{   end }}
 {{ end }}
 
