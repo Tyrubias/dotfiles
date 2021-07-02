@@ -2,7 +2,7 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.sideBar.location": "right",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "Fantasque Sans Mono, Rec Mono Semicasual",
+    "editor.fontFamily": "Fantasque Sans Mono",
     "files.autoSave": "afterDelay",
     "explorer.sortOrder": "type",
     "editor.fontLigatures": true,
