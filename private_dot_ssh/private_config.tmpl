@@ -3,7 +3,7 @@ Host *
   IdentityFile ~/.ssh/id_ed25519
 
 Host wireguard
-  HostName 143.198.146.201 
+  HostName 143.198.146.201
   User vsong
 
 Host backup-rsync
@@ -35,6 +35,10 @@ Host remote-pop
 Host vpn-pop
   HostName 10.104.161.14
   User vsong
+
+Host ts-pop
+  HostName 100.105.71.19
+  User vsong
 {{ end }}
 
 {{ if ne .computername "Victors-Mac-mini" }}
@@ -50,6 +54,10 @@ Host remote-mini
 Host vpn-mini
   HostName 10.104.161.13
   User vsong
+
+Host ts-mini
+  HostName 100.76.77.21
+  User vsong
 {{ end }}
 
 {{ if ne .computername "Victors-MacBook-Air" }}
@@ -64,5 +72,9 @@ Host remote-air
 
 Host vpn-air
   HostName 10.104.161.10
+  User vsong
+
+Host ts-air
+  HostName 100.72.218.23
   User vsong
 {{ end }}
