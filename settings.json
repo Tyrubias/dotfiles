@@ -1,48 +1,73 @@
 {
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.sideBar.location": "right",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "Fantasque Sans Mono",
-    "files.autoSave": "afterDelay",
-    "explorer.sortOrder": "type",
-    "editor.fontLigatures": true,
-    "window.newWindowDimensions": "inherit",
-    "[typescript]": {
-        "editor.defaultFormatter": "numso.prettier-standard-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "numso.prettier-standard-vscode"
-    },
-    "oneDarkPro.bold": true,
-    "oneDarkPro.vivid": true,
-    "[json]": {
-        "editor.defaultFormatter": "numso.prettier-standard-vscode"
-    },
-    "terminal.external.osxExec": "iTerm.app",
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
-    "python.venvPath": "/Users/vsong/mambaforge/envs",
-    "terminal.integrated.inheritEnv": false,
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "numso.prettier-standard-vscode"
-    },
-    "remote.SSH.useLocalServer": false,
-    "remote.SSH.remotePlatform": {
-        "ssh.clear.rice.edu": "linux",
-        "clear": "linux",
-        "local-pop": "linux"
-    },
-    "git.ignoreLegacyWarning": true,
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "numso.prettier-standard-vscode"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "numso.prettier-standard-vscode"
-    },
-    "terminal.integrated.defaultProfile.linux": "/usr/bin/zsh",
-    "python.languageServer": "Pylance",
-    "editor.fontSize": 14,
-    "terminal.integrated.fontSize": 14,
-    "workbench.colorTheme": "Dracula"
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.sideBar.location": "right",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "Fantasque Sans Mono",
+  "files.autoSave": "afterDelay",
+  "explorer.sortOrder": "type",
+  "editor.fontLigatures": true,
+  "window.newWindowDimensions": "inherit",
+  "[typescript]": {
+    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+  },
+  "oneDarkPro.bold": true,
+  "oneDarkPro.vivid": true,
+  "[json]": {
+    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+  },
+  "terminal.external.osxExec": "iTerm.app",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "python.venvPath": "/Users/vsong/mambaforge/envs",
+  "terminal.integrated.inheritEnv": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+  },
+  "remote.SSH.useLocalServer": false,
+  "remote.SSH.remotePlatform": {
+    "ssh.clear.rice.edu": "linux",
+    "clear": "linux",
+    "local-pop": "linux"
+  },
+  "git.ignoreLegacyWarning": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+  },
+  "terminal.integrated.defaultProfile.linux": "/usr/bin/zsh",
+  "python.languageServer": "Pylance",
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "workbench.colorTheme": "Dracula",
+  "bracket-pair-colorizer-2.colors": [
+    "Gold",
+    "Orchid",
+    "LightSkyBlue",
+    "Salmon",
+    "LawnGreen",
+    "DarkOrange",
+    "Cornsilk"
+  ],
+  "bracket-pair-colorizer-2.highlightActiveScope": true,
+  "bracket-pair-colorizer-2.activeScopeCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}",
+    "opacity: 0.5"
+  ],
+  "bracket-pair-colorizer-2.showBracketsInGutter": true,
+  "bracket-pair-colorizer-2.showBracketsInRuler": true,
+  "bracket-pair-colorizer-2.scopeLineRelativePosition": true,
+  "bracket-pair-colorizer-2.scopeLineCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}",
+    "opacity: 0.5"
+  ]
 }
