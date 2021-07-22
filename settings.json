@@ -2,6 +2,7 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.sideBar.location": "right",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.panel.defaultLocation": "left",
   "editor.fontFamily": "Fantasque Sans Mono",
   "files.autoSave": "afterDelay",
   "explorer.sortOrder": "type",
@@ -13,8 +14,6 @@
   "[javascript]": {
     "editor.defaultFormatter": "numso.prettier-standard-vscode"
   },
-  "oneDarkPro.bold": true,
-  "oneDarkPro.vivid": true,
   "[json]": {
     "editor.defaultFormatter": "numso.prettier-standard-vscode"
   },
@@ -69,5 +68,6 @@
     "borderWidth : 1px",
     "borderColor : {color}",
     "opacity: 0.5"
-  ]
+  ],
+  "files.autoSaveDelay": 3500
 }
