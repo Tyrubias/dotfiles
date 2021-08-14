@@ -6,7 +6,7 @@
   "editor.fontFamily": "Fantasque Sans Mono",
   "files.autoSave": "afterDelay",
   "explorer.sortOrder": "type",
-  "editor.fontLigatures": true,
+  "editor.fontLigatures": "'dlig'",
   "window.newWindowDimensions": "inherit",
   "[typescript]": {
     "editor.defaultFormatter": "numso.prettier-standard-vscode"
@@ -41,7 +41,6 @@
   },
   "terminal.integrated.defaultProfile.linux": "/usr/bin/zsh",
   "python.languageServer": "Pylance",
-  "editor.fontSize": 14,
   "terminal.integrated.fontSize": 14,
   "workbench.colorTheme": "Dracula",
   "bracket-pair-colorizer-2.colors": [
@@ -69,5 +68,14 @@
     "borderColor : {color}",
     "opacity: 0.5"
   ],
-  "files.autoSaveDelay": 3500
+  "files.autoSaveDelay": 3500,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "editor.fontSize": 13
 }
