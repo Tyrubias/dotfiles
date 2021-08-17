@@ -9,10 +9,10 @@
   "editor.fontLigatures": "'dlig'",
   "window.newWindowDimensions": "inherit",
   "[typescript]": {
-    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "numso.prettier-standard-vscode"
@@ -34,7 +34,7 @@
   },
   "git.ignoreLegacyWarning": true,
   "[typescriptreact]": {
-    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
     "editor.defaultFormatter": "numso.prettier-standard-vscode"
