@@ -1,6 +1,13 @@
-{{- $email := promptString "email" }}
-{{ $computerName := promptString "unique computer name" -}}
+{{- $codespaces:= env "CODESPACES" | not | not -}}
+sourceDir = "{{ .chezmoi.sourceDir }}"
 
 [data]
-    email = "{{ $email }}"
-    computerName = "{{ $computerName }}"
+  name = "Victor Song"
+  codespaces = {{ $codespaces }}
+{{- if $codespaces }}{{/* Codespaces dotfiles setup is non-interactive, so set email address and name */}}
+  email = "vms2@rice.edu"
+  computerName = "victors-codespace"
+{{- else }}{{/* Interactive setup */}}
+  email = "{{ promptString "email" }}"
+  computerName = "{{ promptString "computer name" }}"
+{{- end}}
