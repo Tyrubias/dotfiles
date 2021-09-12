@@ -1,4 +1,24 @@
 # --- Common .zshenv options ---
+
+function pathprepend() {
+  for ((i=$#; i>0; i--)); 
+  do
+    ARG="${(k@)i}"
+    if [ -d "$ARG" ] && [[ ":$PATH:" != *":$ARG:"* ]]; then
+      PATH="$ARG${PATH:+":$PATH"}"
+    fi
+  done
+}
+
+function pathappend() {
+  for ARG in "$@"
+  do
+    if [ -d "$ARG" ] && [[ ":$PATH:" != *":$ARG:"* ]]; then
+        PATH="${PATH:+"$PATH:"}$ARG"
+    fi
+  done
+}
+
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 
@@ -7,6 +27,17 @@ export BORG_REMOTE_PATH="borg1"
 
 export VISUAL=nvim
 export EDITOR=$VISUAL
+
+{{ if eq .chezmoi.os "darwin" }}
+export HOMEBREW_PREFIX="/opt/homebrew";
+export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
+export HOMEBREW_REPOSITORY="/opt/homebrew";
+export HOMEBREW_SHELLENV_PREFIX="/opt/homebrew";
+pathprepend "$HOMEBREW_PREFIX/bin"
+pathprepend "$HOMEBREW_PREFIX/sbin"
+export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
+export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
+{{ end }}
 
 alias lx="exa --long --git --group-directories-first --all --sort=ext --classify --grid"
 alias le="exa --group-directories-first --all"
