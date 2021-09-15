@@ -6,7 +6,7 @@
   "editor.fontFamily": "Fantasque Sans Mono",
   "files.autoSave": "afterDelay",
   "explorer.sortOrder": "type",
-  "editor.fontLigatures": "'dlig'",
+  "editor.fontLigatures": "'calt' on, 'liga' on, 'dlig' on",
   "window.newWindowDimensions": "inherit",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -15,7 +15,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
-    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "terminal.external.osxExec": "iTerm.app",
   "workbench.editorAssociations": {
@@ -24,7 +24,7 @@
   "python.venvPath": "/Users/vsong/mambaforge/envs",
   "terminal.integrated.inheritEnv": false,
   "[javascriptreact]": {
-    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "remote.SSH.useLocalServer": false,
   "remote.SSH.remotePlatform": {
@@ -37,7 +37,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
-    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "terminal.integrated.defaultProfile.linux": "/usr/bin/zsh",
   "python.languageServer": "Pylance",
@@ -77,8 +77,9 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "editor.fontSize": 13,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.fontSize": 14,
+  "editor.bracketPairColorization.enabled": true
 }
