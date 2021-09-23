@@ -3,7 +3,7 @@
   "workbench.sideBar.location": "right",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.panel.defaultLocation": "left",
-  "editor.fontFamily": "Fantasque Sans Mono",
+  "editor.fontFamily": "Rec Mono Semicasual",
   "files.autoSave": "afterDelay",
   "explorer.sortOrder": "type",
   "editor.fontLigatures": "'calt' on, 'liga' on, 'dlig' on",
@@ -42,7 +42,7 @@
   "terminal.integrated.defaultProfile.linux": "/usr/bin/zsh",
   "python.languageServer": "Pylance",
   "terminal.integrated.fontSize": 14,
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "City Lights",
   "bracket-pair-colorizer-2.colors": [
     "Gold",
     "Orchid",
@@ -80,6 +80,6 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.fontSize": 14,
-  "editor.bracketPairColorization.enabled": true
+  "editor.bracketPairColorization.enabled": true,
+  "editor.fontSize": 16
 }
