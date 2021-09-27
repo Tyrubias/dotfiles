@@ -22,6 +22,22 @@ stfu() {
 # Linux options
 {{   if (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
 # WSL 2 options
+{{   else }}
+# Not WSL 2 options
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/vsong/mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/vsong/mambaforge/etc/profile.d/conda.sh" ]; then
+        . "/home/vsong/mambaforge/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/vsong/mambaforge/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 {{   end }}
 {{ end }}
 
