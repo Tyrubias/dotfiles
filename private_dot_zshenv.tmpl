@@ -1,7 +1,7 @@
 # --- Common .zshenv options ---
 
 function pathprepend() {
-  for ((i=$#; i>0; i--)); 
+  for ((i=$#; i>0; i--));
   do
     ARG="${(k@)i}"
     if [ -d "$ARG" ] && [[ ":$PATH:" != *":$ARG:"* ]]; then
@@ -18,6 +18,8 @@ function pathappend() {
     fi
   done
 }
+
+export NVM_AUTO_USE=true
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"

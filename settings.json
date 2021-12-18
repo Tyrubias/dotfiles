@@ -1,10 +1,8 @@
 {
-  "workbench.startupEditor": "newUntitledFile",
   "workbench.sideBar.location": "right",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.panel.defaultLocation": "left",
-  "editor.fontFamily": "Rec Mono Semicasual",
-  "files.autoSave": "afterDelay",
+  "editor.fontFamily": "Fantasque Sans Mono",
   "explorer.sortOrder": "type",
   "editor.fontLigatures": "'calt' on, 'liga' on, 'dlig' on",
   "window.newWindowDimensions": "inherit",
@@ -41,8 +39,7 @@
   },
   "terminal.integrated.defaultProfile.linux": "/usr/bin/zsh",
   "python.languageServer": "Pylance",
-  "terminal.integrated.fontSize": 14,
-  "workbench.colorTheme": "City Lights",
+  "workbench.colorTheme": "Dracula",
   "bracket-pair-colorizer-2.colors": [
     "Gold",
     "Orchid",
@@ -81,5 +78,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.bracketPairColorization.enabled": true,
-  "editor.fontSize": 16
+  "latex-workshop.latexindent.path": "/Library/TeX/texbin/latexindent",
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "editor.guides.bracketPairsHorizontal": true,
+  "files.autoSave": "afterDelay"
 }
