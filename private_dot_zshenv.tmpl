@@ -39,6 +39,8 @@ pathprepend "$HOMEBREW_PREFIX/bin"
 pathprepend "$HOMEBREW_PREFIX/sbin"
 export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
 export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
+
+. "$HOME/.cargo/env"
 {{ end }}
 
 alias lx="exa --long --git --group-directories-first --all --sort=ext --classify --grid"

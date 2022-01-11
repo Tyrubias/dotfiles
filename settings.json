@@ -4,7 +4,7 @@
   "workbench.panel.defaultLocation": "left",
   "editor.fontFamily": "Fantasque Sans Mono",
   "explorer.sortOrder": "type",
-  "editor.fontLigatures": "'calt' on, 'liga' on, 'dlig' on",
+  //"editor.fontLigatures": "'calt' on, 'liga' on, 'dlig' on",
   "window.newWindowDimensions": "inherit",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -82,5 +82,12 @@
   "latex-workshop.latex.autoClean.run": "onBuilt",
   "latex-workshop.latex.autoBuild.run": "onSave",
   "editor.guides.bracketPairsHorizontal": true,
-  "files.autoSave": "afterDelay"
+  "files.autoSave": "afterDelay",
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/.ammonite": true
+  },
+  "zigLanguageClient.path": "/Users/vsong/.local/bin/zls",
+  "editor.fontSize": 13
 }
