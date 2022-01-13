@@ -1,19 +1,21 @@
 [user]
-	email = {{ .email }}
-	name = Victor Song
+    email = {{ .email }}
+    name = Victor Song
 [core]
-	excludesfile = ~/.gitignore_global
+    excludesfile = ~/.gitignore_global
 [color]
-	ui = true
+    ui = true
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [pull]
-	rebase = false
+    rebase = false
 [alias]
     wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
     root = rev-parse --show-toplevel
+[commit]
+    template = ~/.gitmessage
 
 {{- if eq .chezmoi.os "windows" }}
 [credential]
-       helper = manager-core
+    helper = manager-core
 {{ end }}
