@@ -24,6 +24,12 @@ stfu() {
 # WSL 2 options
 {{   else }}
 # Not WSL 2 options
+if test -n "$KITTY_INSTALLATION_DIR"; then
+    export KITTY_SHELL_INTEGRATION="enabled"
+    autoload -Uz -- "$KITTY_INSTALLATION_DIR"/shell-integration/zsh/kitty-integration
+    kitty-integration
+    unfunction kitty-integration
+fi
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/vsong/mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
