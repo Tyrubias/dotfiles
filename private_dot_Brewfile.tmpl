@@ -1,6 +1,7 @@
 # Common stuff
 tap "homebrew/bundle"
 tap "homebrew/core"
+tap "yt-dlp/taps"
 brew "antibody"
 brew "bat"
 brew "chezmoi"
@@ -13,10 +14,11 @@ brew "neovim"
 brew "pipx"
 brew "r"
 brew "ripgrep"
-brew "tealdeer"
+brew "shellcheck"
+brew "tldr", args: ["HEAD"]
 brew "tmux"
 brew "topgrade"
-brew "youtube-dl"
+brew "yt-dlp/taps/yt-dlp"
 
 {{ if eq .chezmoi.os "darwin" }}
 # Stuff that's macOS only
@@ -34,8 +36,8 @@ cask "firefox"
 cask "font-fantasque-sans-mono"
 cask "font-recursive-code"
 cask "google-chrome"
-cask "intellij-idea"
 cask "iterm2"
+cask "jetbrains-toolbox"
 cask "mambaforge"
 cask "rectangle"
 cask "setapp"
