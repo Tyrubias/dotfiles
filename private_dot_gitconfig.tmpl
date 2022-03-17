@@ -8,12 +8,16 @@
 [init]
     defaultBranch = main
 [pull]
-    rebase = false
+    rebase = true
 [alias]
     wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
     root = rev-parse --show-toplevel
 [commit]
     template = ~/.gitmessage
+[rebase]
+    autoStash = true
+[submodule]
+    recurse = true
 
 {{- if eq .chezmoi.os "windows" }}
 [credential]
