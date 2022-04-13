@@ -85,14 +85,14 @@
     "**/.ammonite": true
   },
   "zigLanguageClient.path": "/Users/vsong/.local/bin/zls",
-  "terminal.integrated.fontFamily": "Iosevka Nerd Font Mono",
   "r.rterm.mac": "/Users/vsong/.local/bin/radian",
   "r.bracketedPaste": true,
   "r.rpath.mac": "/opt/homebrew/bin/R",
   "r.rterm.option": ["--no-save", "--no-restore", "--r-binary=/opt/homebrew/bin/R"],
   "editor.guides.bracketPairs": "active",
-  "remote.SSH.showLoginTerminal": true,
   "remote.SSH.remoteServerListenOnSocket": true,
   "remote.SSH.lockfilesInTmp": true,
-  "editor.fontSize": 14
+  "editor.fontSize": 15,
+  "terminal.integrated.fontFamily": "Iosevka Term",
+  "terminal.integrated.fontSize": 14
 }
