@@ -1,59 +1,18 @@
-# --- Common .zshenv options ---
-
-function pathprepend() {
-  for ((i=$#; i>0; i--));
-  do
-    ARG="${(k@)i}"
-    if [ -d "$ARG" ] && [[ ":$PATH:" != *":$ARG:"* ]]; then
-      PATH="$ARG${PATH:+":$PATH"}"
-    fi
-  done
-}
-
-function pathappend() {
-  for ARG in "$@"
-  do
-    if [ -d "$ARG" ] && [[ ":$PATH:" != *":$ARG:"* ]]; then
-        PATH="${PATH:+"$PATH:"}$ARG"
-    fi
-  done
-}
-
 export NVM_AUTO_USE=true
 
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="${HOME}/.config"
+export XDG_DATA_HOME="${HOME}/.local/share"
 
 export BAT_THEME="Dracula"
 export BORG_REMOTE_PATH="borg1"
 
-export VISUAL=nvim
-export EDITOR=$VISUAL
-
-{{ if eq .chezmoi.os "darwin" }}
-eval "$(/opt/homebrew/bin/brew shellenv)"
-. "$HOME/.cargo/env"
-export PATH="/Users/vsong/.local/bin:$PATH"
-export MANPATH="${MANPATH}:"
-{{ end }}
-
-. "$HOME/.cargo/env"
+export VISUAL="nvim"
+export EDITOR="${VISUAL}"
 
 alias lx="exa --long --git --group-directories-first --all --sort=ext --classify --grid"
 alias le="exa --group-directories-first --all"
 
 alias up="cd .."
 
-{{ if eq .chezmoi.os "linux" }}
-# Linux options
-# Add Linuxbrew to PATH
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-export PATH="/Users/vsong/.local/bin:$PATH"
-{{   if (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
-# WSL 2 options
-
-{{   else }}
-# Not WSL 2 options
-{{   end }}
-{{ end }}
+[[ -f "${HOME}"/.victor-secrets.sh ]] && source "${HOME}/.victor-secrets.sh"
 

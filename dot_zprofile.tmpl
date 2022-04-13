@@ -1,16 +1,14 @@
-# --- Common .zprofile options ---
-source $HOME/.victor-secrets.sh
-FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-eval "$(brew shellenv)"
-
 {{ if eq .chezmoi.os "linux" }}
-# --- Linux .zprofile options ---
-{{   if (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
-# WSL 2 options
-# Get VSCode working after we exclude Windows paths
-# https://devblogs.microsoft.com/commandline/automatically-configuring-wsl/
+{{   if (.chezmoi.kernel.osrelease | lower | contains "microsoft") }}
 alias code="/mnt/c/Users/vsong/scoop/apps/vscode/current/bin/code"
 {{   end }}
-# Common Linux options
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+{{- else -}}
+eval "$(/opt/homebrew/bin/brew shellenv)"
 {{ end }}
+export PATH="/Users/vsong/.local/bin:${PATH}"
+
+[[ -f "${HOME}"/.cargo/env ]] && . "${HOME}"/.cargo/env
+
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 

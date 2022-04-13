@@ -18,7 +18,7 @@ stfu() {
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-{{ if eq .chezmoi.os "linux" }}
+{{- if eq .chezmoi.os "linux" }}
 # Linux options
 {{   if (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
 # WSL 2 options
@@ -45,9 +45,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 {{   end }}
-{{ end }}
+{{ end -}}
 
-{{ if eq .chezmoi.os "darwin" }}
+{{- if eq .chezmoi.os "darwin" }}
 # macOS options
 test -e /Users/vsong/.iterm2_shell_integration.zsh && source /Users/vsong/.iterm2_shell_integration.zsh || true
 
@@ -69,17 +69,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# export MANPATH="${MANPATH}:"
-{{   if eq .computername "Victors-MacBook-Air" }}
-# MacBook Air stuff
-eval "$(rbenv init -)"
-{{   else }}
-{{   end }}
-# Common SDKMan stuff
-# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/vsong/.sdkman"
-[[ -s "/Users/vsong/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/vsong/.sdkman/bin/sdkman-init.sh"
-{{ else if eq .chezmoi.os "linux" }}
-export SDKMAN_DIR="/home/vsong/.sdkman"
-[[ -s "/home/vsong/.sdkman/bin/sdkman-init.sh" ]] && source "/home/vsong/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="${HOME}/.sdkman"
+[[ -s "${HOME}/.sdkman/bin/sdkman-init.sh" ]] && source "${HOME}/.sdkman/bin/sdkman-init.sh"
 {{ end -}}
