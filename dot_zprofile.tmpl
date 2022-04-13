@@ -1,7 +1,7 @@
 # --- Common .zprofile options ---
 # ZSH Autosuggest options
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
-export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history)
+# export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
+# export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history)
 source $HOME/.victor-secrets.sh
 FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 
@@ -17,7 +17,7 @@ export PATH="/Users/vsong/.local/bin:$PATH"
 # WSL 2 options
 # Get VSCode working after we exclude Windows paths
 # https://devblogs.microsoft.com/commandline/automatically-configuring-wsl/
-alias code="/mnt/c/Users/VictorSong/scoop/apps/vscode/current/bin/code"
+alias code="/mnt/c/Users/vsong/scoop/apps/vscode/current/bin/code"
 {{   end }}
 # Common Linux options
 export PATH="/home/vsong/.local/bin:$PATH"
