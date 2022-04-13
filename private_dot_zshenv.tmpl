@@ -33,7 +33,11 @@ export EDITOR=$VISUAL
 {{ if eq .chezmoi.os "darwin" }}
 eval "$(/opt/homebrew/bin/brew shellenv)"
 . "$HOME/.cargo/env"
+export PATH="/Users/vsong/.local/bin:$PATH"
+export MANPATH="${MANPATH}:"
 {{ end }}
+
+. "$HOME/.cargo/env"
 
 alias lx="exa --long --git --group-directories-first --all --sort=ext --classify --grid"
 alias le="exa --group-directories-first --all"
@@ -44,12 +48,12 @@ alias up="cd .."
 # Linux options
 # Add Linuxbrew to PATH
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+export PATH="/Users/vsong/.local/bin:$PATH"
 {{   if (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
 # WSL 2 options
 
 {{   else }}
 # Not WSL 2 options
-. "$HOME/.cargo/env"
 {{   end }}
 {{ end }}
 

@@ -1,15 +1,7 @@
 # --- Common .zprofile options ---
-# ZSH Autosuggest options
-# export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
-# export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history)
 source $HOME/.victor-secrets.sh
 FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-
-{{ if eq .chezmoi.os "darwin" }}
-# --- macOS .zprofile options ---
-# Created by `userpath` on 2021-01-24 05:18:48
-export PATH="/Users/vsong/.local/bin:$PATH"
-{{ end }}
+eval "$(brew shellenv)"
 
 {{ if eq .chezmoi.os "linux" }}
 # --- Linux .zprofile options ---
@@ -20,6 +12,5 @@ export PATH="/Users/vsong/.local/bin:$PATH"
 alias code="/mnt/c/Users/vsong/scoop/apps/vscode/current/bin/code"
 {{   end }}
 # Common Linux options
-export PATH="/home/vsong/.local/bin:$PATH"
 {{ end }}
 
