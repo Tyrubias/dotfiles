@@ -1,7 +1,7 @@
 {{- if eq .chezmoi.os "linux" }}
 {{-   if (.chezmoi.kernel.osrelease | lower | contains "microsoft") }}
 alias code="/mnt/c/Users/vsong/scoop/apps/vscode/current/bin/code"
-{{-   end -}}
+{{-   end }}
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 {{- else -}}
 eval "$(/opt/homebrew/bin/brew shellenv)"
