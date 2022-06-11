@@ -1,7 +1,8 @@
 {
   "workbench.sideBar.location": "right",
   "workbench.iconTheme": "material-icon-theme",
-  "editor.fontFamily": "Iosevka",
+  "workbench.editor.enablePreview": false,
+  "editor.fontFamily": "Iosevka Fixed",
   "explorer.sortOrder": "type",
   //"editor.fontLigatures": "'calt' on, 'liga' on, 'dlig' on",
   "window.newWindowDimensions": "inherit",
@@ -9,7 +10,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -24,7 +25,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "remote.SSH.remotePlatform": {
-    "clear": "linux"
+    "clear": "linux",
+    "victors-pop-os": "linux"
   },
   "git.ignoreLegacyWarning": true,
   "[typescriptreact]": {
@@ -92,7 +94,19 @@
   "editor.guides.bracketPairs": "active",
   "remote.SSH.remoteServerListenOnSocket": true,
   "remote.SSH.lockfilesInTmp": true,
-  "editor.fontSize": 15,
-  "terminal.integrated.fontFamily": "Iosevka Term",
-  "terminal.integrated.fontSize": 14
+  "editor.fontSize": 16,
+  "terminal.integrated.fontFamily": "Iosevka Nerd Font Mono",
+  "terminal.integrated.fontSize": 16,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "errorLens.gutterIconsEnabled": true,
+  "rust-analyzer.lru.capacity": 256,
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "rust": false
+  }
 }
