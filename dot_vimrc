@@ -1,27 +1,10 @@
+set termguicolors
 packadd! dracula
 syntax on
 let g:dracula_colorterm = 0
 let g:dracula_italic = 0
 colorscheme dracula
-set tabstop=8
-set softtabstop=0
-set shiftwidth=4
-set smarttab
-set expandtab
-set autoindent
-set number
+set number relativenumber
+set cursorline
 set hlsearch
-set incsearch
-set showcmd
-set hidden
-set ruler
-set autochdir
-set nojoinspaces
-set wildmenu
-set listchars=eol:$,tab:>-,nbsp:~,trail:~
-set guioptions=ic
-autocmd BufNewFile,BufRead *.md set filetype=markdown
-autocmd BufNewFile,BufRead *.html,*.css,*.js,*.json,*.yml,*.yaml setlocal tabstop=2
-autocmd BufNewFile,BufRead *.go,Makefile* setlocal tabstop=8 noexpandtab
-autocmd BufWinEnter * syntax keyword Todo TODO
-autocmd BufWinEnter * syntax match Error /\s\+$/
+autocmd FileType make setlocal noexpandtab softtabstop=0

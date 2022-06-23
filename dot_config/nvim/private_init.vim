@@ -4,26 +4,37 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
+Plug 'luochen1990/rainbow'
+Plug 'jiangmiao/auto-pairs'
+Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'dracula/vim', { 'as': 'dracula' }
-"Plug 'morhetz/gruvbox'
-"Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
-colorscheme dracula
-
 set termguicolors
 
-set number
-set relativenumber
+colorscheme dracula
+
+set number relativenumber
 set cursorline
-set tabstop=8
-set softtabstop=0
-set expandtab
-set shiftwidth=4
-set smarttab
+set hlsearch
+
+let g:rainbow_active = 1
+
+lua << EOF
+vim.opt.list = true
+vim.opt.listchars:append("eol:↴")
+
+require("indent_blankline").setup {
+    show_end_of_line = true,
+}
+EOF
 
 onoremap af :<C-u>normal! ggVG<CR>
 

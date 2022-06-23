@@ -63,7 +63,7 @@
     "borderColor : {color}",
     "opacity: 0.5"
   ],
-  "files.autoSaveDelay": 3500,
+  "files.autoSaveDelay": 2500,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "files.exclude": {
@@ -107,6 +107,7 @@
     "yaml": false,
     "plaintext": false,
     "markdown": false,
-    "rust": false
+    "rust": false,
+    "javascript": false
   }
 }
