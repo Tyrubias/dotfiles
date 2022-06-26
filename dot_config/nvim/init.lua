@@ -83,7 +83,7 @@ require('nvim-treesitter.configs').setup {
 
     disable = { "phpdoc" },
 
-    additional_vim_regex_highlighting = false,
+    additional_vim_regex_highlighting = true,
   },
 
   rainbow = {
@@ -97,7 +97,7 @@ require('nvim-treesitter.configs').setup {
   },
 
   refactor = {
-    highlight_current_scope = { enable = true },
+    highlight_current_scope = { enable = false},
     smart_rename = {
       enable = true,
       keymaps = {
@@ -162,4 +162,10 @@ local lsp_flags = {
 
 require('neogen').setup({})
 require('wilder').setup({})
+
+require('lspconfig')['rust_analyzer'].setup({
+  on_attach = on_attach,
+  flags = lsp_flags,
+})
+
 require('rust-tools').setup({})
