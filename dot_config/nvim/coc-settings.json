@@ -2,5 +2,5 @@
 	"diagnostic.virtualText": true,
 	"diagnostic.virtualTextCurrentLineOnly": false,
 	"rust-analyzer.checkOnSave.command": "clippy",
-	"rust-analyzer.inlayHints.typeHints": true
+	"rust-analyzer.updates.channel": "nightly"
 }
