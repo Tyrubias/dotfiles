@@ -3,6 +3,7 @@ tap "beeftornado/rmtree"
 tap "homebrew/bundle"
 tap "homebrew/core"
 tap "yt-dlp/taps"
+
 brew "antibody"
 brew "bat"
 brew "chezmoi"
@@ -33,13 +34,14 @@ brew "vim"
 brew "zx"
 brew "yt-dlp/taps/yt-dlp"
 
-{{ if eq .chezmoi.os "darwin" }}
-# Stuff that's macOS only
+{{ if eq .chezmoi.os "darwin" -}}
 
+# Stuff that's macOS only
 tap "buo/cask-upgrade"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
+
 brew "borgbackup"
 brew "coreutils"
 brew "cpanminus"
@@ -50,6 +52,7 @@ brew "rbenv"
 brew "tig"
 brew "tree"
 brew "keith/formulae/dyld-shared-cache-extractor"
+
 cask "alt-tab"
 cask "appcleaner"
 cask "discord"
@@ -86,6 +89,20 @@ cask "spotify"
 cask "sublime-text"
 cask "visual-studio-code"
 cask "zoom"
+
+mas "Amphetamine", id: 937984704
+mas "Bitwarden", id: 1352778147
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "Microsoft Word", id: 462054704
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Tailscale", id: 1475387142
+mas "Xcode", id: 497799835
 {{ end }}
 
 {{ if eq .chezmoi.os "linux" }}
