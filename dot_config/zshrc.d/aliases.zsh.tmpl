@@ -1,0 +1,8 @@
+alias lx='exa --long --git --group-directories-first --all --sort=ext --classify --grid'
+alias le='exa --group-directories-first --all'
+alias up='cd ..'
+{{- if eq .chezmoi.os "linux" }}
+{{    if (.chezmoi.kernel.osrelease | lower | contains "microsoft") }}
+alias code='/mnt/c/Users/vsong/scoop/apps/vscode/current/bin/code'
+{{    end }}
+{{- end }}
