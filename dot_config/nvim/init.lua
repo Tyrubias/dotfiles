@@ -24,6 +24,8 @@ require('packer').startup(function(use)
 
   use { 'dracula/vim', as = 'dracula' }
 
+  use 'morhetz/gruvbox'
+
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use { 'numToStr/Comment.nvim' }
   use 'JoosepAlviste/nvim-ts-context-commentstring'
@@ -63,8 +65,11 @@ require('packer').startup(function(use)
 end)
 
 vim.opt.termguicolors = true
+vim.opt.mouse = 'a'
 
-vim.cmd [[colorscheme dracula]]
+vim.cmd [[let g:gruvbox_contrast_dark = 'hard']]
+
+vim.cmd [[colorscheme gruvbox]]
 
 vim.opt.number = true
 vim.opt.relativenumber = true
