@@ -68,7 +68,7 @@ vim.opt.termguicolors = true
 vim.opt.mouse = 'a'
 
 vim.cmd [[let g:gruvbox_contrast_dark = 'hard']]
-
+vim.cmd [[let g:gruvbox_italic=1]]
 vim.cmd [[colorscheme gruvbox]]
 
 vim.opt.number = true
