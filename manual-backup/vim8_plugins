@@ -1,0 +1,24 @@
+.vim
+└── pack
+    ├── default
+    │   └── start
+    │       └── gruvbox
+    ├── dist
+    │   └── start
+    │       └── vim-airline
+    ├── plugins
+    │   └── start
+    │       └── auto-pairs
+    ├── themes
+    │   └── start
+    │       └── dracula
+    └── tpope
+        └── start
+            ├── commentary
+            ├── eunuch
+            ├── fugitive
+            ├── sensible
+            ├── sleuth
+            └── surround
+
+21 directories, 0 files
