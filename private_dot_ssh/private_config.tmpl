@@ -1,18 +1,14 @@
 Host *
   AddKeysToAgent yes
-{{ if (eq .chezmoi.os "darwin") }}
+{{- if (eq .chezmoi.os "darwin") }}
   UseKeychain yes
-{{ end }}
+{{- end }}
   IdentityFile ~/.ssh/id_ed25519
 
 Host *
-    ControlMaster auto
-    ControlPath ~/.ssh/sockets/%r@%h-%p
-    ControlPersist 600
-
-Host wireguard
-  HostName 143.198.146.201
-  User vsong
+  ControlMaster auto
+  ControlPath ~/.ssh/sockets/%r@%h-%p
+  ControlPersist 600
 
 Host backup-rsync
   HostName ch-s011.rsync.net
@@ -31,58 +27,3 @@ Host nots
   User vms2
   ProxyJump rice-gateway
 
-{{ if ne .computername "pop-os" }}
-Host local-pop
-  HostName pop-os.local
-  User vsong
-
-Host remote-pop
-  HostName hanover.vsong.me
-  User vsong
-
-Host vpn-pop
-  HostName 10.104.161.14
-  User vsong
-
-Host ts-pop
-  HostName 100.78.47.30
-  User vsong
-{{ end }}
-
-{{ if ne .computername "Victors-Mac-mini" }}
-Host local-mini
-  HostName Victors-Mac-mini.local
-  User vsong
-
-Host remote-mini
-  HostName hanover.vsong.me
-  User vsong
-  Port 23
-
-Host vpn-mini
-  HostName 10.104.161.13
-  User vsong
-
-Host ts-mini
-  HostName 100.76.77.21
-  User vsong
-{{ end }}
-
-{{ if ne .computername "Victors-MacBook-Air" }}
-Host local-air
-  HostName Victors-MacBook-Air.local
-  User vsong
-
-Host remote-air
-  HostName hanover.vsong.me
-  User vsong
-  Port 24
-
-Host vpn-air
-  HostName 10.104.161.10
-  User vsong
-
-Host ts-air
-  HostName 100.72.218.23
-  User vsong
-{{ end }}

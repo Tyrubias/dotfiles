@@ -20,13 +20,13 @@
     "*.ipynb": "jupyter-notebook"
   },
   "python.venvPath": "/Users/vsong/mambaforge/envs",
-  "terminal.integrated.inheritEnv": false,
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "remote.SSH.remotePlatform": {
     "clear": "linux",
-    "victors-pop-os": "linux"
+    "victors-pop-os": "linux",
+    "pop-os.local": "linux"
   },
   "git.ignoreLegacyWarning": true,
   "[typescriptreact]": {
@@ -35,9 +35,9 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "terminal.integrated.defaultProfile.linux": "/usr/bin/zsh",
+  "terminal.integrated.defaultProfile.linux": "zsh",
   "python.languageServer": "Pylance",
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
   "bracket-pair-colorizer-2.colors": [
     "Gold",
     "Orchid",
@@ -109,5 +109,43 @@
     "markdown": false,
     "rust": false,
     "javascript": false
-  }
+  },
+  "workbench.colorCustomizations": {
+    "[Gruvbox Dark Hard]": {
+      "editorInlayHint.foreground": "#868686f0",
+      "editorInlayHint.background": "#3d3d3d48"
+    }
+  },
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "bash",
+      "args": [
+        "-l"
+      ],
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": ["/opt/homebrew/bin/zsh", "/usr/bin/zsh", "/bin/zsh"],
+      "args": [
+        "--login",
+        "--interactive"
+      ]
+    },
+    "fish": {
+      "path": "fish",
+      "args": [
+        "-l"
+      ]
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    }
+  },
+  "terminal.integrated.inheritEnv": false
 }
