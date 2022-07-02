@@ -1,4 +1,8 @@
+{{ if eq .chezmoi.os "linux" }}
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+{{ else }}
 eval "$(/opt/homebrew/bin/brew shellenv)"
+{{ end }}
 
 export PATH="${HOME}/.local/bin:${PATH}"
 

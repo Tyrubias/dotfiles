@@ -1,1 +1,3 @@
-hi
+{{ if eq .chezmoi.os "darwin" }}
+test -e /Users/vsong/.iterm2_shell_integration.zsh && source /Users/vsong/.iterm2_shell_integration.zsh || true
+{{ end }}
