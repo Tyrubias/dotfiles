@@ -1,0 +1,10 @@
+
+alias code="/mnt/c/Users/vsong/scoop/apps/vscode/current/bin/code"
+# eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
+export PATH="${HOME}/.local/bin:${PATH}"
+
+[[ -f "${HOME}"/.cargo/env ]] && . "${HOME}"/.cargo/env
+
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
