@@ -6,12 +6,19 @@ export XDG_CACHE_HOME="${HOME}/.cache"
 export XDG_DATA_HOME="${HOME}/.local/share"
 export XDG_STATE_HOME="${HOME}/.local/state"
 
-export BAT_THEME='gruvbox-dark'
-export BORG_REMOTE_PATH='borg1'
+export BAT_THEME="gruvbox-dark"
+export BORG_REMOTE_PATH="borg1"
 
-export VISUAL='nvim'
+export VISUAL="nvim"
 export EDITOR="${VISUAL}"
 
 export HOMEBREW_BAT=true
 export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion history)
+
+alias lx="exa --long --git --group-directories-first --all --sort=ext --classify --grid"
+alias le="exa --group-directories-first --all"
+
+alias up="cd .."
+
+[[ -f "${HOME}"/.victor-secrets.sh ]] && source "${HOME}/.victor-secrets.sh"
 
