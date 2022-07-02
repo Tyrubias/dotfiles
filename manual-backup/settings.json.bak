@@ -1,0 +1,150 @@
+{
+  "workbench.sideBar.location": "right",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.enablePreview": false,
+  "editor.fontFamily": "Iosevka Fixed",
+  "explorer.sortOrder": "type",
+  //"editor.fontLigatures": "'calt' on, 'liga' on, 'dlig' on",
+  "window.newWindowDimensions": "inherit",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.external.osxExec": "iTerm.app",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "python.venvPath": "/Users/vsong/mambaforge/envs",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "remote.SSH.remotePlatform": {
+    "clear": "linux",
+    "victors-pop-os": "linux",
+    "pop-os.local": "linux"
+  },
+  "git.ignoreLegacyWarning": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "python.languageServer": "Pylance",
+  "bracket-pair-colorizer-2.colors": [
+    "Gold",
+    "Orchid",
+    "LightSkyBlue",
+    "Salmon",
+    "LawnGreen",
+    "DarkOrange",
+    "Cornsilk"
+  ],
+  "bracket-pair-colorizer-2.highlightActiveScope": true,
+  "bracket-pair-colorizer-2.activeScopeCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}",
+    "opacity: 0.5"
+  ],
+  "bracket-pair-colorizer-2.showBracketsInGutter": true,
+  "bracket-pair-colorizer-2.showBracketsInRuler": true,
+  "bracket-pair-colorizer-2.scopeLineRelativePosition": true,
+  "bracket-pair-colorizer-2.scopeLineCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}",
+    "opacity: 0.5"
+  ],
+  "files.autoSaveDelay": 2500,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "latex-workshop.latexindent.path": "/Library/TeX/texbin/latexindent",
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "editor.guides.bracketPairsHorizontal": true,
+  "files.autoSave": "afterDelay",
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/.ammonite": true
+  },
+  "zigLanguageClient.path": "/Users/vsong/.local/bin/zls",
+  "r.rterm.mac": "/Users/vsong/.local/bin/radian",
+  "r.bracketedPaste": true,
+  "r.rpath.mac": "/opt/homebrew/bin/R",
+  "r.rterm.option": ["--no-save", "--no-restore", "--r-binary=/opt/homebrew/bin/R"],
+  "editor.guides.bracketPairs": "active",
+  "remote.SSH.remoteServerListenOnSocket": true,
+  "remote.SSH.lockfilesInTmp": true,
+  "editor.fontSize": 16,
+  "terminal.integrated.fontFamily": "Iosevka Nerd Font Mono",
+  "terminal.integrated.fontSize": 16,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "errorLens.gutterIconsEnabled": true,
+  "rust-analyzer.lru.capacity": 256,
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "rust": false,
+    "javascript": false
+  },
+  "workbench.colorCustomizations": {
+    "[Gruvbox Dark Hard]": {
+      "editorInlayHint.foreground": "#868686f0",
+      "editorInlayHint.background": "#3d3d3d48"
+    }
+  },
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "bash",
+      "args": [
+        "-l"
+      ],
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": ["/opt/homebrew/bin/zsh", "/usr/bin/zsh", "/bin/zsh"],
+      "args": [
+        "--login",
+        "--interactive"
+      ]
+    },
+    "fish": {
+      "path": "fish",
+      "args": [
+        "-l"
+      ]
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    }
+  },
+  "terminal.integrated.inheritEnv": false
+}
