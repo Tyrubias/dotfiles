@@ -1,0 +1,42 @@
+tap "homebrew/bundle"
+tap "homebrew/core"
+# Shell plugin manager
+brew "antibody"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
+# Modern replacement for 'ls'
+brew "exa"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GNU compiler collection
+brew "gcc"
+# GNU debugger
+brew "gdb"
+# GitHub command-line tool
+brew "gh"
+# Improved top (interactive process viewer)
+brew "htop"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Fast, highly customisable system info script
+brew "neofetch"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
+# Software environment for statistical computing
+brew "r", args: ["build-from-source"]
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Autoformat shell script source code
+brew "shfmt"
+# Simplified and community-driven man pages
+brew "tldr", args: ["HEAD"]
+# Terminal multiplexer
+brew "tmux"
+# Upgrade all the things
+brew "topgrade"

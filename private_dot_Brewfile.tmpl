@@ -13,6 +13,7 @@ brew "ffmpeg"
 brew "fzf"
 brew "gcc"
 brew "gh"
+brew "git"
 brew "go"
 brew "htop"
 brew "httpie"
@@ -105,12 +106,14 @@ mas "Tailscale", id: 1475387142
 mas "Xcode", id: 497799835
 {{ end }}
 
-{{ if eq .chezmoi.os "linux" }}
+{{- if eq .chezmoi.os "linux" }}
 # Linux stuff. Here, we have to differentiate
 # between WSL 2 and my Pop-OS installation. My
 # Pop OS has hostname "pop-os"
-brew "shellcheck"
-brew "shfmt"
+brew "gdb"
+brew "gcc@12"
+brew "irssi"
+brew "nasm"
 # if WSL 2 => WSL 2 stuff, else Pop OS stuff
 {{   if (contains "microsoft-standard" .chezmoi.kernel.osrelease) }}
 brew "hub"
@@ -124,6 +127,6 @@ tap "jesseduffield/lazydocker"
 brew "hadolint"
 brew "jesseduffield/lazydocker/lazydocker"
 {{   end }}
-{{ end }}
+{{ end -}}
 
 # Install Alacritty/Kitty
