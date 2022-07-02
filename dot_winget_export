@@ -1,0 +1,176 @@
+{
+	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
+	"CreationDate" : "2022-07-02T04:58:49.079-00:00",
+	"Sources" : 
+	[
+		{
+			"Packages" : 
+			[
+				{
+					"PackageIdentifier" : "Bitwarden.Bitwarden",
+					"Version" : "2022.6.0"
+				},
+				{
+					"PackageIdentifier" : "karakun.OpenWebStart",
+					"Version" : "1.6.0"
+				},
+				{
+					"PackageIdentifier" : "Canonical.Ubuntu",
+					"Version" : "2004.2022.1.0"
+				},
+				{
+					"PackageIdentifier" : "Discord.Discord",
+					"Version" : "1.0.9005"
+				},
+				{
+					"PackageIdentifier" : "Docker.DockerDesktop",
+					"Version" : "4.9.1"
+				},
+				{
+					"PackageIdentifier" : "Google.Chrome",
+					"Version" : "103.0.5060.66"
+				},
+				{
+					"PackageIdentifier" : "REALiX.HWiNFO",
+					"Version" : "7.26"
+				},
+				{
+					"PackageIdentifier" : "LibreWolf.LibreWolf",
+					"Version" : "101.0.1-1"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Edge",
+					"Version" : "103.0.1264.44"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.EdgeWebView2Runtime",
+					"Version" : "103.0.1264.44"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsTerminal",
+					"Version" : "1.13.11432.0"
+				},
+				{
+					"PackageIdentifier" : "Mozilla.Firefox",
+					"Version" : "102.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Office",
+					"Version" : "16.0.15225.20288"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.OneDrive",
+					"Version" : "22.121.0605.0002"
+				},
+				{
+					"PackageIdentifier" : "Spotify.Spotify",
+					"Version" : "1.1.88.612.gcc529952"
+				},
+				{
+					"PackageIdentifier" : "Valve.Steam",
+					"Version" : "2.10.91.91"
+				},
+				{
+					"PackageIdentifier" : "tailscale.tailscale",
+					"Version" : "1.26.1"
+				},
+				{
+					"PackageIdentifier" : "JetBrains.Toolbox",
+					"Version" : "1.24.12080"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VisualStudio.2022.Community",
+					"Version" : "17.2.5"
+				},
+				{
+					"PackageIdentifier" : "Axosoft.GitKraken",
+					"Version" : "8.4.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2013Redist-x64",
+					"Version" : "12.0.40664.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2010Redist-x64",
+					"Version" : "10.0.40219"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsSDK",
+					"Version" : "10.1.22000.194"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.5",
+					"Version" : "5.0.17.31219"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.3_1",
+					"Version" : "3.1.26.31323"
+				},
+				{
+					"PackageIdentifier" : "WireGuard.WireGuard",
+					"Version" : "0.5.3"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2012Redist-x86",
+					"Version" : "11.0.61030.0"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsSDK",
+					"Version" : "10.1.19041.685"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.CLRTypesSQLServer.2019",
+					"Version" : "15.0.2000.5"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.PowerToys",
+					"Version" : "0.59.1"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.6",
+					"Version" : "6.0.6.31318"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2013Redist-x86",
+					"Version" : "12.0.40664.0"
+				},
+				{
+					"PackageIdentifier" : "Zoom.Zoom",
+					"Version" : "5.10.6120"
+				},
+				{
+					"PackageIdentifier" : "Nvidia.GeForceExperience",
+					"Version" : "3.25.1.27"
+				},
+				{
+					"PackageIdentifier" : "Nvidia.PhysX",
+					"Version" : "9.21.0713"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2010Redist-x86",
+					"Version" : "10.0.40219"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.3_1",
+					"Version" : "3.1.26.31323"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.6",
+					"Version" : "6.0.6.31318"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2012Redist-x64",
+					"Version" : "11.0.61030.0"
+				}
+			],
+			"SourceDetails" : 
+			{
+				"Argument" : "https://winget.azureedge.net/cache",
+				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name" : "winget",
+				"Type" : "Microsoft.PreIndexed.Package"
+			}
+		}
+	],
+	"WinGetVersion" : "1.2.11601"
+}
