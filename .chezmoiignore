@@ -32,6 +32,8 @@ Library
 {{ end }}
 
 {{ if ne .chezmoi.os "windows" }}
+.winget_apps
+.winget_export
 .scoop_apps.txt
 .choco_apps.txt
 AppData/**
