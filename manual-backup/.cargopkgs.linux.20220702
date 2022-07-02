@@ -1,0 +1,11 @@
+    Updating registry 'https://github.com/rust-lang/crates.io-index'
+
+Package         Installed  Latest   Needs update
+cargo-binutils  v0.3.6     v0.3.6   No
+cargo-edit      v0.9.1     v0.9.1   No
+cargo-expand    v1.0.27    v1.0.27  No
+cargo-nextest   v0.9.24    v0.9.24  No
+cargo-update    v8.1.4     v8.1.4   No
+oha             v0.5.2     v0.5.2   No
+ugdb            v0.1.11    v0.1.11  No
+
