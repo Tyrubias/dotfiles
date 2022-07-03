@@ -21,7 +21,6 @@ Library/**
 Library
 .pipx_apps
 .Rprofile
-.vimrc
 .vscode_extensions
 .zprofile
 .Brewfile
