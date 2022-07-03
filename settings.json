@@ -24,10 +24,17 @@
     ],
     "remote.SSH.lockfilesInTmp": true,
     "rust-analyzer.checkOnSave.command": "clippy",
-    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.defaultProfile.osx": "zsh (interactive)",
     "terminal.integrated.fontFamily": "FantasqueSansMono Nerd Font Mono",
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.profiles.osx": {
+        "zsh (interactive)": {
+            "args": [
+                "-i"
+            ],
+            "path": "/bin/zsh"
+        }
+    },
     "window.newWindowDimensions": "inherit",
     "workbench.colorCustomizations": {
         "[Gruvbox Dark Hard]": {
