@@ -8,7 +8,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Homebrew on WSL 2 only works for Topgrade if it is in .zshenv
 
 export PATH="${HOME}/.local/bin:${PATH}"
-
+{{ if (or (eq .chezmoi.os "darwin") (and (eq .chezmoi.os "linux") (.chezmoi.kernel.osrelease | lower | contains "microsoft"))) }}
 [[ -f "${HOME}"/.cargo/env ]] && source "${HOME}"/.cargo/env
+{{ end }}
 
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
