@@ -7,7 +7,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 {{ end }}
 # Homebrew on WSL 2 only works for Topgrade if it is in .zshenv
 
-export PATH="${HOME}/.local/bin:${PATH}"
+pathprepend "${HOME}/.local/bin"
 {{ if (or (eq .chezmoi.os "darwin") (and (eq .chezmoi.os "linux") (.chezmoi.kernel.osrelease | lower | contains "microsoft"))) }}
 [[ -f "${HOME}"/.cargo/env ]] && source "${HOME}"/.cargo/env
 {{ end }}

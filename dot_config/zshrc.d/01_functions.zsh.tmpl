@@ -1,3 +1,23 @@
 stfu() {
-  "$@" > /dev/null 2>&1
+  "$@" >/dev/null 2>&1
+}
+
+pathprepend() {
+  for ARG in "${(Oa)@}"; do
+    ARG=$({ cd -- "$ARG" && { pwd -P || pwd; }; } 2>/dev/null)
+    if [ -z "$ARG" ]; then continue; fi
+    if [ -d "$ARG" ] && [[ ":$PATH:" != *":$ARG:"* ]]; then
+      PATH="$ARG${PATH:+":$PATH"}"
+    fi
+  done
+}
+
+pathappend() {
+  for ARG in "$@"; do
+    ARG=$({ cd -- "$ARG" && { pwd -P || pwd; }; } 2>/dev/null)
+    if [ -z "$ARG" ]; then continue; fi
+    if [ -d "$ARG" ] && [[ ":$PATH:" != *":$ARG:"* ]]; then
+      PATH="${PATH:+"$PATH:"}$ARG"
+    fi
+  done
 }
