@@ -4,20 +4,42 @@ stfu() {
 
 pathprepend() {
   for ARG in "${(Oa)@}"; do
-    ARG=$({ cd -- "$ARG" && { pwd -P || pwd; }; } 2>/dev/null)
-    if [ -z "$ARG" ]; then continue; fi
-    if [ -d "$ARG" ] && [[ ":$PATH:" != *":$ARG:"* ]]; then
-      PATH="$ARG${PATH:+":$PATH"}"
+    ARG=$({ cd -- "${ARG}" && { pwd -P || pwd; }; } 2>/dev/null)
+    if [[ -z "${ARG}" ]]; then continue; fi
+    if [[ -d "${ARG}" ]] && [[ ":${PATH}:" != *":${ARG}:"* ]]; then
+      PATH="${ARG}${PATH:+":${PATH}"}"
     fi
   done
 }
 
 pathappend() {
   for ARG in "$@"; do
-    ARG=$({ cd -- "$ARG" && { pwd -P || pwd; }; } 2>/dev/null)
-    if [ -z "$ARG" ]; then continue; fi
-    if [ -d "$ARG" ] && [[ ":$PATH:" != *":$ARG:"* ]]; then
-      PATH="${PATH:+"$PATH:"}$ARG"
+    ARG=$({ cd -- "${ARG}" && { pwd -P || pwd; }; } 2>/dev/null)
+    if [[ -z "${ARG}" ]]; then continue; fi
+    if [[ -d "${ARG}" ]] && [[ ":${PATH}:" != *":${ARG}:"* ]]; then
+      PATH="${PATH:+"${PATH}:"}${ARG}"
     fi
   done
+}
+
+get_var() {
+  eval 'printf "%s\n" "${'"$1"'}"'
+}
+
+set_var() {
+  eval "$1=\"\$2\""
+}
+
+dedup_pathvar() {
+  pathvar_name="$1"
+  pathvar_value="$(get_var "${pathvar_name}")"
+  deduped_path="$(perl -e 'chomp; print join(":", reverse(grep { not $seen{$_}++ } reverse(split(/:/, $ARGV[0]))))' "${pathvar_value}")"
+  set_var "${pathvar_name}" "${deduped_path}"
+}
+
+dedup_pathvar_old() {
+  pathvar_name="$1"
+  pathvar_value="$(get_var "${pathvar_name}")"
+  deduped_path="$(perl -e 'print join(":",grep { not $seen{$_}++ } split(/:/, $ARGV[0]))' "${pathvar_value}")"
+  set_var "${pathvar_name}" "${deduped_path}"
 }
