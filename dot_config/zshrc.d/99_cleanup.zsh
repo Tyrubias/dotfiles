@@ -13,3 +13,10 @@ if [[ -n "${PATH}" ]]; then
   PATH=${PATH%:}
   unset old_PATH x
 fi
+
+dedup_pathvar PATH
+dedup_pathvar MANPATH
+dedup_pathvar INFOPATH
+
+export MANPATH="${MANPATH:-}:"
+export INFOPATH="${INFOPATH:-}:"
