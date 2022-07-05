@@ -23,6 +23,9 @@
         "--r-binary=/opt/homebrew/bin/R"
     ],
     "remote.SSH.lockfilesInTmp": true,
+    "remote.SSH.remotePlatform": {
+        "clear": "linux"
+    },
     "rust-analyzer.checkOnSave.command": "clippy",
     "terminal.integrated.defaultProfile.osx": "zsh (interactive)",
     "terminal.integrated.fontFamily": "FantasqueSansMono Nerd Font Mono",
