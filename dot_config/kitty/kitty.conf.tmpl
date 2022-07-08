@@ -1,4 +1,4 @@
-font_family             FantasqueSansMono Nerd Font Mono
+font_family             Fantasque Sans Mono
 disable_ligatures       always
 {{ if (eq .chezmoi.os "darwin") }}
 font_size               13.0
@@ -10,8 +10,8 @@ window_padding_width    3
 initial_window_width    132c
 initial_window_height   43c
 {{ if (eq .chezmoi.os "darwin") }}
-shell                   /bin/zsh --login
+shell                   /bin/zsh --login --interactive
 {{ else }}
-shell                   /usr/bin/zsh --login
+shell                   /usr/bin/zsh --login --interactive
 {{ end }}
 shell_integration       disabled

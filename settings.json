@@ -1,6 +1,6 @@
 {
     "editor.bracketPairColorization.enabled": true,
-    "editor.fontFamily": "Fantasque Sans Mono",
+    "editor.fontFamily": "Rec Mono Duotone, Symbols Nerd Font Mono",
     "editor.fontSize": 14,
     "editor.guides.bracketPairs": "active",
     "editor.guides.bracketPairsHorizontal": true,
@@ -10,6 +10,7 @@
     "explorer.sortOrder": "type",
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 2500,
+    "git.mergeEditor": true,
     "latex-workshop.latex.autoBuild.run": "onSave",
     "latex-workshop.latex.autoClean.run": "onBuilt",
     "latex-workshop.latexindent.path": "/Library/TeX/texbin/latexindent",
@@ -28,8 +29,6 @@
     },
     "rust-analyzer.checkOnSave.command": "clippy",
     "terminal.integrated.defaultProfile.osx": "zsh (interactive)",
-    "terminal.integrated.fontFamily": "FantasqueSansMono Nerd Font Mono",
-    "terminal.integrated.fontSize": 14,
     "terminal.integrated.profiles.osx": {
         "zsh (interactive)": {
             "args": [
@@ -38,6 +37,8 @@
             "path": "/bin/zsh"
         }
     },
+    "terminal.integrated.shellIntegration.enabled": true,
+    "window.commandCenter": true,
     "window.newWindowDimensions": "inherit",
     "workbench.colorCustomizations": {
         "[Gruvbox Dark Hard]": {
