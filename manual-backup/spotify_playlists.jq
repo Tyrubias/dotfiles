@@ -1,0 +1,1 @@
+.playlists | map({ name: .name, tracks: [.tracks[] | { added_at: .added_at, album: { name: .track["album"]["name"], release_date: .track["album"]["release_date"] }, artists: [.track["artists"][]? | .name], duration_ms: .track["duration_ms"], name: .track["name"] }]})

@@ -1,0 +1,1 @@
+.albums | map({ added_at: .added_at, album_type: .album.album_type, artists: [.album.artists[].name], genres: .album.genres, label: .album.label, name: .album.name, release_date: .album.release_date, total_tracks: .album.total_tracks, tracks: [.album.tracks.items[] | { duration_ms: .duration_ms, name: .name }] })
