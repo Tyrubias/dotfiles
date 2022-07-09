@@ -1,8 +1,8 @@
 {
     "editor.bracketPairColorization.enabled": true,
-    "editor.fontFamily": "Rec Mono Semicasual, Symbols Nerd Font Mono",
+    "editor.fontFamily": "Iosevka, Symbols Nerd Font Mono",
     "editor.fontLigatures": true,
-    "editor.fontSize": 15,
+    "editor.fontSize": 17,
     "editor.guides.bracketPairs": "active",
     "editor.guides.bracketPairsHorizontal": true,
     "editor.inlineSuggest.enabled": true,
@@ -47,7 +47,7 @@
             "editorInlayHint.foreground": "#868686f0"
         }
     },
-    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.colorTheme": "Dracula",
     "workbench.editor.enablePreview": false,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right"
