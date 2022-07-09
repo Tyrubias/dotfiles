@@ -67,9 +67,9 @@ end)
 vim.opt.termguicolors = true
 vim.opt.mouse = 'a'
 
-vim.cmd [[let g:gruvbox_contrast_dark = 'hard']]
-vim.cmd [[let g:gruvbox_italic=1]]
-vim.cmd [[colorscheme gruvbox]]
+-- vim.cmd [[let g:gruvbox_contrast_dark = 'hard']]
+-- vim.cmd [[let g:gruvbox_italic=1]]
+vim.cmd [[colorscheme dracula]]
 
 vim.opt.number = true
 vim.opt.relativenumber = true
