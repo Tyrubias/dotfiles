@@ -1,0 +1,163 @@
+tap "beeftornado/rmtree"
+tap "buo/cask-upgrade"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "keith/formulae"
+tap "yt-dlp/taps"
+# Shell plugin manager
+brew "antibody"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Deduplicating archiver with compression and authenticated encryption
+brew "borgbackup"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
+# Statistics utility to count lines of code
+brew "cloc"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Get, unpack, build, and install modules from CPAN
+brew "cpanminus"
+# Modern replacement for 'ls'
+brew "exa"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# Collection of GNU find, xargs, and locate
+brew "findutils"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GNU compiler collection
+brew "gcc"
+# GitHub command-line tool
+brew "gh"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Improved top (interactive process viewer)
+brew "htop"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Mac App Store command-line interface
+brew "mas"
+# NCurses Disk Usage
+brew "ncdu"
+# Fast, highly customisable system info script
+brew "neofetch"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Highly capable, feature-rich programming language
+brew "perl"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
+# Object-relational database system
+brew "postgresql"
+# Software environment for statistical computing
+brew "r"
+# Ruby version manager
+brew "rbenv"
+# Rsync for cloud storage
+brew "rclone"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Autoformat shell script source code
+brew "shfmt"
+# SOcket CAT: netcat on steroids
+brew "socat"
+# Text interface for Git repositories
+brew "tig"
+# Simplified and community-driven man pages
+brew "tldr", args: ["HEAD"]
+# Terminal multiplexer
+brew "tmux"
+# Upgrade all the things
+brew "topgrade"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Vi 'workalike' with many additional features
+brew "vim"
+# Tool for writing better scripts
+brew "zx"
+# Extract libraries from the dyld shared cache
+brew "keith/formulae/dyld-shared-cache-extractor"
+# A youtube-dl fork with additional features and fixes
+brew "yt-dlp/taps/yt-dlp"
+# Enable Windows-like alt-tab
+cask "alt-tab"
+# Application uninstaller
+cask "appcleaner"
+# Voice and text chat software
+cask "discord"
+# App to build and share containerized applications and microservices
+cask "docker"
+# Eclipse IDE for Java developers
+cask "eclipse-java"
+# Web browser
+cask "firefox"
+# Version of Cascadia Code with embedded Powerline symbols
+cask "font-cascadia-code-pl"
+cask "font-caskaydia-cove-nerd-font"
+cask "font-fantasque-sans-mono"
+cask "font-fantasque-sans-mono-nerd-font"
+cask "font-fira-code"
+cask "font-fira-code-nerd-font"
+cask "font-fira-mono"
+cask "font-input"
+# Sans-serif, slab-serif, monospace and quasi‑proportional typeface family
+cask "font-iosevka"
+cask "font-iosevka-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
+cask "font-mononoki"
+cask "font-mononoki-nerd-font"
+# Recursive's prebuilt text-editor-friendly files, including powerline glyphs
+cask "font-recursive-code"
+# Re-enable the font smoothing controls
+cask "font-smoothing-adjuster"
+# Software reverse engineering (SRE) suite of tools
+cask "ghidra"
+# Web browser
+cask "google-chrome"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# JetBrains tools manager
+cask "jetbrains-toolbox"
+# Blocks all Keyboard and TouchBar input
+cask "keyboardcleantool"
+# GPU-based terminal emulator
+cask "kitty"
+# Web browser
+cask "librewolf"
+# Full TeX Live distribution with GUI applications
+cask "mactex"
+# Minimal installer for conda with preinstalled support for Mamba
+cask "mambaforge"
+# Collection of apps available by subscription
+cask "setapp"
+# Team communication and collaboration software
+cask "slack"
+# Music streaming service
+cask "spotify"
+# Text editor for code, markup and prose
+cask "sublime-text"
+# Open-source code editor
+cask "visual-studio-code"
+# Video communication and virtual meeting platform
+cask "zoom"
+mas "Amphetamine", id: 937984704
+mas "Bitwarden", id: 1352778147
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "Microsoft Word", id: 462054704
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Tailscale", id: 1475387142
+mas "Xcode", id: 497799835
