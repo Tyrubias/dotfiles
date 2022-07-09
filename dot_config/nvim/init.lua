@@ -95,6 +95,14 @@ require('nvim-treesitter.configs').setup {
     enable = true,
     extended_mode = true,
     max_file_lines = nil,
+    colors = {
+      "#F8F8F2",
+      "#FF79C6",
+      "#8BE9FD",
+      "#50FA7B",
+      "#BD93F9",
+      "#FFB86C",
+    }
   },
 
   autotag = {
