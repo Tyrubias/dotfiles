@@ -1,6 +1,6 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2022-07-02T04:58:49.079-00:00",
+	"CreationDate" : "2022-07-13T16:59:32.839-00:00",
 	"Sources" : 
 	[
 		{
@@ -24,11 +24,11 @@
 				},
 				{
 					"PackageIdentifier" : "Docker.DockerDesktop",
-					"Version" : "4.9.1"
+					"Version" : "4.10.1"
 				},
 				{
 					"PackageIdentifier" : "Google.Chrome",
-					"Version" : "103.0.5060.66"
+					"Version" : "103.0.5060.114"
 				},
 				{
 					"PackageIdentifier" : "REALiX.HWiNFO",
@@ -36,15 +36,23 @@
 				},
 				{
 					"PackageIdentifier" : "LibreWolf.LibreWolf",
-					"Version" : "101.0.1-1"
+					"Version" : "102.0.1-1"
+				},
+				{
+					"PackageIdentifier" : "CondaForge.Mambaforge",
+					"Version" : "4.10.3-6"
+				},
+				{
+					"PackageIdentifier" : "CondaForge.Mambaforge",
+					"Version" : "4.12.0-2"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.Edge",
-					"Version" : "103.0.1264.44"
+					"Version" : "103.0.1264.49"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.EdgeWebView2Runtime",
-					"Version" : "103.0.1264.44"
+					"Version" : "103.0.1264.49"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.WindowsTerminal",
@@ -52,7 +60,7 @@
 				},
 				{
 					"PackageIdentifier" : "Mozilla.Firefox",
-					"Version" : "102.0"
+					"Version" : "102.0.1"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.Office",
@@ -60,11 +68,11 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.OneDrive",
-					"Version" : "22.121.0605.0002"
+					"Version" : "22.131.0619.0001"
 				},
 				{
 					"PackageIdentifier" : "Spotify.Spotify",
-					"Version" : "1.1.88.612.gcc529952"
+					"Version" : "1.1.89.862.g94554d24"
 				},
 				{
 					"PackageIdentifier" : "Valve.Steam",
@@ -72,15 +80,15 @@
 				},
 				{
 					"PackageIdentifier" : "tailscale.tailscale",
-					"Version" : "1.26.1"
+					"Version" : "1.26.2"
 				},
 				{
 					"PackageIdentifier" : "JetBrains.Toolbox",
-					"Version" : "1.24.12080"
+					"Version" : "1.25.12424"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VisualStudio.2022.Community",
-					"Version" : "17.2.5"
+					"Version" : "17.2.6"
 				},
 				{
 					"PackageIdentifier" : "Axosoft.GitKraken",
@@ -89,6 +97,10 @@
 				{
 					"PackageIdentifier" : "Microsoft.VC++2013Redist-x64",
 					"Version" : "12.0.40664.0"
+				},
+				{
+					"PackageIdentifier" : "Zoom.Zoom",
+					"Version" : "5.11.6602"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VC++2010Redist-x64",
@@ -104,7 +116,7 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.3_1",
-					"Version" : "3.1.26.31323"
+					"Version" : "3.1.27.31415"
 				},
 				{
 					"PackageIdentifier" : "WireGuard.WireGuard",
@@ -115,28 +127,24 @@
 					"Version" : "11.0.61030.0"
 				},
 				{
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.3_1",
+					"Version" : "3.1.27.31415"
+				},
+				{
 					"PackageIdentifier" : "Microsoft.WindowsSDK",
 					"Version" : "10.1.19041.685"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.6",
+					"Version" : "6.0.7.31422"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.CLRTypesSQLServer.2019",
 					"Version" : "15.0.2000.5"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.PowerToys",
-					"Version" : "0.59.1"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.6",
-					"Version" : "6.0.6.31318"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.VC++2013Redist-x86",
 					"Version" : "12.0.40664.0"
-				},
-				{
-					"PackageIdentifier" : "Zoom.Zoom",
-					"Version" : "5.10.6120"
 				},
 				{
 					"PackageIdentifier" : "Nvidia.GeForceExperience",
@@ -147,16 +155,20 @@
 					"Version" : "9.21.0713"
 				},
 				{
+					"PackageIdentifier" : "Microsoft.WindowsSDK",
+					"Version" : "10.1.0.0"
+				},
+				{
 					"PackageIdentifier" : "Microsoft.VC++2010Redist-x86",
 					"Version" : "10.0.40219"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.3_1",
-					"Version" : "3.1.26.31323"
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.6",
+					"Version" : "6.0.7.31422"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.6",
-					"Version" : "6.0.6.31318"
+					"PackageIdentifier" : "Microsoft.PowerToys",
+					"Version" : "0.60.0"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VC++2012Redist-x64",

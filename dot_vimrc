@@ -1,10 +1,10 @@
+packadd! dracula
+syntax enable
+
 set termguicolors
 set number relativenumber
 set cursorline
 set hlsearch
-autocmd FileType make setlocal noexpandtab softtabstop=0
 
-"let g:gruvbox_contrast_dark="hard"
-"let g:gruvbox_italic=1
-set background=dark
+autocmd FileType make setlocal noexpandtab softtabstop=0
 autocmd vimenter * ++nested colorscheme dracula

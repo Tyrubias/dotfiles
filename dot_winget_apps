@@ -1,139 +1,142 @@
+   -\| 
    - 
-   - 
-Name                                      Id                                                Version             Source
+Name                                     Id                                        Version             Available Source
 -----------------------------------------------------------------------------------------------------------------------
-Bitwarden                                 Bitwarden.Bitwarden                               2022.6.0            winget
-Word                                      1b837d0bf93d01407352736c91b7bf50                  1.0                 
-Excel                                     1fc5b090eab9aa41f8a2f5987367e6da                  1.0                 
-PowerPoint                                319814cb56b667dff88f54e08be8f51f                  1.0                 
-Teams                                     606d17a2359c9b915c2ca2796bdad606                  1.0                 
-Outlook                                   6b0f23e57a39ebfbf2814acb1a24293d                  1.0                 
-OpenWebStart                              karakun.OpenWebStart                              1.6.0               winget
-Adobe Media Encoder 2022                  AME_22_5                                          22.5                
-Acrobat Notification Client               AcrobatNotificationClient_e1rzdqpraam7r           1.0.4.0             
-Adobe Creative Cloud                      Adobe Creative Cloud                              5.7.1.1             
-Adobe Acrobat DC                          AdobeAcrobatDCCoreApp_n3f54xz2h0aj4               21.10.15.6          
-Adobe Genuine Service                     AdobeGenuineService                               7.7.0.35            
-Adobe Notification Client                 AdobeNotificationClient_enpm4xejd91yc             3.0.1.1             
-Intel┬« Graphics Command Center            AppUp.IntelGraphicsExperience_8j3eq9eme6ctt       1.100.3408.0        
-Ubuntu                                    Canonical.Ubuntu                                  2004.2022.1.0       winget
-Discord                                   Discord.Discord                                   1.0.9005            winget
-Docker Desktop                            Docker.DockerDesktop                              4.9.1               winget
-Messenger                                 FACEBOOK.317180B0BB486_8xx8rvfyw5nnt              1530.18.110.0       
-Google Chrome                             Google.Chrome                                     103.0.5060.66       winget
-HWiNFO                                    REALiX.HWiNFO                                     7.26                winget
-LibreWolf                                 LibreWolf.LibreWolf                               101.0.1-1           winget
-Macrium Reflect Free                      MacriumReflect                                    v8.0.6635           
-Mambaforge 4.10.3-6 (Python 3.9.7 64-bit) Mambaforge 4.10.3-6 (Python 3.9.7 64-bit)         4.10.3-6            
-Microsoft Edge                            Microsoft.Edge                                    103.0.1264.44       winget
-Microsoft Edge Update                     Microsoft Edge Update                             1.3.163.19          
-Microsoft Edge WebView2 Runtime           Microsoft.EdgeWebView2Runtime                     103.0.1264.44       winget
-Cortana                                   Microsoft.549981C3F5F10_8wekyb3d8bbwe             4.2204.13303.0      
-Microsoft News                            Microsoft.BingNews_8wekyb3d8bbwe                  1.0.6.0             
-MSN Weather                               Microsoft.BingWeather_8wekyb3d8bbwe               4.53.41582.0        
-App Installer                             Microsoft.DesktopAppInstaller_8wekyb3d8bbwe       1.17.11601.0        
-Xbox                                      Microsoft.GamingApp_8wekyb3d8bbwe                 2105.900.24.0       
-Get Help                                  Microsoft.GetHelp_8wekyb3d8bbwe                   10.2204.1222.0      
-Microsoft Tips                            Microsoft.Getstarted_8wekyb3d8bbwe                10.2205.0.0         
-HEIF Image Extensions                     Microsoft.HEIFImageExtension_8wekyb3d8bbwe        1.0.43012.0         
-Paint 3D                                  Microsoft.MSPaint_8wekyb3d8bbwe                   6.2203.1037.0       
-3D Viewer                                 Microsoft.Microsoft3DViewer_8wekyb3d8bbwe         7.2107.7012.0       
-Microsoft Edge                            Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe      103.0.1264.44       
-Office                                    Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe        18.2205.1091.0      
-Microsoft Solitaire Collection            Microsoft.MicrosoftSolitaireCollection_8wekyb3d8ΓÇª 4.13.5310.0         
-Microsoft Sticky Notes                    Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe      4.5.5.0             
-Mixed Reality Portal                      Microsoft.MixedReality.Portal_8wekyb3d8bbwe       2000.21051.1282.0   
-OneNote for Windows 10                    Microsoft.Office.OneNote_8wekyb3d8bbwe            16001.14326.20838.0 
-OneDrive                                  Microsoft.OneDriveSync_8wekyb3d8bbwe              21230.1107.4.0      
-Paint                                     Microsoft.Paint_8wekyb3d8bbwe                     11.2204.2.0         
-Microsoft People                          Microsoft.People_8wekyb3d8bbwe                    10.2105.4.0         
-Power Automate                            Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe      1.0.252.0           
-Snipping Tool                             Microsoft.ScreenSketch_8wekyb3d8bbwe              11.2205.10.0        
-Windows Security                          Microsoft.SecHealthUI_8wekyb3d8bbwe               1000.22000.251.0    
-Skype                                     Microsoft.SkypeApp_kzf8qxf38zg5c                  15.85.3409.0        
-Store Experience Host                     Microsoft.StorePurchaseApp_8wekyb3d8bbwe          12203.44.0.0        
-Microsoft To Do                           Microsoft.Todos_8wekyb3d8bbwe                     0.73.51701.0        
-VP9 Video Extensions                      Microsoft.VP9VideoExtensions_8wekyb3d8bbwe        1.0.51171.0         
-Web Media Extensions                      Microsoft.WebMediaExtensions_8wekyb3d8bbwe        1.0.42192.0         
-Webp Image Extensions                     Microsoft.WebpImageExtension_8wekyb3d8bbwe        1.0.42351.0         
-Windows App Runtime DDLM 3.469.1654.0-x6  Microsoft.WinAppRuntime.DDLM.3.469.1654.0-x6_8weΓÇª 3.469.1654.0        
-Windows App Runtime DDLM 3.469.1654.0-x8  Microsoft.WinAppRuntime.DDLM.3.469.1654.0-x8_8weΓÇª 3.469.1654.0        
-WinDbg Preview                            Microsoft.WinDbg_8wekyb3d8bbwe                    1.2206.19001.0      
-Microsoft Photos                          Microsoft.Windows.Photos_8wekyb3d8bbwe            2022.31060.3004.0   
-Windows Clock                             Microsoft.WindowsAlarms_8wekyb3d8bbwe             11.2204.35.0        
-WindowsAppRuntime.Singleton               Microsoft.WindowsAppRuntime.Singleton_8wekyb3d8bΓÇª 3.469.1654.0        
-Windows Calculator                        Microsoft.WindowsCalculator_8wekyb3d8bbwe         11.2205.9.0         
-Windows Camera                            Microsoft.WindowsCamera_8wekyb3d8bbwe             2022.2205.8.0       
-Feedback Hub                              Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe        1.2203.761.0        
-Windows Maps                              Microsoft.WindowsMaps_8wekyb3d8bbwe               11.2204.5.0         
-Windows Notepad                           Microsoft.WindowsNotepad_8wekyb3d8bbwe            11.2205.11.0        
-Windows Voice Recorder                    Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe      10.2103.28.0        
-Microsoft Store                           Microsoft.WindowsStore_8wekyb3d8bbwe              22204.1401.7.0      
-Windows Terminal                          Microsoft.WindowsTerminal                         1.13.11432.0        winget
-Windows Package Manager Source (winget)   Microsoft.Winget.Source_8wekyb3d8bbwe             2022.702.810.726    
-Xbox TCUI                                 Microsoft.Xbox.TCUI_8wekyb3d8bbwe                 1.24.10001.0        
-Xbox Console Companion                    Microsoft.XboxApp_8wekyb3d8bbwe                   48.89.25001.0       
-Xbox Accessories                          Microsoft.XboxDevices_8wekyb3d8bbwe               300.2202.25001.0    
-Xbox Game Bar Plugin                      Microsoft.XboxGameOverlay_8wekyb3d8bbwe           1.54.4001.0         
-Xbox Game Bar                             Microsoft.XboxGamingOverlay_8wekyb3d8bbwe         5.722.5052.0        
-Xbox Identity Provider                    Microsoft.XboxIdentityProvider_8wekyb3d8bbwe      12.90.14001.0       
-Xbox Game Speech Window                   Microsoft.XboxSpeechToTextOverlay_8wekyb3d8bbwe   1.21.13002.0        
-Phone Link                                Microsoft.YourPhone_8wekyb3d8bbwe                 1.22052.136.0       
-Windows Media Player                      Microsoft.ZuneMusic_8wekyb3d8bbwe                 11.2204.25.0        
-Movies & TV                               Microsoft.ZuneVideo_8wekyb3d8bbwe                 10.22041.10091.0    
-WindowsAppRuntime.Main.1.0                MicrosoftCorporationII.WindowsAppRuntime.Main.1.ΓÇª 4.528.1755.0        
-Windows Subsystem for Linux Preview       MicrosoftCorporationII.WindowsSubsystemForLinux_ΓÇª 0.61.4.0            
-Microsoft Teams                           MicrosoftTeams_8wekyb3d8bbwe                      22147.303.1400.1220 
-Windows Web Experience Pack               MicrosoftWindows.Client.WebExperience_cw5n1h2txyΓÇª 421.20070.425.0     
-Mozilla Firefox                           Mozilla.Firefox                                   102.0               winget
-Mozilla Maintenance Service               MozillaMaintenanceService                         102.0               
-NVIDIA Control Panel                      NVIDIACorp.NVIDIAControlPanel_56jybvy8sckqj       8.1.962.0           
-Npcap                                     NpcapInst                                         1.60                
-Microsoft 365 Apps for enterprise         Microsoft.Office                                  16.0.15225.20288    winget
-Oculus                                    Oculus                                            <3                  
-Microsoft OneDrive                        Microsoft.OneDrive                                22.121.0605.0002    winget
-Adobe Photoshop 2022                      PHSP_23_4_1                                       23.4.1.547          
-Adobe Premiere Pro 2022                   PPRO_22_5                                         22.5                
-Realtek Audio Control                     RealtekSemiconductorCorp.RealtekAudioControl_dt2ΓÇª 1.2.175.0           
-Spotify                                   Spotify.Spotify                                   1.1.88.612.gcc5299ΓÇª winget
-Steam                                     Valve.Steam                                       2.10.91.91          winget
-Hades                                     Steam App 1145360                                 Unknown             
-Overcooked! 2                             Steam App 728880                                  Unknown             
-Control Ultimate Edition                  Steam App 870780                                  Unknown             
-Tailscale                                 tailscale.tailscale                               1.26.1              winget
-JetBrains Toolbox                         JetBrains.Toolbox                                 1.24.12080          winget
-UXP WebView Support                       UXPW_1_1_0                                        1.1.0               
-Visual Studio Community 2022              Microsoft.VisualStudio.2022.Community             17.2.5              winget
-GitKraken                                 Axosoft.GitKraken                                 8.4.0               winget
-Mail and Calendar                         microsoft.windowscommunicationsapps_8wekyb3d8bbwe 16005.14326.20970.0 
-Microsoft Visual C++ 2013 RedistributablΓÇª Microsoft.VC++2013Redist-x64                      12.0.40664.0        winget
-Microsoft Visual C++ 2010 x64 RedistribuΓÇª Microsoft.VC++2010Redist-x64                      10.0.40219          winget
-Windows Software Development Kit          Microsoft.WindowsSDK                              10.1.22000.194      winget
-Microsoft .NET Windows Desktop Runtime 5ΓÇª Microsoft.DotNet.DesktopRuntime.5                 5.0.17.31219        winget
-Microsoft .NET Windows Desktop Runtime 3ΓÇª Microsoft.DotNet.DesktopRuntime.3_1               3.1.26.31323        winget
-WireGuard                                 WireGuard.WireGuard                               0.5.3               winget
-Microsoft Visual C++ 2012 RedistributablΓÇª Microsoft.VC++2012Redist-x86                      11.0.61030.0        winget
-Microsoft Visual C++ 2015-2022 RedistribΓÇª {3746f21b-c990-4045-bb33-1cf98cff7a68}            14.32.31332.0       
-Windows Software Development Kit          Microsoft.WindowsSDK                              10.1.19041.685      winget
-Microsoft System CLR Types for SQL ServeΓÇª Microsoft.CLRTypesSQLServer.2019                  15.0.2000.5         winget
-Microsoft Update Health Tools             {6A2A8076-135F-4F55-BB02-DED67C8C6934}            4.67.0.0            
-Microsoft Visual Studio Installer         {6F320B93-EE3C-4826-85E0-ADF79F8D4C61}            3.2.2146.50370      
-PowerToys (Preview)                       Microsoft.PowerToys                               0.59.1              winget
-Microsoft .NET Windows Desktop Runtime 6ΓÇª Microsoft.DotNet.DesktopRuntime.6                 6.0.6.31318         winget
-Microsoft Visual C++ 2013 RedistributablΓÇª Microsoft.VC++2013Redist-x86                      12.0.40664.0        winget
-Zoom                                      Zoom.Zoom                                         5.10.6120           winget
-Adobe Acrobat DC                          {AC76BA86-1033-FFFF-7760-0C0F074E4100}            22.001.20142        
-NVIDIA Graphics Driver 516.59             {B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.DΓÇª 516.59              
-NVIDIA GeForce Experience                 Nvidia.GeForceExperience                          3.25.1.27           winget
-NVIDIA PhysX System Software              Nvidia.PhysX                                      9.21.0713           winget
-NVIDIA FrameView SDK 1.2.7521.31103277    {B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_FrameViewΓÇª 1.2.7521.31103277   
-NVIDIA HD Audio Driver 1.3.39.3           {B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_HDAudio.DΓÇª 1.3.39.3            
-Tower                                     {B50273AE-0B7E-47A3-91D0-751C85891F02}            2.9.1.358           
-Windows Subsystem for Linux WSLg Preview  {E04B0005-A349-4BCC-9662-CA0132007E14}            1.0.26              
-Windows SDK AddOn                         {E18618EC-D9DB-4BCE-B382-85ADA2CBB340}            10.1.0.0            
-Microsoft Visual C++ 2010 x86 RedistribuΓÇª Microsoft.VC++2010Redist-x86                      10.0.40219          winget
-Windows Subsystem for Linux Update        {F8474A47-8B5D-4466-ACE3-78EAB3BF21A8}            5.10.102.1          
-Microsoft .NET Windows Desktop Runtime 3ΓÇª Microsoft.DotNet.DesktopRuntime.3_1               3.1.26.31323        winget
-Microsoft Visual C++ 2015-2022 RedistribΓÇª {a98dc6ff-d360-4878-9f0a-915eba86eaf3}            14.32.31332.0       
-Microsoft .NET Windows Desktop Runtime 6ΓÇª Microsoft.DotNet.DesktopRuntime.6                 6.0.6.31318         winget
-Microsoft Visual C++ 2012 RedistributablΓÇª Microsoft.VC++2012Redist-x64                      11.0.61030.0        winget
+Bitwarden                                Bitwarden.Bitwarden                       2022.6.0                      winget
+Word                                     1b837d0bf93d01407352736c91b7bf50          1.0                           
+Excel                                    1fc5b090eab9aa41f8a2f5987367e6da          1.0                           
+PowerPoint                               319814cb56b667dff88f54e08be8f51f          1.0                           
+Teams                                    606d17a2359c9b915c2ca2796bdad606          1.0                           
+Outlook                                  6b0f23e57a39ebfbf2814acb1a24293d          1.0                           
+OpenWebStart                             karakun.OpenWebStart                      1.6.0                         winget
+Adobe Media Encoder 2022                 AME_22_5                                  22.5                          
+Acrobat Notification Client              AcrobatNotificationClient_e1rzdqpraam7r   1.0.4.0                       
+Adobe Creative Cloud                     Adobe Creative Cloud                      5.7.1.1                       
+Adobe Acrobat DC                         AdobeAcrobatDCCoreApp_n3f54xz2h0aj4       21.10.15.6                    
+Adobe Genuine Service                    AdobeGenuineService                       7.7.0.35                      
+Adobe Notification Client                AdobeNotificationClient_enpm4xejd91yc     3.0.1.1                       
+Intel┬« Graphics Command Center           AppUp.IntelGraphicsExperience_8j3eq9eme6ΓÇª 1.100.3408.0                  
+Ubuntu                                   Canonical.Ubuntu                          2004.2022.1.0                 winget
+Discord                                  Discord.Discord                           1.0.9005                      winget
+Docker Desktop                           Docker.DockerDesktop                      4.10.1                        winget
+Messenger                                FACEBOOK.317180B0BB486_8xx8rvfyw5nnt      1530.18.110.0                 
+Google Chrome                            Google.Chrome                             103.0.5060.114                winget
+HWiNFO                                   REALiX.HWiNFO                             7.26                          winget
+LibreWolf                                LibreWolf.LibreWolf                       102.0.1-1                     winget
+Macrium Reflect Free                     MacriumReflect                            v8.0.6635                     
+Mambaforge                               CondaForge.Mambaforge                     4.10.3-6            4.12.0-2  winget
+Mambaforge                               CondaForge.Mambaforge                     4.12.0-2                      winget
+Microsoft Edge                           Microsoft.Edge                            103.0.1264.49                 winget
+Microsoft Edge Update                    Microsoft Edge Update                     1.3.163.19                    
+Microsoft Edge WebView2 Runtime          Microsoft.EdgeWebView2Runtime             103.0.1264.49                 winget
+Cortana                                  Microsoft.549981C3F5F10_8wekyb3d8bbwe     4.2204.13303.0                
+Microsoft News                           Microsoft.BingNews_8wekyb3d8bbwe          1.0.6.0                       
+MSN Weather                              Microsoft.BingWeather_8wekyb3d8bbwe       4.53.41582.0                  
+App Installer                            Microsoft.DesktopAppInstaller_8wekyb3d8bΓÇª 1.17.11601.0                  
+Xbox                                     Microsoft.GamingApp_8wekyb3d8bbwe         2105.900.24.0                 
+Get Help                                 Microsoft.GetHelp_8wekyb3d8bbwe           10.2204.1222.0                
+Microsoft Tips                           Microsoft.Getstarted_8wekyb3d8bbwe        10.2205.0.0                   
+HEIF Image Extensions                    Microsoft.HEIFImageExtension_8wekyb3d8bbΓÇª 1.0.43012.0                   
+Paint 3D                                 Microsoft.MSPaint_8wekyb3d8bbwe           6.2203.1037.0                 
+3D Viewer                                Microsoft.Microsoft3DViewer_8wekyb3d8bbwe 7.2107.7012.0                 
+Microsoft Edge                           Microsoft.MicrosoftEdge.Stable_8wekyb3d8ΓÇª 103.0.1264.49                 
+Office                                   Microsoft.MicrosoftOfficeHub_8wekyb3d8bbΓÇª 18.2205.1091.0                
+Microsoft Solitaire Collection           Microsoft.MicrosoftSolitaireCollection_8ΓÇª 4.13.7040.0                   
+Microsoft Sticky Notes                   Microsoft.MicrosoftStickyNotes_8wekyb3d8ΓÇª 4.5.5.0                       
+Mixed Reality Portal                     Microsoft.MixedReality.Portal_8wekyb3d8bΓÇª 2000.21051.1282.0             
+OneNote for Windows 10                   Microsoft.Office.OneNote_8wekyb3d8bbwe    16001.14326.20838.0           
+OneDrive                                 Microsoft.OneDriveSync_8wekyb3d8bbwe      21230.1107.4.0                
+Paint                                    Microsoft.Paint_8wekyb3d8bbwe             11.2205.9.0                   
+Microsoft People                         Microsoft.People_8wekyb3d8bbwe            10.2105.4.0                   
+Power Automate                           Microsoft.PowerAutomateDesktop_8wekyb3d8ΓÇª 1.0.252.0                     
+Microsoft.PowerToys.ImageResizerContextΓÇª Microsoft.PowerToys.ImageResizerContextMΓÇª 1.0.0.0                       
+Snipping Tool                            Microsoft.ScreenSketch_8wekyb3d8bbwe      11.2205.10.0                  
+Windows Security                         Microsoft.SecHealthUI_8wekyb3d8bbwe       1000.22000.251.0              
+Skype                                    Microsoft.SkypeApp_kzf8qxf38zg5c          15.85.3409.0                  
+Store Experience Host                    Microsoft.StorePurchaseApp_8wekyb3d8bbwe  12203.44.0.0                  
+Microsoft To Do                          Microsoft.Todos_8wekyb3d8bbwe             0.74.51921.0                  
+VP9 Video Extensions                     Microsoft.VP9VideoExtensions_8wekyb3d8bbΓÇª 1.0.51171.0                   
+Web Media Extensions                     Microsoft.WebMediaExtensions_8wekyb3d8bbΓÇª 1.0.42192.0                   
+Webp Image Extensions                    Microsoft.WebpImageExtension_8wekyb3d8bbΓÇª 1.0.42351.0                   
+Windows App Runtime DDLM 3.469.1654.0-x6 Microsoft.WinAppRuntime.DDLM.3.469.1654.ΓÇª 3.469.1654.0                  
+Windows App Runtime DDLM 3.469.1654.0-x8 Microsoft.WinAppRuntime.DDLM.3.469.1654.ΓÇª 3.469.1654.0                  
+WinDbg Preview                           Microsoft.WinDbg_8wekyb3d8bbwe            1.2206.19001.0                
+Microsoft Photos                         Microsoft.Windows.Photos_8wekyb3d8bbwe    2022.31060.30005.0            
+Windows Clock                            Microsoft.WindowsAlarms_8wekyb3d8bbwe     11.2204.35.0                  
+WindowsAppRuntime.Singleton              Microsoft.WindowsAppRuntime.Singleton_8wΓÇª 3.469.1654.0                  
+Windows Calculator                       Microsoft.WindowsCalculator_8wekyb3d8bbwe 11.2205.9.0                   
+Windows Camera                           Microsoft.WindowsCamera_8wekyb3d8bbwe     2022.2205.8.0                 
+Feedback Hub                             Microsoft.WindowsFeedbackHub_8wekyb3d8bbΓÇª 1.2203.761.0                  
+Windows Maps                             Microsoft.WindowsMaps_8wekyb3d8bbwe       11.2205.9.0                   
+Windows Notepad                          Microsoft.WindowsNotepad_8wekyb3d8bbwe    11.2205.11.0                  
+Windows Sound Recorder                   Microsoft.WindowsSoundRecorder_8wekyb3d8ΓÇª 11.2205.15.0                  
+Microsoft Store                          Microsoft.WindowsStore_8wekyb3d8bbwe      22205.1401.13.0               
+Windows Terminal                         Microsoft.WindowsTerminal                 1.13.11432.0                  winget
+Windows Package Manager Source (winget)  Microsoft.Winget.Source_8wekyb3d8bbwe     2022.713.2200.171             
+Xbox TCUI                                Microsoft.Xbox.TCUI_8wekyb3d8bbwe         1.24.10001.0                  
+Xbox Console Companion                   Microsoft.XboxApp_8wekyb3d8bbwe           48.89.25001.0                 
+Xbox Accessories                         Microsoft.XboxDevices_8wekyb3d8bbwe       300.2202.25001.0              
+Xbox Game Bar Plugin                     Microsoft.XboxGameOverlay_8wekyb3d8bbwe   1.54.4001.0                   
+Xbox Game Bar                            Microsoft.XboxGamingOverlay_8wekyb3d8bbwe 5.722.5052.0                  
+Xbox Identity Provider                   Microsoft.XboxIdentityProvider_8wekyb3d8ΓÇª 12.90.14001.0                 
+Xbox Game Speech Window                  Microsoft.XboxSpeechToTextOverlay_8wekybΓÇª 1.21.13002.0                  
+Phone Link                               Microsoft.YourPhone_8wekyb3d8bbwe         1.22052.136.0                 
+Windows Media Player                     Microsoft.ZuneMusic_8wekyb3d8bbwe         11.2205.22.0                  
+Movies & TV                              Microsoft.ZuneVideo_8wekyb3d8bbwe         10.22041.10091.0              
+WindowsAppRuntime.Main.1.0               MicrosoftCorporationII.WindowsAppRuntimeΓÇª 4.528.1755.0                  
+Windows Subsystem for Linux Preview      MicrosoftCorporationII.WindowsSubsystemFΓÇª 0.61.8.0                      
+Microsoft Teams                          MicrosoftTeams_8wekyb3d8bbwe              22147.303.1400.1220           
+Windows Web Experience Pack              MicrosoftWindows.Client.WebExperience_cwΓÇª 421.20070.545.0               
+Mozilla Firefox                          Mozilla.Firefox                           102.0.1                       winget
+Mozilla Maintenance Service              MozillaMaintenanceService                 102.0                         
+NVIDIA Control Panel                     NVIDIACorp.NVIDIAControlPanel_56jybvy8scΓÇª 8.1.962.0                     
+Npcap                                    NpcapInst                                 1.60                          
+Microsoft 365 Apps for enterprise        Microsoft.Office                          16.0.15225.20288              winget
+Oculus                                   Oculus                                    <3                            
+Microsoft OneDrive                       Microsoft.OneDrive                        22.131.0619.0001              winget
+Adobe Photoshop 2022                     PHSP_23_4_1                               23.4.1.547                    
+Adobe Premiere Pro 2022                  PPRO_22_5                                 22.5                          
+PowerRenameContextMenu                   PowerRenameContextMenu_8wekyb3d8bbwe      1.0.0.0                       
+Realtek Audio Control                    RealtekSemiconductorCorp.RealtekAudioConΓÇª 1.2.175.0                     
+Spotify                                  Spotify.Spotify                           1.1.89.862.g94554dΓÇª           winget
+Steam                                    Valve.Steam                               2.10.91.91                    winget
+Hades                                    Steam App 1145360                         Unknown                       
+Overcooked! 2                            Steam App 728880                          Unknown                       
+Control Ultimate Edition                 Steam App 870780                          Unknown                       
+Tailscale                                tailscale.tailscale                       1.26.2                        winget
+JetBrains Toolbox                        JetBrains.Toolbox                         1.25.12424                    winget
+UXP WebView Support                      UXPW_1_1_0                                1.1.0                         
+Visual Studio Community 2022             Microsoft.VisualStudio.2022.Community     17.2.6                        winget
+GitKraken                                Axosoft.GitKraken                         8.4.0                         winget
+Mail and Calendar                        microsoft.windowscommunicationsapps_8wekΓÇª 16005.14326.20970.0           
+Microsoft Visual C++ 2013 RedistributabΓÇª Microsoft.VC++2013Redist-x64              12.0.40664.0                  winget
+Zoom                                     Zoom.Zoom                                 5.11.6602                     winget
+Microsoft Visual C++ 2010 x64 RedistribΓÇª Microsoft.VC++2010Redist-x64              10.0.40219                    winget
+Windows Software Development Kit         Microsoft.WindowsSDK                      10.1.22000.194                winget
+Microsoft .NET Windows Desktop Runtime ΓÇª Microsoft.DotNet.DesktopRuntime.5         5.0.17.31219                  winget
+Microsoft .NET Windows Desktop Runtime ΓÇª Microsoft.DotNet.DesktopRuntime.3_1       3.1.27.31415                  winget
+WireGuard                                WireGuard.WireGuard                       0.5.3                         winget
+Microsoft Visual C++ 2012 RedistributabΓÇª Microsoft.VC++2012Redist-x86              11.0.61030.0                  winget
+Microsoft Visual C++ 2015-2022 RedistriΓÇª {3746f21b-c990-4045-bb33-1cf98cff7a68}    14.32.31332.0                 
+Microsoft .NET Windows Desktop Runtime ΓÇª Microsoft.DotNet.DesktopRuntime.3_1       3.1.27.31415                  winget
+Windows Software Development Kit         Microsoft.WindowsSDK                      10.1.19041.685                winget
+Microsoft .NET Windows Desktop Runtime ΓÇª Microsoft.DotNet.DesktopRuntime.6         6.0.7.31422                   winget
+Microsoft System CLR Types for SQL ServΓÇª Microsoft.CLRTypesSQLServer.2019          15.0.2000.5                   winget
+Microsoft Update Health Tools            {6A2A8076-135F-4F55-BB02-DED67C8C6934}    4.67.0.0                      
+Microsoft Visual Studio Installer        {6F320B93-EE3C-4826-85E0-ADF79F8D4C61}    3.2.2146.50370                
+Microsoft Visual C++ 2013 RedistributabΓÇª Microsoft.VC++2013Redist-x86              12.0.40664.0                  winget
+Adobe Acrobat DC                         {AC76BA86-1033-FFFF-7760-0C0F074E4100}    22.001.20169                  
+NVIDIA Graphics Driver 516.59            {B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_DΓÇª 516.59                        
+NVIDIA GeForce Experience                Nvidia.GeForceExperience                  3.25.1.27                     winget
+NVIDIA PhysX System Software             Nvidia.PhysX                              9.21.0713                     winget
+NVIDIA FrameView SDK 1.2.7521.31103277   {B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_FΓÇª 1.2.7521.31103277             
+NVIDIA HD Audio Driver 1.3.39.3          {B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_HΓÇª 1.3.39.3                      
+Tower                                    {B50273AE-0B7E-47A3-91D0-751C85891F02}    2.9.1.358                     
+Windows Subsystem for Linux WSLg Preview {E04B0005-A349-4BCC-9662-CA0132007E14}    1.0.26                        
+Windows Software Development Kit         Microsoft.WindowsSDK                      10.1.0.0                      winget
+Microsoft Visual C++ 2010 x86 RedistribΓÇª Microsoft.VC++2010Redist-x86              10.0.40219                    winget
+Windows Subsystem for Linux Update       {F8474A47-8B5D-4466-ACE3-78EAB3BF21A8}    5.10.102.1                    
+Microsoft .NET Windows Desktop Runtime ΓÇª Microsoft.DotNet.DesktopRuntime.6         6.0.7.31422                   winget
+Microsoft Visual C++ 2015-2022 RedistriΓÇª {a98dc6ff-d360-4878-9f0a-915eba86eaf3}    14.32.31332.0                 
+PowerToys (Preview)                      Microsoft.PowerToys                       0.60.0                        winget
+Microsoft Visual C++ 2012 RedistributabΓÇª Microsoft.VC++2012Redist-x64              11.0.61030.0                  winget
