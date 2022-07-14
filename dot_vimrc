@@ -1,6 +1,3 @@
-packadd! dracula
-syntax enable
-
 set termguicolors
 set number relativenumber
 set cursorline
