@@ -1,8 +1,8 @@
 {
     "editor.bracketPairColorization.enabled": true,
-    "editor.fontFamily": "Iosevka, Symbols Nerd Font Mono, Menlo, \"Apple Color Emoji\",  monospace",
+    "editor.fontFamily": "\"Iosevka SS17\", \"Symbols Nerd Font Mono\", Menlo, \"Apple Color Emoji\",  monospace",
     "editor.fontLigatures": "'ss01','ss05','dlig'",
-    "editor.fontSize": 14,
+    "editor.fontSize": 16,
     "editor.guides.bracketPairs": "active",
     "editor.guides.bracketPairsHorizontal": true,
     "editor.inlineSuggest.enabled": true,
@@ -28,9 +28,20 @@
     "remote.SSH.remotePlatform": {
         "clear": "linux"
     },
+    "ruby.format": "rubocop",
+    "ruby.lint": {
+        "reek": {
+            "useBundler": true
+        },
+        "rubocop": {
+            "useBundler": true
+        }
+    },
+    "ruby.useBundler": true,
+    "ruby.useLanguageServer": true,
     "rust-analyzer.checkOnSave.command": "clippy",
     "terminal.integrated.defaultProfile.osx": "zsh (interactive)",
-    "terminal.integrated.fontFamily": "Iosevka Term, Symbols Nerd Font Mono, Menlo, \"Apple Color Emoji\",  monospace",
+    "terminal.integrated.fontFamily": "\"Iosevka Term SS17\", \"Symbols Nerd Font Mono\", Menlo, \"Apple Color Emoji\",  monospace",
     "terminal.integrated.profiles.osx": {
         "zsh (interactive)": {
             "args": [
