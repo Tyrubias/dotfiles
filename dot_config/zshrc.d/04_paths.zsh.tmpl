@@ -1,7 +1,5 @@
 {{ if eq .chezmoi.os "linux" }}
-{{   if (not (.chezmoi.kernel.osrelease | lower | contains "microsoft")) }}
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-{{   end }}
 {{ else }}
 eval "$(/opt/homebrew/bin/brew shellenv)"
 {{ end }}
@@ -10,9 +8,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 pathprepend "${HOME}/.local/bin"
 
 # Cargo on WSL 2 only works for Topgrade if it is in .zshenv
-{{ if (or (eq .chezmoi.os "darwin") (and (eq .chezmoi.os "linux") (not (.chezmoi.kernel.osrelease | lower | contains "microsoft")))) }}
 [[ -f "${HOME}"/.cargo/env ]] && source "${HOME}"/.cargo/env
-{{ end }}
 
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
