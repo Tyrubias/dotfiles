@@ -31,7 +31,7 @@
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "defaultProfile": "{47d900a3-00fb-565b-aec3-02bcb48a48d5}",
     "launchMode": "maximized",
     "profiles": 
     {
@@ -65,8 +65,8 @@
                 "cursorShape": "filledBox",
                 "font": 
                 {
-                    "face": "FantasqueSansMono NF",
-                    "size": 12
+                    "face": "Iosevka Term SS17",
+                    "size": 13
                 },
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
                 "hidden": false,
@@ -83,8 +83,8 @@
                 "experimental.retroTerminalEffect": false,
                 "font": 
                 {
-                    "face": "FantasqueSansMono NF",
-                    "size": 12
+                    "face": "Iosevka Term SS17",
+                    "size": 13
                 },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
@@ -100,15 +100,18 @@
             },
             {
                 "colorScheme": "Dracula",
-                "commandline": "C:\\Users\\Victor Song\\scoop\\shims\\pwsh.exe -NoExit -Command \"&{Import-Module \"\"\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell c094d858 -SkipAutomaticLocation -DevCmdArguments \"\"\"-arch=x64 -host_arch=x64\"\"\"}\"",
+                "commandline": "C:\\Users\\Victor Song\\scoop\\shims\\pwsh.exe -NoLogo -NoExit -Command \"&{Import-Module \"\"\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell c094d858 -SkipAutomaticLocation -DevCmdArguments \"\"\"-arch=x64 -host_arch=x64\"\"\"}\"",
                 "font": 
                 {
-                    "face": "FantasqueSansMono NF"
+                    "face": "Iosevka Term SS17",
+                    "size": 13
                 },
                 "guid": "{47d900a3-00fb-565b-aec3-02bcb48a48d5}",
                 "hidden": false,
+                "icon": "ms-appx:///ProfileIcons/pwsh.png",
                 "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
+                "source": "Windows.Terminal.VisualStudio",
+                "startingDirectory": "C:\\Users\\vsong"
             }
         ]
     },
