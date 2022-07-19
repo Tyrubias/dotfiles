@@ -1,5 +1,12 @@
 set -U fish_greeting
 
+{{ if (and (eq .chezmoi.os "linux") (not (.chezmoi.kernel.osrelease | lower | contains "microsoft"))) }}
+set -Ux DOCKER_HOST "unix://$XDG_RUNTIME_DIR/docker.sock"
+{{ end }}
+if test -e "$HOME/.victor-secrets.fish"
+    source "$HOME/.victor-secrets.fish"
+end
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
 {{ if eq .chezmoi.os "darwin" }}
@@ -11,7 +18,6 @@ if status is-interactive
     fish_add_path -m $HOME/.cargo/bin
     fish_add_path -m $HOME/.sdkman/candidates/*/current/bin
 end
-
 {{ if eq .chezmoi.os "darwin" }}
 eval /opt/homebrew/Caskroom/mambaforge/base/bin/conda "shell.fish" "hook" $argv | source
 {{ else if (and (eq .chezmoi.os "linux") (not (.chezmoi.kernel.osrelease | lower | contains "microsoft"))) }}
