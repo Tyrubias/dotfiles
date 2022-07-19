@@ -11,3 +11,6 @@ if status is-interactive
     fish_add_path -m $HOME/.cargo/bin
     fish_add_path -m $HOME/.sdkman/candidates/*/current/bin
 end
+
+eval /opt/homebrew/Caskroom/mambaforge/base/bin/conda "shell.fish" "hook" $argv | source
+
