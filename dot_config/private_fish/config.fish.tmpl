@@ -12,5 +12,9 @@ if status is-interactive
     fish_add_path -m $HOME/.sdkman/candidates/*/current/bin
 end
 
+{{ if eq .chezmoi.os "darwin" }}
 eval /opt/homebrew/Caskroom/mambaforge/base/bin/conda "shell.fish" "hook" $argv | source
+{{ else if (and (eq .chezmoi.os "linux") (not (.chezmoi.kernel.osrelease | lower | contains "microsoft"))) }}
+eval /home/vsong/mambaforge/bin/conda "shell.fish" "hook" $argv | source
+{{ end }}
 
