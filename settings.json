@@ -53,14 +53,14 @@
     "ruby.useBundler": true,
     "ruby.useLanguageServer": true,
     "rust-analyzer.checkOnSave.command": "clippy",
-    "terminal.integrated.defaultProfile.osx": "zsh (interactive)",
+    "terminal.integrated.defaultProfile.osx": "fish (interactive)",
     "terminal.integrated.fontFamily": "\"Iosevka Term SS17\", \"Symbols Nerd Font Mono\", Menlo, \"Apple Color Emoji\",  monospace",
     "terminal.integrated.profiles.osx": {
-        "zsh (interactive)": {
+        "fish (interactive)": {
             "args": [
                 "-i"
             ],
-            "path": "/bin/zsh"
+            "path": "/opt/homebrew/bin/fish"
         }
     },
     "terminal.integrated.shellIntegration.enabled": true,
