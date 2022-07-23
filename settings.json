@@ -1,8 +1,8 @@
 {
     "editor.bracketPairColorization.enabled": true,
-    "editor.fontFamily": "\"Iosevka SS17\", \"Symbols Nerd Font Mono\", Menlo, \"Apple Color Emoji\",  monospace",
+    "editor.fontFamily": "'Iosevka SS17', 'Symbols Nerd Font Mono', Menlo, 'Apple Color Emoji',  monospace",
     "editor.fontLigatures": "'liga', 'calt', 'dlig'",
-    "editor.fontSize": 14,
+    "editor.fontSize": 16,
     "editor.guides.bracketPairs": "active",
     "editor.guides.bracketPairsHorizontal": true,
     "editor.inlineSuggest.enabled": true,
@@ -55,8 +55,8 @@
     "rust-analyzer.checkOnSave.command": "clippy",
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.defaultProfile.osx": "fish (interactive)",
-    "terminal.integrated.fontFamily": "\"Iosevka Term SS17\", \"Symbols Nerd Font Mono\", Menlo, \"Apple Color Emoji\",  monospace",
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "'Iosevka Term SS17', 'Symbols Nerd Font Mono', Menlo, 'Apple Color Emoji',  monospace",
+    "terminal.integrated.fontSize": 16,
     "terminal.integrated.profiles.osx": {
         "fish (interactive)": {
             "args": [
