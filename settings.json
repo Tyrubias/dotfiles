@@ -1,5 +1,6 @@
 {
     "editor.bracketPairColorization.enabled": true,
+    "editor.experimental.stickyScroll.enabled": true,
     "editor.fontFamily": "'Iosevka SS17', 'Symbols Nerd Font Mono', Menlo, 'Apple Color Emoji',  monospace",
     "editor.fontLigatures": "'liga', 'calt', 'dlig'",
     "editor.fontSize": 16,
