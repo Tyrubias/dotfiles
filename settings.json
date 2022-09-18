@@ -1,82 +1,80 @@
 {
-    "editor.bracketPairColorization.enabled": true,
-    "editor.fontFamily": "'Iosevka SS17', 'Symbols Nerd Font Mono', Menlo, 'Apple Color Emoji',  monospace",
-    "editor.fontLigatures": "'liga', 'calt', 'dlig'",
-    "editor.fontSize": 14,
-    "editor.guides.bracketPairs": "active",
-    "editor.guides.bracketPairsHorizontal": true,
-    "editor.inlineSuggest.enabled": true,
-    "editor.suggestSelection": "first",
-    "errorLens.gutterIconsEnabled": true,
-    "explorer.sortOrder": "type",
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 2500,
-    "git.allowForcePush": true,
-    "git.autoStash": true,
-    "git.autofetch": "all",
-    "git.enableSmartCommit": true,
-    "git.fetchOnPull": true,
-    "git.followTagsWhenSync": true,
-    "git.mergeEditor": true,
-    "git.rebaseWhenSync": true,
-    "git.supportCancellation": true,
-    "git.terminalGitEditor": true,
-    "github.copilot.enable": {
-        "*": false
+  "editor.bracketPairColorization.enabled": true,
+  "editor.fontFamily": "'Iosevka SS17', 'Symbols Nerd Font Mono', Menlo, 'Apple Color Emoji',  monospace",
+  "editor.fontLigatures": "'liga', 'calt', 'dlig'",
+  "editor.fontSize": 16,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.suggestSelection": "first",
+  "errorLens.gutterIconsEnabled": true,
+  "explorer.sortOrder": "type",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 2500,
+  "git.allowForcePush": true,
+  "git.autoStash": true,
+  "git.autofetch": "all",
+  "git.enableSmartCommit": true,
+  "git.fetchOnPull": true,
+  "git.followTagsWhenSync": true,
+  "git.mergeEditor": true,
+  "git.rebaseWhenSync": true,
+  "git.supportCancellation": true,
+  "git.terminalGitEditor": true,
+  "github.copilot.enable": {
+    "*": false
+  },
+  "github.gitProtocol": "ssh",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+  "latex-workshop.latexindent.path": "/Library/TeX/texbin/latexindent",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "r.bracketedPaste": true,
+  "r.rpath.mac": "/opt/homebrew/bin/R",
+  "r.rterm.mac": "/Users/vsong/.local/bin/radian",
+  "r.rterm.option": [
+    "--no-save",
+    "--no-restore",
+    "--r-binary=/opt/homebrew/bin/R"
+  ],
+  "remote.SSH.lockfilesInTmp": true,
+  "remote.SSH.remotePlatform": {
+    "clear": "linux"
+  },
+  "ruby.format": "rubocop",
+  "ruby.lint": {
+    "reek": {
+      "useBundler": true
     },
-    "github.gitProtocol": "ssh",
-    "latex-workshop.latex.autoBuild.run": "onSave",
-    "latex-workshop.latex.autoClean.run": "onBuilt",
-    "latex-workshop.latexindent.path": "/Library/TeX/texbin/latexindent",
-    "latex-workshop.view.pdf.viewer": "tab",
-    "r.bracketedPaste": true,
-    "r.rpath.mac": "/opt/homebrew/bin/R",
-    "r.rterm.mac": "/Users/vsong/.local/bin/radian",
-    "r.rterm.option": [
-        "--no-save",
-        "--no-restore",
-        "--r-binary=/opt/homebrew/bin/R"
-    ],
-    "remote.SSH.lockfilesInTmp": true,
-    "remote.SSH.remotePlatform": {
-        "clear": "linux"
-    },
-    "ruby.format": "rubocop",
-    "ruby.lint": {
-        "reek": {
-            "useBundler": true
-        },
-        "rubocop": {
-            "useBundler": true
-        }
-    },
-    "ruby.useBundler": true,
-    "ruby.useLanguageServer": true,
-    "rust-analyzer.checkOnSave.command": "clippy",
-    "telemetry.telemetryLevel": "off",
-    "terminal.integrated.defaultProfile.osx": "fish (interactive)",
-    "terminal.integrated.fontFamily": "'Iosevka Term SS17', 'Symbols Nerd Font Mono', Menlo, 'Apple Color Emoji',  monospace",
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.profiles.osx": {
-        "fish (interactive)": {
-            "args": [
-                "-i"
-            ],
-            "path": "/opt/homebrew/bin/fish"
-        }
-    },
-    "terminal.integrated.shellIntegration.enabled": true,
-    "window.commandCenter": true,
-    "window.newWindowDimensions": "inherit",
-    "workbench.colorCustomizations": {
-        "[Gruvbox Dark Hard]": {
-            "editorInlayHint.background": "#3d3d3d48",
-            "editorInlayHint.foreground": "#868686f0"
-        }
-    },
-    "workbench.colorTheme": "Dracula",
-    "workbench.editor.enablePreview": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "right",
-    "editor.stickyScroll.enabled": true
+    "rubocop": {
+      "useBundler": true
+    }
+  },
+  "ruby.useBundler": true,
+  "ruby.useLanguageServer": true,
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.defaultProfile.osx": "fish (interactive)",
+  "terminal.integrated.fontFamily": "'Iosevka Term SS17', 'Symbols Nerd Font Mono', Menlo, 'Apple Color Emoji',  monospace",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.profiles.osx": {
+    "fish (interactive)": {
+      "args": ["-i"],
+      "path": "/opt/homebrew/bin/fish"
+    }
+  },
+  "terminal.integrated.shellIntegration.enabled": true,
+  "window.commandCenter": true,
+  "window.newWindowDimensions": "inherit",
+  "workbench.colorCustomizations": {
+    "[Gruvbox Dark Hard]": {
+      "editorInlayHint.background": "#3d3d3d48",
+      "editorInlayHint.foreground": "#868686f0"
+    }
+  },
+  "workbench.colorTheme": "Dracula",
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "right"
 }

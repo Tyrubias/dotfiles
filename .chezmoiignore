@@ -8,6 +8,8 @@ Library/**
 Library
 .sdkman/**
 .sdkman
+.hammerspoon/**
+.hammerspoon
 {{ end }}
 
 {{ if (and (ne .chezmoi.os "darwin") (ne .chezmoi.os "linux")) }}
@@ -28,6 +30,8 @@ Library
 .zshenv
 .zshrc
 .tmux.conf
+.hammerspoon/**
+.hammerspoon
 {{ end }}
 
 {{ if ne .chezmoi.os "windows" }}
