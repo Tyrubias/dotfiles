@@ -48,7 +48,7 @@ Documents
 .spicetify
 {{ end }}
 
-{{ if ne .computername "Victors-Mac-mini" }}
+{{ if ne .computerName "Victors-Mac-mini" }}
 .config/borg-remote.sh
 Library/LaunchAgents/me.vsong.borg.plist
 {{ end }}
