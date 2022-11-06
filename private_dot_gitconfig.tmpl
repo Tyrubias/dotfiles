@@ -21,6 +21,8 @@
     recurse = true
 [push]
     autoSetupRemote = true
+[hub]
+    protocol = ssh
 
 {{- if eq .chezmoi.os "windows" }}
 [credential]
