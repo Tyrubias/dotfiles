@@ -25,6 +25,7 @@ brew "gpg"
 brew "htop"
 brew "httpie"
 brew "hub"
+brew "imagemagick"
 brew "jq"
 brew "ncdu"
 brew "neofetch"
@@ -60,7 +61,6 @@ brew "borgmatic"
 brew "coreutils"
 brew "cpanminus"
 brew "findutils"
-brew "imagemagick"
 brew "mas"
 brew "meson"
 brew "nmap"
@@ -142,12 +142,12 @@ brew "hub"
 brew "pango"
 brew "zsh"
 {{   else }}
-tap "jesseduffield/lazydocker"
+# tap "jesseduffield/lazydocker"
 # brew "docker" (Install through APT instead)
 # Make sure to run in rootless mode and disable cgroups for Nvidia
 # Also install Docker Compose
-brew "hadolint"
-brew "jesseduffield/lazydocker/lazydocker"
+# brew "hadolint"
+# brew "jesseduffield/lazydocker/lazydocker"
 {{   end }}
 {{ end -}}
 
