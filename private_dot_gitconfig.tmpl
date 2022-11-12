@@ -1,28 +1,53 @@
 [user]
     email = {{ .email }}
     name = Victor Song
+
 [core]
     editor = nvim
     excludesfile = ~/.gitignore_global
+
 [color]
     ui = true
+
 [init]
     defaultBranch = main
+
 [pull]
     rebase = true
+
 [alias]
     wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
     root = rev-parse --show-toplevel
+
 [commit]
     template = ~/.gitmessage
+
 [rebase]
     autoStash = true
+
 [submodule]
     recurse = true
+
 [push]
     autoSetupRemote = true
+
 [hub]
     protocol = ssh
+
+[diff]
+    tool = difftastic
+
+[difftool]
+    prompt = false
+
+[difftool "difftastic"]
+    cmd = difft "$LOCAL" "$REMOTE"
+
+[pager]
+    difftool = true
+
+[alias]
+    dft = difftool
 
 {{- if eq .chezmoi.os "windows" }}
 [credential]
