@@ -23,7 +23,11 @@
   "git.supportCancellation": true,
   "git.terminalGitEditor": true,
   "github.copilot.enable": {
-    "*": false
+    "*": true,
+    "rust": false,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
   },
   "github.gitProtocol": "ssh",
   "latex-workshop.latex.autoBuild.run": "onSave",
