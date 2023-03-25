@@ -1,6 +1,9 @@
 {
 	"diagnostic.virtualText": true,
 	"diagnostic.virtualTextCurrentLineOnly": false,
-	"rust-analyzer.checkOnSave.command": "clippy",
-	"rust-analyzer.updates.channel": "nightly"
+	"rust-analyzer.check.command": "clippy",
+	"rust-analyzer.updates.channel": "nightly",
+	"rust-analyzer.procMacro.enable": true,
+	"rust-analyzer.procMacro.attributes.enable": true,
+	"rust-analyzer.cargo.buildScripts.useRustcWrapper": true
 }

@@ -24,10 +24,10 @@
   "git.terminalGitEditor": true,
   "github.copilot.enable": {
     "*": true,
-    "rust": false,
-    "yaml": false,
+    "markdown": false,
     "plaintext": false,
-    "markdown": false
+    "rust": false,
+    "yaml": false
   },
   "github.gitProtocol": "ssh",
   "latex-workshop.latex.autoBuild.run": "onSave",
@@ -57,14 +57,20 @@
   },
   "ruby.useBundler": true,
   "ruby.useLanguageServer": true,
-  "rust-analyzer.checkOnSave.command": "clippy",
+  "rust-analyzer.cargo.buildScripts.enable": true,
+  "rust-analyzer.cargo.buildScripts.useRustcWrapper": true,
+  "rust-analyzer.check.command": "clippy",
+  "rust-analyzer.procMacro.attributes.enable": true,
+  "rust-analyzer.procMacro.enable": true,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.defaultProfile.osx": "fish (interactive)",
   "terminal.integrated.fontFamily": "'Iosevka Term', 'Symbols Nerd Font Mono', Menlo, 'Apple Color Emoji',  monospace",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.profiles.osx": {
     "fish (interactive)": {
-      "args": ["-i"],
+      "args": [
+        "-i"
+      ],
       "path": "/opt/homebrew/bin/fish"
     }
   },

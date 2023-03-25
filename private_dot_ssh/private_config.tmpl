@@ -4,11 +4,10 @@ Host *
   UseKeychain yes
 {{- end }}
   IdentityFile ~/.ssh/id_ed25519
-
-Host *
   ControlMaster auto
   ControlPath ~/.ssh/sockets/%r@%h-%p
   ControlPersist 600
+  RevokedHostKeys ~/.ssh/revoked_hosts
 
 Host backup-rsync
   HostName ch-s011.rsync.net
