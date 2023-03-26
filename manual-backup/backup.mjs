@@ -40,7 +40,7 @@ const pruneFlags = [
 const time = (await $`date -u +"%Y-%m-%dT%H:%M:%SZ"`).stdout.trim()
 const host = (await $`hostname`).stdout.trim()
 
-$.prefix += 'source /Users/vsong/.victor-secrets.sh; '
+$.prefix += 'source /Users/vsong/.secrets.sh; '
 
 console.log(`${time}\t${chalk.greenBright('Starting backup...')}`)
 

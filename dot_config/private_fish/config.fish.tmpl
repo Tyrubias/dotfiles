@@ -15,8 +15,8 @@ set -Ux BORG_REMOTE_PATH borg1
 {{ if (and (eq .chezmoi.os "linux") (not (.chezmoi.kernel.osrelease | lower | contains "microsoft"))) }}
 set -Ux DOCKER_HOST "unix://$XDG_RUNTIME_DIR/docker.sock"
 {{ end }}
-if test -e "$HOME/.victor-secrets.fish"
-    source "$HOME/.victor-secrets.fish"
+if test -e "$HOME/.secrets.fish"
+    source "$HOME/.secrets.fish"
 end
 
 if set -q KITTY_INSTALLATION_DIR

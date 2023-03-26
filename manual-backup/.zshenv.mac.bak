@@ -20,5 +20,5 @@ alias le="exa --group-directories-first --all"
 
 alias up="cd .."
 
-[[ -f "${HOME}"/.victor-secrets.sh ]] && source "${HOME}/.victor-secrets.sh"
+[[ -f "${HOME}"/.secrets.sh ]] && source "${HOME}/.secrets.sh"
 

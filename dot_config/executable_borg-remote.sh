@@ -7,7 +7,7 @@ export BORG_REPO='ssh://18320@ch-s011.rsync.net/./mac-mini-personal'
 export BORG_REMOTE_PATH='borg1'
 export DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")-$(hostname)
 
-source '/Users/vsong/.victor-secrets.sh'
+source '/Users/vsong/.secrets.sh'
 
 info() { printf "\n%s %s\n\n" "$( date )" "$*" >&2; }
 trap 'echo $( date ) Backup interrupted >&2; exit 2' INT TERM
