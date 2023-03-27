@@ -35,24 +35,38 @@
     "launchMode": "maximized",
     "profiles": 
     {
-        "defaults": {},
+        "defaults": 
+        {
+            "font": 
+            {
+                "face": "Iosevka Term"
+            }
+        },
         "list": 
         [
             {
                 "font": 
                 {
-                    "face": "FiraCode NF Retina"
+                    "face": "Iosevka Term"
                 },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": true,
                 "name": "Windows PowerShell"
             },
             {
+                "font": 
+                {
+                    "face": "Iosevka Term"
+                },
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": true,
                 "name": "Command Prompt"
             },
             {
+                "font": 
+                {
+                    "face": "Iosevka Term"
+                },
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": true,
                 "name": "Azure Cloud Shell",
@@ -65,8 +79,8 @@
                 "cursorShape": "filledBox",
                 "font": 
                 {
-                    "face": "Iosevka Term SS17",
-                    "size": 13
+                    "face": "Iosevka Term",
+                    "size": 12.0
                 },
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
                 "hidden": false,
@@ -83,8 +97,8 @@
                 "experimental.retroTerminalEffect": false,
                 "font": 
                 {
-                    "face": "Iosevka Term SS17",
-                    "size": 13
+                    "face": "Iosevka Term",
+                    "size": 12.0
                 },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
@@ -93,6 +107,10 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
+                "font": 
+                {
+                    "face": "Iosevka Term"
+                },
                 "guid": "{cd454470-a260-5447-97db-c386d6d706ee}",
                 "hidden": false,
                 "name": "Developer Command Prompt for VS 2022",
@@ -103,8 +121,8 @@
                 "commandline": "C:\\Users\\Victor Song\\scoop\\shims\\pwsh.exe -NoLogo -NoExit -Command \"&{Import-Module \"\"\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell c094d858 -SkipAutomaticLocation -DevCmdArguments \"\"\"-arch=x64 -host_arch=x64\"\"\"}\"",
                 "font": 
                 {
-                    "face": "Iosevka Term SS17",
-                    "size": 13
+                    "face": "Iosevka Term",
+                    "size": 12.0
                 },
                 "guid": "{47d900a3-00fb-565b-aec3-02bcb48a48d5}",
                 "hidden": false,
@@ -393,5 +411,6 @@
             "white": "#C0C0C0",
             "yellow": "#808000"
         }
-    ]
+    ],
+    "themes": []
 }
