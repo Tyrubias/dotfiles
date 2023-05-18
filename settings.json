@@ -1,6 +1,6 @@
 {
   "editor.bracketPairColorization.enabled": true,
-  "editor.fontFamily": "'Iosevka Curly', 'Symbols Nerd Font Mono', Menlo, 'Apple Color Emoji',  monospace",
+  "editor.fontFamily": "'Iosevka', 'Symbols Nerd Font Mono', Menlo, 'Apple Color Emoji',  monospace",
   "editor.fontLigatures": "'liga', 'calt', 'dlig'",
   "editor.fontSize": 16,
   "editor.guides.bracketPairs": "active",
