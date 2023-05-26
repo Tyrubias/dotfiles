@@ -31,7 +31,7 @@ if status is-interactive
 {{ if eq .chezmoi.os "darwin" }}
     eval (/opt/homebrew/bin/brew shellenv)
     rbenv init - fish | source
-    test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
+#   test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 {{ else }}
     eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 {{ end }}

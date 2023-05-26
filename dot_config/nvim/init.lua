@@ -9,6 +9,8 @@ vim.cmd [[packadd packer.nvim]]
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
+  use 'alker0/chezmoi.vim'
+
   use 'tpope/vim-sensible'
   use 'tpope/vim-eunuch'
   use 'tpope/vim-sleuth'

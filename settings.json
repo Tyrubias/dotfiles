@@ -1,4 +1,13 @@
 {
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "editor.bracketPairColorization.enabled": true,
   "editor.fontFamily": "'Iosevka', 'Symbols Nerd Font Mono', Menlo, 'Apple Color Emoji',  monospace",
   "editor.fontLigatures": "'liga', 'calt', 'dlig'",
@@ -68,9 +77,7 @@
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.profiles.osx": {
     "fish (interactive)": {
-      "args": [
-        "-i"
-      ],
+      "args": ["-i"],
       "path": "/opt/homebrew/bin/fish"
     }
   },

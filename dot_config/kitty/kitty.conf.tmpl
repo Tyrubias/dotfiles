@@ -1,26 +1,79 @@
-font_family             Iosevka Term
-bold_font               Iosevka Term Bold
-italic_font             Iosevka Term Italic
-bold_italic_font        Iosevka Term Bold Italic
-disable_ligatures       cursor
-font_features           +liga +calt +dlig
-{{ if (eq .chezmoi.os "darwin") }}
-font_size               14.0
-{{ else }}
-font_size               13.0
-{{ end }}
-include                 dracula.conf
-window_padding_width    3
-initial_window_width    132c
-initial_window_height   43c
-{{ if (eq .chezmoi.os "darwin") }}
-shell                   /opt/homebrew/bin/fish --login --interactive
-{{ else }}
-shell                   /home/linuxbrew/.linuxbrew/bin/fish --login --interactive
-{{ end }}
-cursor_shape            block
-cursor_blink_interval   0
-shell_integration       disabled
-macos_option_as_alt     yes
+# vim:fileencoding=utf-8:foldmethod=marker:foldmarker=[[[,]]]
 
-symbol_map U+23fb-U+23fe,U+2665,U+26a1,U+2b58,U+e000-U+e00a,U+e0a0-U+e0a2,U+e0a3,U+e0b0-U+e0b3,U+e0b4-U+e0c8,U+e0ca,U+e0cc-U+e0d4,U+e200-U+e2a9,U+e300-U+e3e3,U+e5fa-U+e6a6,U+e700-U+e7c5,U+ea60-U+ebeb,U+f000-U+f2e0,U+f300-U+f32f,U+f400-U+f532,U+f0001-U+f1af0, Symbols Nerd Font Mono
+#: Fonts [[[
+
+font_family      Iosevka Term
+bold_font        Iosevka Term Bold
+italic_font      Iosevka Term Italic
+bold_italic_font Iosevka Term Bold Italic
+
+{{ if (eq .chezmoi.os "darwin") -}}
+font_size 16.0
+{{ else if (eq .chezmoi.os "linux") -}}
+font_size 14.0
+{{ end -}}
+
+symbol_map U+23FB-U+23FE,U+2665,U+26A1,U+2B58,U+E000-U+E00A,U+E0A0-U+E0A3,U+E0B0-U+E0D4,U+E200-U+E2A9,U+E300-U+E3E3,U+E5FA-U+E6AA,U+E700-U+E7C5,U+EA60-U+EBEB,U+F000-U+F2E0,U+F300-U+F32F,U+F400-U+F4A9,U+F500-U+F8FF,U+F0001-U+F1AF0 Symbols Nerd Font Mono
+
+disable_ligatures cursor
+
+font_features +liga +calt +dlig
+
+#: ]]]
+
+#: Cursor customization [[[
+
+cursor_blink_interval 0
+
+#: ]]]
+
+#: Window layout [[[
+
+window_padding_width 3
+
+#: ]]]
+
+#: Tab bar [[[
+
+tab_bar_style powerline
+
+tab_powerline_style round
+
+#: ]]]
+
+#: Color scheme [[[
+
+include dracula.conf
+
+#: ]]]
+
+#: Advanced [[[
+
+{{ if (eq .chezmoi.os "darwin") -}}
+shell /opt/homebrew/bin/fish --login --interactive
+{{ else if (eq .chezmoi.os "linux") -}}
+shell /home/linuxbrew/.linuxbrew/bin/fish --login --interactive
+{{ end }}
+
+shell_integration disabled
+
+#: ]]]
+
+#: OS specific tweaks [[[
+
+macos_option_as_alt yes
+
+macos_traditional_fullscreen yes
+
+#: ]]]
+
+#: Keyboard shortcuts [[[
+
+#: Tab management [[[
+
+map alt+shift+c launch --type=tab caffeinate -i -m -s -u -d
+
+#: ]]]
+
+#: ]]]
+
