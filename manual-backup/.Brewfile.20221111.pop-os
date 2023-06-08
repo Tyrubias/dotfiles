@@ -1,0 +1,70 @@
+# Common stuff
+tap "beeftornado/rmtree"
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "yt-dlp/taps"
+
+brew "age"
+brew "antibody"
+brew "atool"
+brew "bat"
+brew "chezmoi"
+brew "cloc"
+brew "exa"
+brew "fd"
+brew "ffmpeg"
+brew "fish"
+# brew "fisher"
+brew "fzf"
+brew "gcc"
+brew "gh"
+brew "git"
+brew "go"
+brew "gpg"
+brew "htop"
+brew "httpie"
+<<<<<<< Updated upstream
+brew "hub"
+=======
+brew "imagemagick"
+>>>>>>> Stashed changes
+brew "jq"
+brew "ncdu"
+brew "neofetch"
+brew "neovim"
+brew "parallel"
+brew "pipx"
+brew "r"
+brew "rclone"
+brew "ripgrep"
+brew "rlwrap"
+brew "rsync"
+brew "shellcheck"
+brew "shfmt"
+brew "socat"
+brew "tealdeer"
+brew "tmux"
+brew "topgrade"
+brew "vim"
+brew "zx"
+brew "yt-dlp/taps/yt-dlp"
+
+
+# Linux stuff. Here, we have to differentiate
+# between WSL 2 and my Pop-OS installation. My
+# Pop OS has hostname "pop-os"
+brew "gdb"
+brew "gcc@12"
+brew "irssi"
+brew "nasm"
+# if WSL 2 => WSL 2 stuff, else Pop OS stuff
+
+# tap "jesseduffield/lazydocker"
+# brew "docker" (Install through APT instead)
+# Make sure to run in rootless mode and disable cgroups for Nvidia
+# Also install Docker Compose
+# brew "hadolint"
+# brew "jesseduffield/lazydocker/lazydocker"
+
+# Install Alacritty/Kitty
