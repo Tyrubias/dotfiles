@@ -12,8 +12,7 @@ function cleanup {
 trap cleanup EXIT
 
 {{ if (eq .chezmoi.os "darwin") -}}
-/Applications/LibreWolf.app/Contents/MacOS/librewolf -profile "${PROFILE_DIR}" -no-remote -new-instance >/dev/null 2>&1 || true
+/Applications/Firefox.app/Contents/MacOS/firefox -profile "${PROFILE_DIR}" -no-remote -new-instance >/dev/null 2>&1 || true
 {{ else if (eq .chezmoi.os "linux") -}}
-/usr/bin/librewolf -profile "${PROFILE_DIR}" -no-remote -new-instance >/dev/null 2>&1 || true
+/usr/bin/firefox -profile "${PROFILE_DIR}" -no-remote -new-instance >/dev/null 2>&1 || true
 {{ end -}}
-

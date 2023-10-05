@@ -21,32 +21,56 @@ if test -e "$HOME/.secrets.fish"
     source "$HOME/.secrets.fish"
 end
 
-if set -q KITTY_INSTALLATION_DIR
-    set --global KITTY_SHELL_INTEGRATION enabled
-    source "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish"
-    set --prepend fish_complete_path "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_completions.d"
-end
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
     # fish_vi_key_bindings
 {{ if eq .chezmoi.os "darwin" }}
     fzf_configure_bindings --directory=\cf
-    eval (/opt/homebrew/bin/brew shellenv)
+
+    set -gx HOMEBREW_PREFIX "/opt/homebrew";
+    set -gx HOMEBREW_CELLAR "/opt/homebrew/Cellar";
+    set -gx HOMEBREW_REPOSITORY "/opt/homebrew";
+
+    fish_add_path --prepend --global '/opt/homebrew/bin' '/opt/homebrew/sbin'
+    set -q MANPATH; or set MANPATH ''; set -gx MANPATH "/opt/homebrew/share/man" $MANPATH;
+    set -q INFOPATH; or set INFOPATH ''; set -gx INFOPATH "/opt/homebrew/share/info" $INFOPATH;
+
     rbenv init - fish | source
+
     if $HOME/.iterm2/it2check
         test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
     end
+
+    if set -q KITTY_INSTALLATION_DIR
+        set --global KITTY_SHELL_INTEGRATION enabled
+        source "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish"
+        set --prepend fish_complete_path "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_completions.d"
+    end
 {{ else }}
     eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+    set -gx HOMEBREW_PREFIX "/home/linuxbrew/.linuxbrew"
+    set -gx HOMEBREW_CELLAR "/home/linuxbrew/.linuxbrew/Cellar"
+    set -gx HOMEBREW_REPOSITORY "/home/linuxbrew/.linuxbrew"
+
+    fish_add_path --prepend --global '/home/linuxbrew/.linuxbrew/bin' '/home/linuxbrew/.linuxbrew/sbin'
+    set -q MANPATH; or set MANPATH ''; set -gx MANPATH "/home/linuxbrew/.linuxbrew/share/man" $MANPATH;
+    set -q INFOPATH; or set INFOPATH ''; set -gx INFOPATH "/home/linuxbrew/.linuxbrew/share/info" $INFOPATH;
 {{ end }}
-    fish_add_path -m $HOME/.local/bin
-    fish_add_path -m $HOME/.cargo/bin
-    fish_add_path -m $HOME/.sdkman/candidates/*/current/bin
-end
+    fish_add_path --prepend --global $HOME/.local/bin
+    fish_add_path --prepend --global $HOME/.cargo/bin
+
+    for sdk in (path filter -d $HOME/.sdkman/candidates/*)
+        fish_add_path --prepend --global $sdk/current/bin
+    end
 {{ if eq .chezmoi.os "darwin" }}
-eval /opt/homebrew/Caskroom/mambaforge/base/bin/conda "shell.fish" "hook" $argv | source
+    if test -f /opt/homebrew/Caskroom/mambaforge/base/bin/conda
+        eval /opt/homebrew/Caskroom/mambaforge/base/bin/conda "shell.fish" "hook" $argv | source
+    end
 {{ else if (and (eq .chezmoi.os "linux") (not (.chezmoi.kernel.osrelease | lower | contains "microsoft"))) }}
-eval /home/vsong/mambaforge/bin/conda "shell.fish" "hook" $argv | source
+    if test -f /home/vsong/mambaforge/bin/conda
+        eval /home/vsong/mambaforge/bin/conda "shell.fish" "hook" $argv | source
+    end
 {{ end }}
+end
 
