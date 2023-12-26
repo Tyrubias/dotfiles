@@ -66,11 +66,7 @@
   },
   "ruby.useBundler": true,
   "ruby.useLanguageServer": true,
-  "rust-analyzer.cargo.buildScripts.enable": true,
-  "rust-analyzer.cargo.buildScripts.useRustcWrapper": true,
   "rust-analyzer.check.command": "clippy",
-  "rust-analyzer.procMacro.attributes.enable": true,
-  "rust-analyzer.procMacro.enable": true,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.defaultProfile.osx": "fish (interactive)",
   "terminal.integrated.fontFamily": "'Iosevka Term', 'Symbols Nerd Font Mono', Menlo, 'Apple Color Emoji',  monospace",
@@ -93,5 +89,6 @@
   "workbench.colorTheme": "Dracula",
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.sideBar.location": "left"
+  "workbench.sideBar.location": "left",
+  "typst-lsp.exportPdf": "never"
 }

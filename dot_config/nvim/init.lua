@@ -130,11 +130,9 @@ require('nvim-treesitter.configs').setup {
       },
     },
   },
-
-  context_commentstring = {
-    enable = true
-  },
 }
+
+require('nvim-treesitter.configs').setup {}
 
 vim.cmd([[
 " Some servers have issues with backup files, see #649.
