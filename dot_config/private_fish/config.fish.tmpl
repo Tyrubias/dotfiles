@@ -74,3 +74,7 @@ if status is-interactive
 {{ end }}
 end
 
+if type -q direnv
+    direnv hook fish | source
+end
+
