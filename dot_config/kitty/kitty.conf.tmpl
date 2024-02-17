@@ -8,9 +8,9 @@ italic_font      Iosevka Term Italic
 bold_italic_font Iosevka Term Bold Italic
 
 {{ if (eq .chezmoi.os "darwin") -}}
-font_size 16.0
+font_size 14
 {{ else if (eq .chezmoi.os "linux") -}}
-font_size 12.0
+font_size 12
 {{ end -}}
 
 symbol_map U+23FB-U+23FE,U+2665,U+26A1,U+2B58,U+E000-U+E00A,U+E0A0-U+E0A3,U+E0B0-U+E0D4,U+E200-U+E2A9,U+E300-U+E3E3,U+E5FA-U+E6AA,U+E700-U+E7C5,U+EA60-U+EBEB,U+F000-U+F2E0,U+F300-U+F32F,U+F400-U+F4A9,U+F500-U+F8FF,U+F0001-U+F1AF0 Symbols Nerd Font Mono
@@ -26,6 +26,18 @@ font_features +liga +calt +dlig
 cursor_blink_interval 0
 
 #: ]]]
+
+#: Mouse [[[
+
+#: Mouse actions [[[
+
+mouse_map left click ungrabbed mouse_handle_click selection prompt
+
+mouse_map ctrl+shift+left release grabbed,ungrabbed mouse_handle_click link
+
+#]]]
+
+#]]]
 
 #: Window layout [[[
 
@@ -71,7 +83,17 @@ macos_traditional_fullscreen yes
 
 #: Tab management [[[
 
-map alt+shift+c launch --type=tab caffeinate -i -m -s -u -d
+map cmd+1 goto_tab 1
+map cmd+2 goto_tab 2
+map cmd+3 goto_tab 3
+map cmd+4 goto_tab 4
+map cmd+5 goto_tab 5
+map cmd+6 goto_tab 6
+map cmd+7 goto_tab 7
+map cmd+8 goto_tab 8
+map cmd+9 goto_tab 9
+
+map alt+shift+c launch --type=tab --location=first --dont-take-focus caffeinate -i -m -s -u -d
 
 #: ]]]
 
