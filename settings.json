@@ -1,4 +1,13 @@
 {
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -78,8 +87,10 @@
     }
   },
   "terminal.integrated.shellIntegration.enabled": true,
+  "typst-lsp.exportPdf": "never",
   "window.commandCenter": true,
   "window.newWindowDimensions": "inherit",
+  "window.openFoldersInNewWindow": "on",
   "workbench.colorCustomizations": {
     "[Gruvbox Dark Hard]": {
       "editorInlayHint.background": "#3d3d3d48",
@@ -89,15 +100,5 @@
   "workbench.colorTheme": "Dracula",
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.sideBar.location": "left",
-  "typst-lsp.exportPdf": "never",
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "workbench.sideBar.location": "left"
 }

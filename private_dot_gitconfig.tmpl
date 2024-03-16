@@ -19,9 +19,6 @@
     wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
     root = rev-parse --show-toplevel
 
-[commit]
-    template = ~/.gitmessage
-
 [rebase]
     autoStash = true
 
@@ -48,6 +45,9 @@
 
 [alias]
     dft = difftool
+
+[url "ssh://git@github.com/"]
+    insteadOf = https://github.com/
 
 {{- if eq .chezmoi.os "windows" }}
 [credential]
