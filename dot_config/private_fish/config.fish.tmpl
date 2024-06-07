@@ -80,8 +80,18 @@ if status is-interactive
         source "/opt/homebrew/Caskroom/miniforge/base/etc/fish/conf.d/mamba.fish"
     end
 {{ else if (and (eq .chezmoi.os "linux") (not (.chezmoi.kernel.osrelease | lower | contains "microsoft"))) }}
-    if test -f /home/vsong/mambaforge/bin/conda
-        eval /home/vsong/mambaforge/bin/conda "shell.fish" "hook" $argv | source
+    if test -f /home/vsong/miniforge3/bin/conda
+        eval /home/vsong/miniforge3/bin/conda "shell.fish" "hook" $argv | source
+    else
+        if test -f "/home/vsong/miniforge3/etc/fish/conf.d/conda.fish"
+            . "/home/vsong/miniforge3/etc/fish/conf.d/conda.fish"
+        else
+            set -x PATH "/home/vsong/miniforge3/bin" $PATH
+        end
+    end
+
+    if test -f "/home/vsong/miniforge3/etc/fish/conf.d/mamba.fish"
+        source "/home/vsong/miniforge3/etc/fish/conf.d/mamba.fish"
     end
 {{ end }}
 end
