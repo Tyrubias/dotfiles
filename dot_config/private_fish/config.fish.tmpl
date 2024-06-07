@@ -14,6 +14,8 @@ set -Ux XDG_DATA_HOME {$HOME}/.local/share
 set -Ux XDG_STATE_HOME {$HOME}/.local/state
 set -Ux BORG_REMOTE_PATH borg1
 
+set -gx PIP_REQUIRE_VIRTUALENV true
+
 {{ if (and (eq .chezmoi.os "linux") (not (.chezmoi.kernel.osrelease | lower | contains "microsoft"))) }}
 set -Ux DOCKER_HOST "unix://$XDG_RUNTIME_DIR/docker.sock"
 {{ end }}
@@ -64,8 +66,18 @@ if status is-interactive
         fish_add_path --prepend --global $sdk/current/bin
     end
 {{ if eq .chezmoi.os "darwin" }}
-    if test -f /opt/homebrew/Caskroom/mambaforge/base/bin/conda
-        eval /opt/homebrew/Caskroom/mambaforge/base/bin/conda "shell.fish" "hook" $argv | source
+    if test -f /opt/homebrew/Caskroom/miniforge/base/bin/conda
+        eval /opt/homebrew/Caskroom/miniforge/base/bin/conda "shell.fish" "hook" $argv | source
+    else
+        if test -f "/opt/homebrew/Caskroom/miniforge/base/etc/fish/conf.d/conda.fish"
+            . "/opt/homebrew/Caskroom/miniforge/base/etc/fish/conf.d/conda.fish"
+        else
+            set -x PATH "/opt/homebrew/Caskroom/miniforge/base/bin" $PATH
+        end
+    end
+
+    if test -f "/opt/homebrew/Caskroom/miniforge/base/etc/fish/conf.d/mamba.fish"
+        source "/opt/homebrew/Caskroom/miniforge/base/etc/fish/conf.d/mamba.fish"
     end
 {{ else if (and (eq .chezmoi.os "linux") (not (.chezmoi.kernel.osrelease | lower | contains "microsoft"))) }}
     if test -f /home/vsong/mambaforge/bin/conda
