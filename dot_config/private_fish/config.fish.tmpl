@@ -2,22 +2,22 @@ fish_config theme choose "Dracula Official"
 
 set -U fish_greeting
 
-set -Ux BAT_THEME Dracula
-set -Ux HOMEBREW_BAT true
-set -Ux EDITOR nvim
-set -Ux VISUAL nvim
-set -Ux NVM_AUTO_USE true
-set -Ux NVM_LAZY_LOAD true
-set -Ux XDG_CONFIG_HOME {$HOME}/.config
-set -Ux XDG_CACHE_HOME {$HOME}/.cache
-set -Ux XDG_DATA_HOME {$HOME}/.local/share
-set -Ux XDG_STATE_HOME {$HOME}/.local/state
-set -Ux BORG_REMOTE_PATH borg1
+set -gx BAT_THEME Dracula
+set -gx HOMEBREW_BAT true
+set -gx EDITOR nvim
+set -gx VISUAL nvim
+set -gx NVM_AUTO_USE true
+set -gx NVM_LAZY_LOAD true
+set -gx XDG_CONFIG_HOME {$HOME}/.config
+set -gx XDG_CACHE_HOME {$HOME}/.cache
+set -gx XDG_DATA_HOME {$HOME}/.local/share
+set -gx XDG_STATE_HOME {$HOME}/.local/state
+set -gx BORG_REMOTE_PATH borg1
 
 set -gx PIP_REQUIRE_VIRTUALENV true
 
 {{ if (and (eq .chezmoi.os "linux") (not (.chezmoi.kernel.osrelease | lower | contains "microsoft"))) }}
-set -Ux DOCKER_HOST "unix://$XDG_RUNTIME_DIR/docker.sock"
+set -gx DOCKER_HOST "unix://$XDG_RUNTIME_DIR/docker.sock"
 {{ end }}
 if test -e "$HOME/.secrets.fish"
     source "$HOME/.secrets.fish"
