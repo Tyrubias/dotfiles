@@ -19,6 +19,10 @@ disable_ligatures cursor
 
 font_features +liga +calt +dlig
 
+{{ if (eq .chezmoi.os "darwin") }}
+text_composition_strategy 1.1 3
+{{ end }}
+
 #: ]]]
 
 #: Cursor customization [[[

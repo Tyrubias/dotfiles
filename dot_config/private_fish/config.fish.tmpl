@@ -15,6 +15,9 @@ set -gx XDG_STATE_HOME {$HOME}/.local/state
 set -gx BORG_REMOTE_PATH borg1
 
 set -gx PIP_REQUIRE_VIRTUALENV true
+set -gx VIRTUAL_ENV_DISABLE_PROMPT true
+
+set -gx HOMEBREW_NO_ENV_HINTS true
 
 {{ if (and (eq .chezmoi.os "linux") (not (.chezmoi.kernel.osrelease | lower | contains "microsoft"))) }}
 set -gx DOCKER_HOST "unix://$XDG_RUNTIME_DIR/docker.sock"
