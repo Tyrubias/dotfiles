@@ -47,15 +47,9 @@ if status is-interactive
         test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
     end
 
-    if set -q KITTY_INSTALLATION_DIR
-        set --global KITTY_SHELL_INTEGRATION enabled
-        source "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish"
-        set --prepend fish_complete_path "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_completions.d"
-        bind \eQ 'clone-in-kitty --type=tab'
-    end
-
     bind \eX 'commandline | pbcopy'
 {{ else }}
+    bind \eX 'commandline | xclip -selection clipboard'
     eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
     set -gx HOMEBREW_PREFIX "/home/linuxbrew/.linuxbrew"
     set -gx HOMEBREW_CELLAR "/home/linuxbrew/.linuxbrew/Cellar"
@@ -65,6 +59,13 @@ if status is-interactive
     set -q MANPATH; or set MANPATH ''; set -gx MANPATH "/home/linuxbrew/.linuxbrew/share/man" $MANPATH;
     set -q INFOPATH; or set INFOPATH ''; set -gx INFOPATH "/home/linuxbrew/.linuxbrew/share/info" $INFOPATH;
 {{ end }}
+    if set -q KITTY_INSTALLATION_DIR
+        set --global KITTY_SHELL_INTEGRATION enabled
+        source "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish"
+        set --prepend fish_complete_path "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_completions.d"
+        bind \eQ 'clone-in-kitty --type=tab'
+    end
+
     fish_add_path --prepend --global $HOME/.local/bin
     fish_add_path --prepend --global $HOME/.cargo/bin
 
