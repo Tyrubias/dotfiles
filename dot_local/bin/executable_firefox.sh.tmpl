@@ -5,8 +5,11 @@ IFS=$'\n\t'
 
 PROFILE_DIR="$(mktemp -d)"
 
+echo "${PROFILE_DIR}" > "${HOME}/.local/state/firefox_guest"
+
 function cleanup {
   rm -rf "${PROFILE_DIR}"
+  rm "${HOME}/.local/state/firefox_guest"
 }
 
 trap cleanup EXIT

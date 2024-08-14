@@ -1,4 +1,7 @@
 {
+  "[c]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -48,6 +51,7 @@
     "yaml": false
   },
   "github.gitProtocol": "ssh",
+  "gitlens.launchpad.indicator.enabled": false,
   "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.latex.autoClean.run": "onBuilt",
   "latex-workshop.latexindent.path": "/Library/TeX/texbin/latexindent",
@@ -97,7 +101,7 @@
       "editorInlayHint.foreground": "#868686f0"
     }
   },
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Dracula Theme",
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "left"
