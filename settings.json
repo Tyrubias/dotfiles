@@ -35,7 +35,7 @@
   "files.autoSaveDelay": 2500,
   "git.allowForcePush": true,
   "git.autoStash": true,
-  "git.autofetch": "all",
+  // "git.autofetch": "all",
   "git.enableSmartCommit": true,
   "git.fetchOnPull": true,
   "git.followTagsWhenSync": true,
@@ -43,18 +43,18 @@
   "git.rebaseWhenSync": true,
   "git.supportCancellation": true,
   "git.terminalGitEditor": true,
-  "github.copilot.enable": {
-    "*": true,
-    "markdown": false,
-    "plaintext": false,
-    "rust": false,
-    "yaml": false
-  },
+  // "github.copilot.enable": {
+  //   "*": true,
+  //   "markdown": false,
+  //   "plaintext": false,
+  //   "rust": false,
+  //   "yaml": false
+  // },
   "github.gitProtocol": "ssh",
   "gitlens.launchpad.indicator.enabled": false,
   "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.latex.autoClean.run": "onBuilt",
-  "latex-workshop.latexindent.path": "/Library/TeX/texbin/latexindent",
+  "latex-workshop.formatting.latexindent.path": "/Library/TeX/texbin/latexindent",
   "latex-workshop.view.pdf.viewer": "tab",
   "r.bracketedPaste": true,
   "r.rpath.mac": "/opt/homebrew/bin/R",
@@ -64,21 +64,21 @@
     "--no-restore",
     "--r-binary=/opt/homebrew/bin/R"
   ],
-  "remote.SSH.lockfilesInTmp": true,
-  "remote.SSH.remotePlatform": {
-    "clear": "linux"
-  },
-  "ruby.format": "rubocop",
-  "ruby.lint": {
-    "reek": {
-      "useBundler": true
-    },
-    "rubocop": {
-      "useBundler": true
-    }
-  },
-  "ruby.useBundler": true,
-  "ruby.useLanguageServer": true,
+  // "remote.SSH.lockfilesInTmp": true,
+  // "remote.SSH.remotePlatform": {
+  //   "clear": "linux"
+  // },
+  // "ruby.format": "rubocop",
+  // "ruby.lint": {
+  //   "reek": {
+  //     "useBundler": true
+  //   },
+  //   "rubocop": {
+  //     "useBundler": true
+  //   }
+  // },
+  // "ruby.useBundler": true,
+  // "ruby.useLanguageServer": true,
   "rust-analyzer.check.command": "clippy",
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.defaultProfile.osx": "fish (interactive)",
@@ -104,5 +104,13 @@
   "workbench.colorTheme": "Dracula Theme",
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.sideBar.location": "left"
+  "workbench.sideBar.location": "left",
+  "remote.SSH.useLocalServer": false,
+  "remote.SSH.remotePlatform": {
+    "victors-pop-os": "linux"
+  },
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ]
 }
