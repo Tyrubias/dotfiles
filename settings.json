@@ -2,6 +2,9 @@
   "[c]": {
     "editor.defaultFormatter": "xaver.clang-format"
   },
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
