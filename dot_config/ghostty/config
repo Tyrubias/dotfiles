@@ -1,0 +1,5 @@
+theme = Dracula
+font-family = Iosevka Term
+font-size = 14
+shell-integration = none
+shell-integration-features = true
