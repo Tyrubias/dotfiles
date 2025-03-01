@@ -5,6 +5,7 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "keith/formulae"
+tap "oven-sh/bun"
 tap "yt-dlp/taps"
 brew "age"
 brew "antidote"
@@ -105,12 +106,14 @@ brew "zig"
 brew "zsh"
 brew "zx"
 brew "keith/formulae/dyld-shared-cache-extractor"
+brew "oven-sh/bun/bun"
 cask "adobe-digital-editions"
 cask "alt-tab"
 cask "appcleaner"
 cask "balenaetcher"
 cask "betterdisplay"
 cask "calibre"
+cask "cursor"
 cask "discord"
 cask "firefox"
 cask "font-cascadia-code"
@@ -123,6 +126,8 @@ cask "fontsmoothingadjuster"
 cask "ghidra"
 cask "ghostty"
 cask "google-chrome"
+cask "grandperspective"
+cask "imazing"
 cask "iterm2"
 cask "jetbrains-toolbox"
 cask "keyboardcleantool"
@@ -142,11 +147,13 @@ cask "setapp"
 cask "slack"
 cask "spotify"
 cask "sublime-text"
+cask "timemachineeditor"
 cask "visual-studio-code"
 cask "wezterm"
 cask "zoom"
 mas "Amphetamine", id: 937984704
 mas "Bitwarden", id: 1352778147
+mas "Copilot", id: 1447330651
 mas "GarageBand", id: 682658836
 mas "Goodnotes", id: 1444383602
 mas "HP Smart", id: 1474276998
@@ -154,6 +161,7 @@ mas "iMovie", id: 408981434
 mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
 mas "Messenger", id: 1480068668
+mas "Notability", id: 360593530
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Tailscale", id: 1475387142

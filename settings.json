@@ -91,5 +91,6 @@
   "workbench.colorTheme": "Dracula Theme",
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.sideBar.location": "left"
+  "workbench.sideBar.location": "left",
+  "go.toolsManagement.autoUpdate": true
 }
