@@ -25,16 +25,6 @@ set -gx VCPKG_ROOT {$HOME}/Downloads/vcpkg
 set -gx DOCKER_HOST "unix://$XDG_RUNTIME_DIR/docker.sock"
 {{ end }}
 
-# set -Ux MISE_FISH_AUTO_ACTIVATE 0
-{{- if eq .chezmoi.os "darwin" }}
-if not status is-interactive; and test -f /opt/homebrew/bin/mise
-    /opt/homebrew/bin/mise activate fish --shims | source
-end
-{{ else }}
-if not status is-interactive; and test -f /home/linuxbrew/.linuxbrew/bin/mise
-    /home/linuxbrew/.linuxbrew/bin/mise activate fish --shims | source
-end
-{{ end -}}
 if test -e "$HOME/.secrets.fish"
     source "$HOME/.secrets.fish"
 end
@@ -68,7 +58,10 @@ if status is-interactive
         builtin source "$GHOSTTY_RESOURCES_DIR/shell-integration/fish/vendor_conf.d/ghostty-shell-integration.fish"
     end
 
-    mise activate fish | source
+    # set -Ux MISE_FISH_AUTO_ACTIVATE 0
+    if type -q mise
+        mise activate fish | source
+    end
 
     fish_add_path --prepend --global $HOME/.local/bin
 
