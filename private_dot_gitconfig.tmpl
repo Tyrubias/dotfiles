@@ -2,12 +2,26 @@
     email = {{ .email }}
     name = Victor Song
 
+[column]
+    ui = auto
+
+[branch]
+    sort = -committerdate
+
+[tag]
+    sort = version:refname
+
 [core]
     editor = nvim
     excludesfile = ~/.gitignore_global
+    fsmonitor = true
+    untrackedCache = true
 
 [color]
     ui = true
+
+[help]
+    autocorrect = prompt
 
 [init]
     defaultBranch = main
@@ -18,21 +32,44 @@
 [alias]
     wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
     root = rev-parse --show-toplevel
+    dft = difftool
+
+[merge]
+    conflictstyle = zdiff3
 
 [rebase]
+    autoSquash = true
     autoStash = true
+    updateRefs = true
 
 [submodule]
     recurse = true
 
+[fetch]
+    prune = true
+    all = true
+
 [push]
+    default = simple
     autoSetupRemote = true
+    followTags = true
+
+[commit]
+    verbose = true
+
+[rerere]
+    enabled = true
+    autoupdate = true
 
 [hub]
     protocol = ssh
 
 [diff]
     tool = difftastic
+    algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+    renames = true
 
 [difftool]
     prompt = false
@@ -42,9 +79,6 @@
 
 [pager]
     difftool = true
-
-[alias]
-    dft = difftool
 
 [url "ssh://git@github.com/"]
     insteadOf = https://github.com/
