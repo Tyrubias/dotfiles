@@ -1,95 +1,95 @@
-[user]
-    email = {{ .email }}
-    name = Victor Song
-
-[column]
-    ui = auto
+[alias]
+	dft = difftool
+	root = rev-parse --show-toplevel
+	wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
 
 [branch]
-    sort = -committerdate
-
-[tag]
-    sort = version:refname
-
-[core]
-    editor = nvim
-    excludesfile = ~/.gitignore_global
-    fsmonitor = true
-    untrackedCache = true
+	sort = -committerdate
 
 [color]
-    ui = true
+	ui = true
 
-[help]
-    autocorrect = prompt
-
-[init]
-    defaultBranch = main
-
-[pull]
-    rebase = true
-
-[alias]
-    wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
-    root = rev-parse --show-toplevel
-    dft = difftool
-
-[merge]
-    conflictstyle = zdiff3
-
-[rebase]
-    autoSquash = true
-    autoStash = true
-    updateRefs = true
-
-[submodule]
-    recurse = true
-
-[fetch]
-    prune = true
-    all = true
-
-[push]
-    default = simple
-    autoSetupRemote = true
-    followTags = true
+[column]
+	ui = auto
 
 [commit]
-    verbose = true
+	verbose = true
 
-[rerere]
-    enabled = true
-    autoupdate = true
+[core]
+	editor = nvim
+	excludesfile = ~/.gitignore_global
+	fsmonitor = true
+	untrackedCache = true
 
-[hub]
-    protocol = ssh
+[credential]
+{{- if eq .chezmoi.os "windows" }}
+	helper = manager-core
+{{ end }}
 
 [diff]
-    tool = difftastic
-    algorithm = histogram
-    colorMoved = plain
-    mnemonicPrefix = true
-    renames = true
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+	tool = difftastic
 
 [difftool]
-    prompt = false
+	prompt = false
 
 [difftool "difftastic"]
-    cmd = difft "$LOCAL" "$REMOTE"
+	cmd = difft "$LOCAL" "$REMOTE"
 
-[pager]
-    difftool = true
-
-[url "ssh://git@github.com/"]
-    insteadOf = https://github.com/
+[fetch]
+	all = true
+	prune = true
 
 [filter "lfs"]
-    clean = git-lfs clean -- %f
-    smudge = git-lfs smudge -- %f
-    process = git-lfs filter-process
-    required = true
+	clean = git-lfs clean -- %f
+	process = git-lfs filter-process
+	required = true
+	smudge = git-lfs smudge -- %f
 
-{{- if eq .chezmoi.os "windows" }}
-[credential]
-    helper = manager-core
-{{ end }}
+[help]
+	autocorrect = prompt
+
+[hub]
+	protocol = ssh
+
+[init]
+	defaultBranch = main
+
+[merge]
+	conflictstyle = zdiff3
+
+[pager]
+	difftool = true
+
+[pull]
+	rebase = true
+
+[push]
+	autoSetupRemote = true
+	default = simple
+	followTags = true
+
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
+
+[rerere]
+	autoupdate = true
+	enabled = true
+
+[submodule]
+	recurse = true
+
+[tag]
+	sort = version:refname
+
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+
+[user]
+	email = {{ .email }}
+	name = Victor Song
