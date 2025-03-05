@@ -1,5 +1,7 @@
 [alias]
-	dft = difftool
+	dft = -c diff.external=difft diff
+	dl = -c diff.external=difft log -p --ext-diff
+	ds = -c diff.external=difft show --ext-diff
 	lg = log --graph --oneline --decorate --color --all
 	root = rev-parse --show-toplevel
 	wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
@@ -32,13 +34,6 @@
 	colorMoved = plain
 	mnemonicPrefix = true
 	renames = true
-	tool = difftastic
-
-[difftool]
-	prompt = false
-
-[difftool "difftastic"]
-	cmd = difft "$LOCAL" "$REMOTE"
 
 [fetch]
 	all = true
@@ -62,9 +57,6 @@
 
 [merge]
 	conflictstyle = zdiff3
-
-[pager]
-	difftool = true
 
 [pull]
 	rebase = interactive
