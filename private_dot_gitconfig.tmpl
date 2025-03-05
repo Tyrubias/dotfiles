@@ -19,9 +19,11 @@
 	verbose = true
 
 [core]
+	autocrlf = false
 	editor = nvim
 	excludesfile = ~/.gitignore_global
 	fsmonitor = true
+	eol = native
 	untrackedCache = true
 
 [credential]
@@ -62,7 +64,6 @@
 	rebase = interactive
 
 [push]
-	autocrlf = input
 	autoSetupRemote = true
 	default = simple
 	followTags = true
