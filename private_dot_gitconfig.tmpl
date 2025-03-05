@@ -1,5 +1,6 @@
 [alias]
 	dft = difftool
+	lg = log --graph --oneline --decorate --color --all
 	root = rev-parse --show-toplevel
 	wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
 
@@ -42,6 +43,7 @@
 [fetch]
 	all = true
 	prune = true
+	tags = true
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -65,9 +67,10 @@
 	difftool = true
 
 [pull]
-	rebase = true
+	rebase = interactive
 
 [push]
+	autocrlf = input
 	autoSetupRemote = true
 	default = simple
 	followTags = true
