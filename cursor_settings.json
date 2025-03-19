@@ -1,0 +1,21 @@
+{
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "editor.fontFamily": "'Iosevka', 'Symbols Nerd Font Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.guides.bracketPairs": "active",
+    "gitblame.inlineMessageEnabled": true,
+    "terminal.integrated.fontFamily": "'Iosevka Term', 'Symbols Nerd Font Mono', Menlo, Monaco, 'Courier New', monospace",
+    "terminal.integrated.fontSize": 16,
+    "window.autoDetectColorScheme": false,
+    "window.commandCenter": true,
+    "workbench.colorTheme": "Dracula Theme",
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.preferredDarkColorTheme": "Dracula Pro",
+    "workbench.preferredHighContrastColorTheme": "Cursor Dark High Contrast",
+    "workbench.preferredLightColorTheme": "Dracula Pro (Alucard)"
+}

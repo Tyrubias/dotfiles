@@ -53,3 +53,4 @@ Documents
 Library/LaunchAgents/me.vsong.borg.plist
 {{ end }}
 windows_terminal_settings.json
+cursor_settings.json
