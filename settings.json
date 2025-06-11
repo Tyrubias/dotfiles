@@ -23,6 +23,8 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "chat.agent.enabled": true,
+  "chat.mcp.discovery.enabled": true,
   "cmake.pinnedCommands": [
     "workbench.action.tasks.configureTaskRunner",
     "workbench.action.tasks.runTask"
@@ -49,12 +51,16 @@
   "git.rebaseWhenSync": true,
   "git.supportCancellation": true,
   "git.terminalGitEditor": true,
+  "github.copilot.chat.agent.thinkingTool": true,
   "github.gitProtocol": "ssh",
   "gitlens.launchpad.indicator.enabled": false,
+  "gitlens.telemetry.enabled": false,
+  "go.toolsManagement.autoUpdate": true,
   "latex-workshop.formatting.latexindent.path": "/Library/TeX/texbin/latexindent",
   "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.latex.autoClean.run": "onBuilt",
   "latex-workshop.view.pdf.viewer": "tab",
+  "python.terminal.activateEnvironment": false,
   "r.bracketedPaste": true,
   "r.rpath.mac": "/opt/homebrew/bin/R",
   "r.rterm.mac": "/Users/vsong/.local/bin/radian",
@@ -68,6 +74,7 @@
   },
   "remote.SSH.useLocalServer": false,
   "rust-analyzer.check.command": "clippy",
+  "telemetry.feedback.enabled": false,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.defaultProfile.osx": "fish (interactive)",
   "terminal.integrated.fontFamily": "'Iosevka Term', 'Symbols Nerd Font Mono', Menlo, 'Apple Color Emoji',  monospace",
@@ -92,5 +99,7 @@
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "left",
-  "go.toolsManagement.autoUpdate": true
+  "workbench.startupEditor": "none",
+  "github.copilot.chat.codesearch.enabled": true,
+  "github.copilot.nextEditSuggestions.enabled": true
 }
