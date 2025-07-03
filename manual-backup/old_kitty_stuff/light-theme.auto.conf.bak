@@ -1,0 +1,112 @@
+# vim:ft=kitty
+
+## name: Dracula Pro - Alucard
+## author: Zeno Rocha (original Dracula theme)
+## license: MIT
+## upstream: https://github.com/dracula/kitty
+## blurb: A light variant of the Dracula Pro theme family,
+## inverting the traditional dark theme to create an elegant,
+## high-contrast light experience.
+
+#: The basic colors
+
+foreground                      #1F1F1F
+background                      #F5F5F5
+selection_foreground            #1F1F1F
+selection_background            #CFCFDE
+
+
+#: Cursor colors
+
+cursor                          #635D97
+cursor_text_color               #F5F5F5
+
+
+#: URL underline color when hovering with mouse
+
+url_color                       #036A96
+
+
+#: kitty window border colors and terminal bell colors
+
+active_border_color             #635D97
+inactive_border_color           #CFCFDE
+bell_border_color               #CB3A2A
+visual_bell_color               none
+
+
+#: OS Window titlebar colors
+
+wayland_titlebar_color          system
+macos_titlebar_color            system
+
+
+#: Tab bar colors
+
+active_tab_foreground           #F5F5F5
+active_tab_background           #635D97
+inactive_tab_foreground         #1F1F1F
+inactive_tab_background         #CFCFDE
+tab_bar_background              none
+tab_bar_margin_color            none
+
+
+#: Colors for marks (marked text in the terminal)
+
+mark1_foreground                #F5F5F5
+mark1_background                #CB3A2A
+mark2_foreground                #F5F5F5
+mark2_background                #A3144D
+mark3_foreground                #F5F5F5
+mark3_background                #644AC9
+
+
+#: The basic 16 colors
+
+#: black (light in this theme)
+color0                          #F5F5F5
+color8                          #FFFFFF
+
+#: red
+color1                          #CB3A2A
+color9                          #D74C3D
+
+#: green
+color2                          #14710A
+color10                         #198D0C
+
+#: yellow
+color3                          #846E15
+color11                         #9E841A
+
+#: blue
+color4                          #644AC9
+color12                         #7862D0
+
+#: magenta
+color5                          #A3144D
+color13                         #BF185A
+
+#: cyan
+color6                          #036A96
+color14                         #047FB4
+
+#: white (dark in this theme)
+color7                          #1F1F1F
+color15                         #2C2B31
+
+
+#: Additional colors
+
+#: orange
+color16                         #A34D14
+
+#: dim colors
+color0_dim                      #C4C4C4
+color1_dim                      #A22E22
+color2_dim                      #105A08
+color3_dim                      #6A5811
+color4_dim                      #503BA1
+color5_dim                      #82103E
+color6_dim                      #025578
+color7_dim                      #191919
